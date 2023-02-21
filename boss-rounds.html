@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olinequ">
+    <meta name="keywords" content="BTD6, BloonsTD6, Bloons Tower Defence 6">
+    <link rel="stylesheet" href="style.css">
+    <title>BTD6 Resources</title>
+</head>
+<body onload="onload()">
+
+<div id="naglowek">
+    <div id="naglowek-logo">
+        <img src="logo-fixed.png" alt="logo">
+    </div>
+
+    <div id="naglowek-tekst">
+        <h1>Resources</h1>
+    </div>
+</div>
+
+<div id="menu">
+    <ul>
+        <li>
+            <a href="main.html">Start</a>
+        </li>
+
+        <li id="bosses-main">
+            <a href="#" onclick="expandbosses()">Bosses</a>
+            <ul id="bosses-suboptions">
+                <li>
+                    <a href="boss-health.html">Boss Health</a>
+                </li>
+                <li>
+                    <a href="boss-rounds.html">Boss Rounds</a>
+                </li>
+                <li>
+                    <a href="minimal-times-&-world-records.html">World Records</a>
+                </li>
+            </ul>
+        </li>
+
+        <li id="paragons-main">
+            <a href="#" onclick="expandparagons()">Paragons</a>
+            <ul id="paragons-suboptions">
+                <li>
+                    <a href="paragon-degree-calculator.html" class="multiline">
+Paragon Degree
+Calculator
+                    </a>
+                </li>
+                <li>
+                    <a href="paragon-damage.html">Paragon Damage</a>
+                </li>
+            </ul>
+        </li>
+
+        <li id="rounds-main">
+            <a href="#" onclick="expandrounds()">Rounds</a>
+            <ul id="rounds-suboptions">
+                <li>
+                    <a href="normal-rounds.html">Normal Rounds</a>
+                </li>
+                <li>
+                    <a href="alternate-rounds.html">Alternate Rounds</a>
+                </li>
+                <li>
+                    <a href="boss-rounds.html">Boss Rounds</a>
+                </li>
+            </ul>
+        </li>
+
+        <li id="farming-main">
+            <a href="#" onclick="expandfarming()">Farming</a>
+            <ul id="farming-suboptions">
+                <li>
+                    <a href="farms-&-boats-calculator.html" class="multiline">
+Farms & Boats
+Income Calculator
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="tower-costs.html">Tower Costs</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <h1>Custom Boss Rounds</h1>
+
+    <h2 style="font-size: 45px; margin-bottom: 100px">Bloonarius hasn't got any special rounds</h2>
+
+    <h2>Lych</h2>
+    <ul>
+        <li>Round 40: MOAB is replaced by 6 ceramics</li>
+        <li>Round 41: 1 Additional MOAB</li>
+        <li>Round 42: 1 Additional MOAB</li>
+        <li>Round 43: 1 Additional Fortified MOAB</li>
+        <li>Round 44: 2 Additional MOABs</li>
+        <li>Round 45: 1 Additional MOAB & 1 Fortified MOAB</li>
+        <li>Round 46: 1 Additional MOAB & 1 Fortified MOAB</li>
+        <li>Round 47: 2 Additional Fortified MOABs</li>
+        <li>Round 48: 2 Additional Fortified MOABs</li>
+        <li>Round 60: BFB is replaced by 6 MOABs</li>
+        <li>Round 80: ZOMG is replaced by 6 BFBs</li>
+        <li>Round 100: BAD is replaced by 10 ZOMGs & 15 DDTs</li>
+    </ul>
+
+    <h2>Vortex</h2>
+    <ul>
+        <li>Round 5: 6 Additional Yellows</li>
+        <li>Round 12: +1 Layer to all bloons - 10 Yellows, 15 Greens, 5 Pinks</li>
+        <li>Round 24: 20 Blues replaced by 20 Pinks, Camo Green replaced by Camo Yellow</li>
+        <li>Round 30: 4 Additional Yellows & 5 Pinks</li>
+        <li>Round 40: MOAB replaced by 6 Ceramics</li>
+        <li>Round 41: 60 Additional Pinks</li>
+        <li>Round 60: BFB replaced by 6 MOABs</li>
+        <li>Round 80: ZOMG replaced by 6 BFBs</li>
+        <li>Round 100: BAD replaced by 4 ZOMGs & 6 DDTs</li>
+    </ul>
+
+    <h2>Dreadbloon</h2>
+    <ul>
+        <li>All Leads & Ceramics become fortified</li>
+        <li>All Zebras are replaced with Leads</li>
+        <li>All Rainbows are replaced with Ceramics</li>
+        <li>After round 40, every regular MOAB that spawns becomes fortified</li>
+        <li>After round 70, every MOAB is fortified</li>
+    </ul>
+
+    <ul>
+        <li>Round 39: Rainbows are replaced with 12 Fortified Leads & 6 Ceramics</li>
+        <li>Round 40: MOAB replaced by 10 Fortified Leads & 8 Fortified Ceramics</li>
+        <li>Round 43: 10 Rainbows are replaced by 10 Fortified Leads</li>
+        <li>Round 46: Round is replaced by 1 Fortified MOAB</li>
+        <li>Round 48: 40 Rainbows & 3 Fortified Ceramics are replaced by 20 Fortified Ceramics</li>
+        <li>Round 49: First 10 Rainbows are replaced by 10 Fortified Regrow Ceramics</li>
+        <li>Round 60: BFB is replaced by 3 Fortified MOABs & 2 groups of 20 Fortified Leads</li>
+        <li>Round 80: Round 75 is repeated</li>
+    </ul>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

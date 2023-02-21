@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Olinequ">
+    <meta name="keywords" content="BTD6, BloonsTD6, Bloons Tower Defence 6">
+    <link rel="stylesheet" href="style.css">
+    <title>BTD6 Resources</title>
+</head>
+<body onload="onload()">
+
+<div id="naglowek">
+    <div id="naglowek-logo">
+        <img src="logo-fixed.png" alt="logo">
+    </div>
+
+    <div id="naglowek-tekst">
+        <h1>Resources</h1>
+    </div>
+</div>
+
+<div id="menu">
+    <ul>
+        <li>
+            <a href="main.html">Start</a>
+        </li>
+
+        <li id="bosses-main">
+            <a href="#" onclick="expandbosses()">Bosses</a>
+            <ul id="bosses-suboptions">
+                <li>
+                    <a href="boss-health.html">Boss Health</a>
+                </li>
+                <li>
+                    <a href="boss-rounds.html">Boss Rounds</a>
+                </li>
+                <li>
+                    <a href="minimal-times-&-world-records.html">World Records</a>
+                </li>
+            </ul>
+        </li>
+
+        <li id="paragons-main">
+            <a href="#" onclick="expandparagons()">Paragons</a>
+            <ul id="paragons-suboptions">
+                <li>
+                    <a href="paragon-degree-calculator.html" class="multiline">
+Paragon Degree
+Calculator
+                    </a>
+                </li>
+                <li>
+                    <a href="paragon-damage.html">Paragon Damage</a>
+                </li>
+            </ul>
+        </li>
+
+        <li id="rounds-main">
+            <a href="#" onclick="expandrounds()">Rounds</a>
+            <ul id="rounds-suboptions">
+                <li>
+                    <a href="normal-rounds.html">Normal Rounds</a>
+                </li>
+                <li>
+                    <a href="alternate-rounds.html">Alternate Rounds</a>
+                </li>
+                <li>
+                    <a href="boss-rounds.html">Boss Rounds</a>
+                </li>
+            </ul>
+        </li>
+
+        <li id="farming-main">
+            <a href="#" onclick="expandfarming()">Farming</a>
+            <ul id="farming-suboptions">
+                <li>
+                    <a href="farms-&-boats-calculator.html" class="multiline">
+Farms & Boats
+Income Calculator
+                    </a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="tower-costs.html">Tower Costs</a>
+        </li>
+    </ul>
+</div>
+
+<div id="content">
+    <h1>Boss Health</h1>
+
+
+    <h2 style="font-size: 45px; margin-bottom: 100px">To Find out which paragon degrees can instakill bosses visit: <a href="paragon-damage.html">Paragon Damage</a></h2>
+
+    <h2>Go To:</h2>
+    <ul>
+        <li><a href="#bl-n-h">Bloonarius Normal Health</a></li>
+        <li><a href="#bl-e-h">Bloonarius Elite Health</a></li>
+        <li><a href="#bl-s">Bloonarius Swarms</a></li>
+    </ul>
+    <ul>
+        <li><a href="#ly-n-h">Lych Normal Health</a></li>
+        <li><a href="#ly-e-h">Lych Elite Health</a></li>
+        <li><a href="#ly-s-h">Lych Soul Health & Resurrected Moabs</a></li>
+    </ul>
+    <ul>
+        <li><a href="#vo-n-h">Vortex Normal Health</a></li>
+        <li><a href="#vo-e-h">Vortex Elite Health</a></li>
+        <li><a href="#vo-s-d">Vortex Stun Duration & Range</a></li>
+    </ul>
+    <ul>
+        <li><a href="#dr-n-h">Dreadbloon Normal Health</a></li>
+        <li><a href="#dr-e-h">Dreadbloon Elite Health</a></li>
+    </ul>
+
+    <h1>Bloonarius</h1>
+    <h2 id="bl-n-h">Bloonarius Normal Health - 3 skulls</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>20 000</td> <td>24 000</td> <td>28 000</td> <td>32 000</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>75 000</td> <td>90 000</td> <td>105 000</td> <td>120 000</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>300 000</td> <td>420 000</td> <td>490 000</td> <td>560 000</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>750 000</td> <td>900 000</td> <td>1 050 000</td> <td>1 200 000</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>3 000 000</td> <td>3 600 000</td> <td>4 200 000</td> <td>4 800 000</td>
+        </tr>
+    </table>
+
+    <h2 id="bl-e-h">Bloonarius Elite Health - 7 skulls</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>50 000</td> <td>60 000</td> <td>70 000</td> <td>80 000</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>300 000</td> <td>360 000</td> <td>420 000</td> <td>480 000</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>2 000 000</td> <td>2 400 000</td> <td>2 800 000</td> <td>3 200 000</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>8 000 000</td> <td>9 600 000</td> <td>11 200 000</td> <td>12 800 000</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>40 000 000</td> <td>48 000 000</td> <td>56 000 000</td> <td>64 000 000</td>
+        </tr>
+    </table>
+
+    <h2 id="bl-s">Bloonarius Swarms (sent on skull)</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Normal</td><td>Elite</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>8 Greens</td> <td>30 Greens + 30 Ceramics</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>15 Yellows</td> <td>60 Yellows + 60 Ceramics</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>25 Pinks</td> <td>100 Pinks + 6 MOABs</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>15 Zebras</td> <td>60 Zebras + 10 ZOMGs</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>25 Rainbows</td> <td>100 Rainbows + 1 B.A.D.</td>
+        </tr>
+    </table>
+
+
+    <h1>Lych</h1>
+    <h2 id="ly-n-h">Lych Normal Health - 5 skulls</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>14 000</td> <td>16 800</td> <td>19 600</td> <td>22 400</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>52 500</td> <td>63 000</td> <td>73 500</td> <td>84 000</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>245 000</td> <td>294 000</td> <td>343 000</td> <td>392 000</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>525 000</td> <td>630 800</td> <td>735 000</td> <td>840 000</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>2 100 000</td> <td>2 520 000</td> <td>2 940 000</td> <td>3 360 000</td>
+        </tr>
+    </table>
+
+    <h2 id="ly-e-h">Lych Elite Health - 7 skulls</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>30 000</td> <td>36 000</td> <td>42 000</td> <td>48 000</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>180 000</td> <td>216 000</td> <td>252 000</td> <td>288 000</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>1 200 000</td> <td>1 440 000</td> <td>1 680 000</td> <td>1 920 000</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>4 800 000</td> <td>5 760 000</td> <td>6 720 000</td> <td>7 680 000</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>24 000 000</td> <td>28 800 000</td> <td>33 600 000</td> <td>38 400 000</td>
+        </tr>
+    </table>
+
+    <h2 id="ly-s-h">Lych Soul Health & Resurrected Moabs</h2>
+    <p>*Lych resurrects every popped blimp below BAD from the last 20 seconds</p>
+    <table>
+        <tr>
+            <td></td><td colspan="2">Normal</td><td colspan="2">Elite</td>
+        </tr>
+        <tr>
+            <td>Tier</td><td>Soul Health</td><td>Resurrected Moabs</td><td>Soul Health</td><td>Resurrected Moabs</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>1 280</td> <td>1.6x speed & 4x health</td> <td>1 600</td> <td>1.8x speed & 7x health</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>3 050</td> <td>1.7x speed & 6x health</td> <td>5 600</td> <td>1.9x speed & 8x health</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>7 900</td> <td>1.8x speed & 7x health</td> <td>27 000</td> <td>2x speed & 9x health</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>14 500</td> <td>1.9x speed & 8x health</td> <td>100 000</td> <td>2.1x speed & 10x health</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>47 000</td> <td>2x speed & 9x health</td> <td>485 000</td> <td>2.2x speed & 12x health</td>
+        </tr>
+    </table>
+
+    <h1>Vortex</h1>
+    <h2 id="vo-n-h">Vortex Normal Health - 4 skulls</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>20 000</td> <td>24 000</td> <td>28 000</td> <td>32 000</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>62 800</td> <td>75 600</td> <td>87 920</td> <td>100 480</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>294 000</td> <td>352 800</td> <td>411 600</td> <td>470 400</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>628 000</td> <td>753 600</td> <td>879 200</td> <td>1 004 800</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>2 512 500</td> <td>3 015 000</td> <td>3 517 500</td> <td>4 020 000</td>
+        </tr>
+    </table>
+
+    <h2 id="vo-e-h">Vortex Elite Health - 7 skulls</h2>
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>41 800</td> <td>50 160</td> <td>58 520</td> <td>66 880</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>251 000</td> <td>301 200</td> <td>351 400</td> <td>401 600</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>1 675 000</td> <td>2 010 000</td> <td>2 345 000</td> <td>2 680 000</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>6 700 000</td> <td>8 040 000</td> <td>9 380 000</td> <td>10 720 000</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>33 500 000</td> <td>40 200 000</td> <td>46 900 000</td> <td>53 600 000</td>
+        </tr>
+    </table>
+
+    <h2 id="vo-s-d">Vortex Stun Duration & Range</h2>
+    <table>
+        <tr>
+            <td></td><td colspan="2">Normal</td><td colspan="2">Elite</td>
+        </tr>
+        <tr>
+            <td>Tier</td> <td>Stun Duration</td> <td>Stun Range</td> <td>Stun Duration</td> <td>Stun Range</td>
+        </tr>
+        <tr>
+            <td>Tier 1</td> <td>16s</td> <td>60</td> <td>20s</td> <td>60</td>
+        </tr>
+        <tr>
+            <td>Tier 2</td> <td>16s</td> <td>65</td> <td>25s</td> <td>65</td>
+        </tr>
+        <tr>
+            <td>Tier 3</td> <td>20s</td> <td>70</td> <td>30s</td> <td>70</td>
+        </tr>
+        <tr>
+            <td>Tier 4</td> <td>25s</td> <td>75</td> <td>35s</td> <td>75</td>
+        </tr>
+        <tr>
+            <td>Tier 5</td> <td>30s</td> <td>80</td> <td>40s</td> <td>80</td>
+        </tr>
+
+
+    </table>
+
+    <h1>Dreadbloon</h1>
+    <h2 id="dr-n-h">Dreadbloon Normal Health - 3 skulls</h2>
+
+    <ul>
+        <li style="list-style-type: none; margin-left: 0.7%; margin-top: 1.5%">*Immunities are primary > military > magic > support</li>
+        <li style="list-style-type: none; margin-left: 0.7%">**Shield's hp doesn't scale with coop</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td><td>Each Shield</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 1</td> <td>7 500</td> <td>9 000</td> <td>10 500</td> <td>12 000</td> <td rowspan="2">3 750</td>
+        </tr>
+        <tr>
+            <td>Total: 18 750</td> <td>Total: 20 250</td> <td>Total: 21 750</td> <td>Total: 23 250</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 2</td> <td>25 000</td> <td>30 000</td> <td>35 000</td> <td>40 000</td> <td rowspan="2"> 12 500</td>
+        </tr>
+        <tr>
+            <td>Total: 62 500</td> <td>Total: 67 500</td> <td>Total: 72 500</td> <td>Total: 77 500</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 3</td> <td>120 000</td> <td>144 000</td> <td>168 000</td> <td>192 000</td> <td rowspan="2">60 000</td>
+        </tr>
+        <tr>
+            <td>Total: 300 000</td> <td>Total: 324 000</td> <td>Total: 348 000</td> <td>Total: 372 000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 4</td> <td>260 000</td> <td>312 000</td> <td>364 000</td> <td>416 000</td> <td rowspan="2">130 000</td>
+        </tr>
+        <tr>
+            <td>Total: 650 000</td> <td>Total: 702 000</td> <td>Total: 754 000</td> <td>Total: 806 000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 5</td> <td>1 000 000</td> <td>1 200 000</td> <td>1 400 000</td> <td>1 600 000</td> <td rowspan="2">500 000</td>
+        </tr>
+        <tr>
+            <td>Total: 2 500 000</td> <td>Total: 2 700 000</td> <td>Total: 2 900 000</td> <td>Total: 3 100 000</td>
+        </tr>
+    </table>
+
+    <h2 id="dr-e-h">Dreadbloon Elite Health - 3 skulls</h2>
+
+    <ul>
+        <li style="list-style-type: none; margin-left: 0.7%; margin-top: 1.5%">*Immunities are primary > military > magic > support</li>
+        <li style="list-style-type: none; margin-left: 0.7%">**Shield's hp doesn't scale with coop</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>Tier</td><td>Solo</td><td>2 Players</td><td>3 Players</td><td>4 Players</td><td>Each Shield</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 1</td> <td>15 000</td> <td>18 000</td> <td>21 000</td> <td>24 000</td> <td rowspan="2">7 500</td>
+        </tr>
+        <tr>
+            <td>Total: 37 500</td> <td>Total: 40 500</td> <td>Total: 43 500</td> <td>Total: 47 500</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 2</td> <td>90 000</td> <td>108 000</td> <td>126 000</td> <td>144 000</td> <td rowspan="2">45 000</td>
+        </tr>
+        <tr>
+            <td>Total: 225 000</td> <td>Total: 243 000</td> <td>Total: 261 000</td> <td>Total: 279 000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 3</td> <td>650 000</td> <td>780 000</td> <td>910 000</td> <td>1 040 000</td> <td rowspan="2">325 000</td>
+        </tr>
+        <tr>
+            <td>Total: 1 625 000</td> <td>Total: 1 755 000</td> <td>Total: 1 885 000</td> <td>Total:2 015 000</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 4</td> <td>2 625 000</td> <td>3 150 000</td> <td>3 675 000</td> <td>4 200 000</td> <td rowspan="2">1 312 500</td>
+        </tr>
+        <tr>
+            <td>Total: 6 562 500</td> <td>Total: 7 087 500</td> <td>Total: 7 612 500</td> <td>Total: 8 137 500</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tier 5</td> <td>12 500 000</td> <td>15 000 000</td> <td>17 500 000</td> <td>20 000 000</td> <td rowspan="2">6 250 000</td>
+        </tr>
+        <tr>
+            <td>Total: 31 250 000</td> <td>Total: 33 750 000</td> <td>Total: 36 250 000</td> <td>Total: 38 750 000</td>
+        </tr>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
