@@ -332,18 +332,6 @@ td {
     text-decoration: none;
 }
 
-#content > pre {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 40px;
-    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
 
 
 
