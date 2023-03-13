@@ -48,7 +48,7 @@ body {
     margin-top: 60px;
     background: rgb(0, 0, 0, 0.8);
     width: 102%;
-    height: 100px;
+    height: 95px;
     border-top: solid rgb(0, 0, 0, 0.8) 25px;
     border-bottom: solid rgb(0, 0, 0, 0.8) 19px;
     background-clip: padding-box;
@@ -68,7 +68,7 @@ body {
 }
 
 #menu > ul > li > a {
-    font-size: 45px;
+    font-size: 40px;
     font-family: "Luckiest Guy", sans-serif;
     background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
     -webkit-background-clip: text;
@@ -147,9 +147,10 @@ body {
     padding: 0;
 }
 
-#menu > ul > li > #farming-suboptions > li:nth-child(4) {
+#menu > ul > li > #bosses-suboptions > li:nth-child(1) {
     padding: 0;
 }
+
 
 
 
@@ -315,11 +316,12 @@ td {
     -webkit-text-stroke-width: 1px;
 }
 
-.tower {
-    background: -webkit-linear-gradient(#DD79DD, #2B54F4);
+.value {
+    background: -webkit-linear-gradient(#193DEC, #D3E1B7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
 }
 
 #content > p > a:hover {
@@ -330,6 +332,73 @@ td {
 
 #content > p > a {
     text-decoration: none;
+}
+
+#content > form > h1 {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 70px;
+    background: -webkit-linear-gradient(#ee0979, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #841414;
+    padding: 25px;
+}
+
+#content > form > h2 {
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 50px;
+    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(134, 14, 0);
+}
+
+#content > form > p {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 40px;
+    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+#content > form > label {
+    padding: 25px;
+}
+
+#content > form > label > input {
+    border: 8px double #f9ffbf;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 40px;
+    text-indent: 10px;
+    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    width: 500px;
+    margin-bottom: 5%;
+}
+
+#content > form > button {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 2%;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 40px;
+    color: black;
+    width: 300px;
 }
 
 

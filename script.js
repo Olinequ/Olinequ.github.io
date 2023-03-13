@@ -60,9 +60,7 @@ function expandbosses() {
             document.getElementById("bosses-main").classList.remove('active');
         }
 
-    }
-
-    else {
+    } else {
         document.getElementById("bosses-suboptions").style.display = 'block';
         document.getElementById("bosses-main").classList.add('active');
         setTimeout(opacitybosses1, 15)
@@ -449,4 +447,173 @@ function expandfarming() {
             document.getElementById("farming-suboptions").style.opacity = '1';
         }
     }
+}
+
+function calculate() {
+
+
+    let b = document.forms["calculator"]["boss"].value;
+    let modifier = document.forms["calculator"]["modifier"].value;
+    let players = document.forms["calculator"]["players"].value;
+
+    let doublehp = document.forms["calculator"]["doublehp"];
+    let d;
+    let p;
+    let tier1;
+    let tier2;
+    let tier3;
+    let tier4;
+    let tier5;
+
+    if (b === "Normal Bloonarius") {
+        tier1 = 20000
+        tier2 = 75000
+        tier3 = 350000
+        tier4 = 750000
+        tier5 = 3000000
+    }
+    if (b === "Elite Bloonarius") {
+        tier1 = 50000
+        tier2 = 300000
+        tier3 = 2000000
+        tier4 = 8000000
+        tier5 = 40000000
+    }
+    if (b === "Normal Lych") {
+        tier1 = 14000
+        tier2 = 52500
+        tier3 = 245000
+        tier4 = 525000
+        tier5 = 2100000
+    }
+    if (b === "Elite Lych") {
+        tier1 = 30000
+        tier2 = 180000
+        tier3 = 1200000
+        tier4 = 4800000
+        tier5 = 24000000
+    }
+    if (b === "Normal Vortex") {
+        tier1 = 20000
+        tier2 = 62800
+        tier3 = 294000
+        tier4 = 628000
+        tier5 = 2512000
+    }
+    if (b === "Elite Vortex") {
+        tier1 = 41800
+        tier2 = 251000
+        tier3 = 1675000
+        tier4 = 6700000
+        tier5 = 33500000
+    }
+    if (b === "Normal Dreadbloon") {
+        tier1 = 18750
+        tier2 = 62500
+        tier3 = 300000
+        tier4 = 650000
+        tier5 = 2500000
+    }
+    if (b === "Elite Dreadbloon") {
+        tier1 = 37500
+        tier2 = 225000
+        tier3 = 1625000
+        tier4 = 6562500
+        tier5 = 31250000
+    }
+
+    if (players === "1") {
+        p = 1
+    }
+    if (players === "2") {
+        p = 1.2
+    }
+    if (players === "3") {
+        p = 1.4
+    }
+    if (players === "4") {
+        p = 1.6
+    }
+
+    if (doublehp.checked === true) {
+        d = 2
+    }
+    else {
+        d = 1
+    }
+
+    tier1=tier1*modifier*p*d
+    tier2=tier2*modifier*p*d
+    tier3=tier3*modifier*p*d
+    tier4=tier4*modifier*p*d
+    tier5=tier5*modifier*p*d
+
+    document.getElementById(1).innerHTML = tier1;
+    document.getElementById(2).innerHTML = tier2;
+    document.getElementById(3).innerHTML = tier3;
+    document.getElementById(4).innerHTML = tier4;
+    document.getElementById(5).innerHTML = tier5;
+
+    if (b === "Normal Bloonarius") {
+        tier1=tier1/4
+        tier2=tier2/4
+        tier3=tier3/4
+        tier4=tier4/4
+        tier5=tier5/4
+    }
+    if (b === "Elite Bloonarius") {
+        tier1=tier1/8
+        tier2=tier2/8
+        tier3=tier3/8
+        tier4=tier4/8
+        tier5=tier5/8
+    }
+    if (b === "Normal Lych") {
+        tier1=tier1/6
+        tier2=tier2/6
+        tier3=tier3/6
+        tier4=tier4/6
+        tier5=tier5/6
+    }
+    if (b === "Elite Lych") {
+        tier1=tier1/8
+        tier2=tier2/8
+        tier3=tier3/8
+        tier4=tier4/8
+        tier5=tier5/8
+    }
+    if (b === "Normal Vortex") {
+        tier1=tier1/4
+        tier2=tier2/4
+        tier3=tier3/4
+        tier4=tier4/4
+        tier5=tier5/4
+    }
+    if (b === "Elite Vortex") {
+        tier1=tier1/8
+        tier2=tier2/8
+        tier3=tier3/8
+        tier4=tier4/8
+        tier5=tier5/8
+    }
+    if (b === "Normal Dreadbloon") {
+        tier1=tier1/4
+        tier2=tier2/4
+        tier3=tier3/4
+        tier4=tier4/4
+        tier5=tier5/4
+    }
+    if (b === "Elite Dreadbloon") {
+        tier1=tier1/4
+        tier2=tier2/4
+        tier3=tier3/4
+        tier4=tier4/4
+        tier5=tier5/4
+    }
+
+    document.getElementById(6).innerHTML = tier1;
+    document.getElementById(7).innerHTML = tier2;
+    document.getElementById(8).innerHTML = tier3;
+    document.getElementById(9).innerHTML = tier4;
+    document.getElementById(10).innerHTML = tier5;
 }
