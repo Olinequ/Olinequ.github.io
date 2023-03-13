@@ -548,11 +548,11 @@ function calculate() {
     tier4=tier4*modifier*p*d
     tier5=tier5*modifier*p*d
 
-    document.getElementById(1).innerHTML = tier1;
-    document.getElementById(2).innerHTML = tier2;
-    document.getElementById(3).innerHTML = tier3;
-    document.getElementById(4).innerHTML = tier4;
-    document.getElementById(5).innerHTML = tier5;
+    document.getElementById(1).innerHTML = tier1.toFixed(0);
+    document.getElementById(2).innerHTML = tier2.toFixed(0);
+    document.getElementById(3).innerHTML = tier3.toFixed(0);
+    document.getElementById(4).innerHTML = tier4.toFixed(0);
+    document.getElementById(5).innerHTML = tier5.toFixed(0);
 
     if (b === "Normal Bloonarius") {
         tier1=tier1/4
@@ -611,9 +611,9 @@ function calculate() {
         tier5=tier5/4
     }
 
-    document.getElementById(6).innerHTML = tier1;
-    document.getElementById(7).innerHTML = tier2;
-    document.getElementById(8).innerHTML = tier3;
-    document.getElementById(9).innerHTML = tier4;
-    document.getElementById(10).innerHTML = tier5;
+    document.getElementById(6).innerHTML = tier1.toFixed(0);
+    document.getElementById(7).innerHTML = tier2.toFixed(0);
+    document.getElementById(8).innerHTML = tier3.toFixed(0);
+    document.getElementById(9).innerHTML = tier4.toFixed(0);
+    document.getElementById(10).innerHTML = tier5.toFixed(0);
 }
