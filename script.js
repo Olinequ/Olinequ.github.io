@@ -508,18 +508,32 @@ function calculate() {
         tier5 = 33500000
     }
     if (b === "Normal Dreadbloon") {
-        tier1 = 18750
-        tier2 = 62500
-        tier3 = 300000
-        tier4 = 650000
-        tier5 = 2500000
+        tier1 = 7500
+        tier2 = 25000
+        tier3 = 120000
+        tier4 = 260000
+        tier5 = 1000000
     }
     if (b === "Elite Dreadbloon") {
-        tier1 = 37500
-        tier2 = 225000
-        tier3 = 1625000
-        tier4 = 6562500
-        tier5 = 31250000
+        tier1 = 15000
+        tier2 = 90000
+        tier3 = 650000
+        tier4 = 2625000
+        tier5 = 12500000
+    }
+    if (b === "Normal Phayze") {
+        tier1 = 10000
+        tier2 = 37500
+        tier3 = 175000
+        tier4 = 375000
+        tier5 = 1500000
+    }
+    if (b === "Elite Phayze") {
+        tier1 = 20000
+        tier2 = 120000
+        tier3 = 800000
+        tier4 = 3200000
+        tier5 = 16000000
     }
 
     if (players === "1") {
@@ -609,6 +623,20 @@ function calculate() {
         tier3=tier3/4
         tier4=tier4/4
         tier5=tier5/4
+    }
+    if (b === "Normal Phayze") {
+        tier1=tier1/4
+        tier2=tier2/4
+        tier3=tier3/4
+        tier4=tier4/4
+        tier5=tier5/4
+    }
+    if (b === "Elite Phayze") {
+        tier1=tier1/6
+        tier2=tier2/6
+        tier3=tier3/6
+        tier4=tier4/6
+        tier5=tier5/6
     }
 
     document.getElementById(6).innerHTML = tier1.toFixed(0);
