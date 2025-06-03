@@ -1,406 +1,107 @@
-@font-face {
-    font-family: 'Luckiest Guy';
-    src: url(LuckiestGuy-Regular.ttf);
-}
-
 body {
-    background: url("background.png") repeat;
+    background: url("background.png");
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-#naglowek {
-    margin-left: -1%;
-    margin-right: -1%;
-    margin-top: 2%;
-    background: rgb(0, 0, 0, 0.8);
-    height: 180px;
-    width: 102%;
-}
-
-#naglowek-tekst > h1 {
-    font-size: 90px;
-    font-family: "Luckiest Guy", sans-serif;
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-    padding: 40px;
-}
-
-#naglowek-tekst {
-    text-align: left;
-    width: auto;
-}
-
-#naglowek-logo {
+#title {
+    background-color: #393939;
     float: left;
-    width: auto;
-    padding: 15px;
-}
-
-
-
-
-
-#menu {
-    margin-left: -1%;
-    margin-right: -1%;
-    margin-top: 60px;
-    background: rgb(0, 0, 0, 0.8);
-    width: 102%;
-    height: 95px;
-    border-top: solid rgb(0, 0, 0, 0.8) 25px;
-    border-bottom: solid rgb(0, 0, 0, 0.8) 19px;
-    background-clip: padding-box;
-    position: absolute;
-}
-
-#menu > ul {
-    list-style-type: none;
-}
-
-#menu > ul > li {
-    display: inline-block;
-    border-radius: 5px;
-    width: auto;
-    float: left;
-    margin-right: 10px;
-}
-
-#menu > ul > li > a {
-    font-size: 40px;
-    font-family: "Luckiest Guy", sans-serif;
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-    padding: 51px;
-    text-decoration: none;
-    position: relative;
-}
-
-#menu > ul > li:hover {
-    background: radial-gradient(orange 3%, transparent 70%);
-    transition: .5s ease;
-}
-
-#menu > ul > li > ul > li:hover {
-    transition: .5s ease;
-    background-clip: padding-box;
-    background: rgb(0, 0, 0, 0.8) radial-gradient(orange 3%, transparent 70%);
-}
-
-#menu > ul > li > ul {
-    list-style-type: none;
-    display: none;
-    margin: 0;
-    padding: 0;
-}
-
-#menu > ul > li > ul > li {
-    font-size: 25px;
-    font-family: "Luckiest Guy", sans-serif;
     padding: 20px;
-    text-align: center;
-    margin: 0;
-    position: relative;
-    background-clip: padding-box;
-    background-color: rgb(0, 0, 0, 0.8);
-}
-
-#menu > ul > li > ul > li > a {
-    text-decoration: none;
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-}
-
-#menu > ul > li > ul > li:nth-child(1) {
-    margin-top: 44px;
-}
-
-#menu > ul > li > ul > li > a {
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-}
-
-#menu > ul > li.active {
-    background: none;
-    transition: 2s ease;
-}
-
-#menu > ul > li > ul > li > a.multiline {
-    white-space: pre-wrap;
-}
-
-#menu > ul > li > #paragons-suboptions > li:nth-child(1) {
-    padding: 0;
-}
-
-#menu > ul > li > #farming-suboptions > li:nth-child(1) {
-    padding: 0;
-}
-
-#menu > ul > li > #bosses-suboptions > li:nth-child(1) {
-    padding: 0;
-}
-
-
-
-
-
-
-#content {
-    margin-top: 300px;
-    margin-left: -1%;
-    margin-right: -1%;
-    width: 102%;
-    background: rgb(0, 0, 0, 0.8);
-    border-bottom: solid 50px rgb(0, 0, 0, 0);
-}
-
-#content > h1 {
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 70px;
-    background: -webkit-linear-gradient(#ee0979, #ff6a00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #841414;
-    padding: 25px;
-}
-
-#content > h2 {
-    margin-bottom: -1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 50px;
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-}
-
-#content > p {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 40px;
-    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-#content > table {
-    margin-left: 1%;
-    margin-right: 2%;
-    margin-bottom: 5%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 30px;
-    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    padding: 25px;
-    text-align: center;
-}
-
-td {
-    padding: 10px;
-    border: 3px solid #f9ffbf;
-}
-
-#content > ul > li {
-    margin-left: 4%;
-    margin-right: 2%;
-    font-family: "Luckiest Guy", sans-serif;
-    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    font-size: 40px;
-    list-style-type: disc;
-    color: #9692B1;
-}
-
-#content > p > u {
-    text-decoration: underline firebrick;
-}
-
-#content > ul > li > u {
-    text-decoration: underline firebrick;
-}
-
-#content > #img > img {
+    border-bottom: floralwhite 5px solid;
+    width: 100%;
+    margin: -1%;
+    font-family: "Trebuchet MS", sans-serif;
+    color: #BBBBBB;
+    text-shadow: 5px 5px 5px #000000;
+}  #title > img {
+    float: left;
     border-radius: 25px;
-    border: dimgray 5px double;
-    margin-left: auto;
-    margin-right: auto;
+    border: 5px #393939 solid;
+    background-color: #606060;
+}  #title > h1 {
+    font-size: 275%;
+    float: left;
+    padding: 20px;
+}  #title > * {
+    background-color: #393939;
+}
+
+#bracket {
+    margin-top: 75px;
+    float: left;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    color: #BBBBBB;
+    scale: 0.99;
+} #bracket > h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    color: white;
+} #bracket > hr {
+    color: white;
+    width: 122%;
+    margin-bottom: 2.5%;
+} .rounds {
+    font-size: 150%;
     text-align: center;
-}
-
-#content > #img {
-    margin-left: 5%;
-}
-
-#content > ul > li > span {
-    font-size: 45px;
-}
-
-#content > ul > li > a {
+    color: goldenrod;
+} .rounds-group {
+    font-size: 150%;
+    text-align: center;
+    color: goldenrod;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+}  .player {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+}  .points {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 30px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+}  td {
+    padding: 10px;
+    font-size: 100%;
+} .blank {
+    border: 0;
+} .full {
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+} .arrow_a {
+    border-top: white 1px solid;
+    width: 200px;
+    height: 30px;
+} .arrow_b {
+    border-bottom: white 1px solid;
+    width: 200px;
+    height: 30px;
+} .arrow_c {
+      border-right: white 1px solid;
+      width: 200px;
+      height: 30px;
+} .w {
+    color: darkseagreen;
     text-decoration: none;
-}
-
-#content > h2 > a {
+} .l {
+    color: indianred;
+    text-decoration: none;
+} .w:hover {
     text-decoration: underline;
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-}
-
-#content > ul > li > a:hover {
-    transition: .5s ease;
-    background-clip: padding-box;
-    background: radial-gradient(rgb(255, 255, 255, 0.5)20%, transparent 50%);
-}
-
-.blue {
-    background: -webkit-linear-gradient(lightskyblue, cornflowerblue);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: darkblue;
-}
-
-.green {
-    background: -webkit-linear-gradient(green, limegreen);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.purple {
-    background: -webkit-linear-gradient(purple, rebeccapurple);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: slateblue;
-}
-
-.yellow {
-    background: -webkit-linear-gradient(gold, goldenrod);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.credit {
-    background: -webkit-linear-gradient(#E3D44D, #017FEB);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-}
-
-.value {
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-#content > p > a:hover {
-    transition: .5s ease;
-    background-clip: padding-box;
-    background: radial-gradient(rgb(255, 255, 255, 0.5)20%, transparent 50%);
-}
-
-#content > p > a {
+} .l:hover {
+    text-decoration: underline;
+} a {
     text-decoration: none;
+    color: #DDDDDD;
 }
-
-#content > form > h1 {
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 70px;
-    background: -webkit-linear-gradient(#ee0979, #ff6a00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #841414;
-    padding: 25px;
-}
-
-#content > form > h2 {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 50px;
-    background: -webkit-linear-gradient(rgb(255, 241, 0), rgb(221, 57, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(134, 14, 0);
-}
-
-#content > form > p {
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 40px;
-    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-}
-
-#content > form > label {
-    padding: 25px;
-}
-
-#content > form > label > input {
-    border: 8px double #f9ffbf;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 40px;
-    text-indent: 10px;
-    background: -webkit-linear-gradient(#f9ffbf, #ffafbd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    width: 500px;
-    margin-bottom: 5%;
-}
-
-#content > form > button {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    margin-left: 2%;
-    font-family: "Luckiest Guy", sans-serif;
-    font-size: 40px;
-    color: black;
-    width: 300px;
-}
-
-
-
-
