@@ -27,19 +27,19 @@ body {
     background-color: #393939;
 }
 
-#bracket {
+.bracket {
     margin-top: 75px;
     float: left;
     font-family: "Trebuchet MS", sans-serif;
     font-weight: bold;
     color: #BBBBBB;
     scale: 0.99;
-} #bracket > h1 {
+} .bracket > h1 {
     font-family: "Trebuchet MS", sans-serif;
     color: white;
-} #bracket > hr {
+} .bracket > hr {
     color: white;
-    width: 122%;
+    width: 1000%;
     margin-bottom: 2.5%;
 } .rounds {
     font-size: 150%;
@@ -53,15 +53,7 @@ body {
     width: 200px;
     height: 30px;
     background: rgba(100, 100, 100, 0.25);
-}  .player {
-    font-size: 150%;
-    text-align: center;
-    color: yellow;
-    border: 1px white solid;
-    width: 200px;
-    height: 30px;
-    background: rgba(100, 100, 100, 0.25);
-}  .points {
+} .points {
     font-size: 150%;
     text-align: center;
     color: yellow;
@@ -104,4 +96,61 @@ body {
 } a {
     text-decoration: none;
     color: #DDDDDD;
+} .choose-group {
+    font-size: 175%;
+    text-align: center;
+    border: 1px white solid;
+    width: 250px;
+    height: 40px;
+    background: rgba(100, 100, 100, 0.25);
+} .choose-group:nth-child(1):hover {
+    cursor: pointer;
+    background: rgba(255, 0, 0, 0.35);
+    transition: .4s ease;
+} .choose-group:nth-child(2):hover {
+    cursor: pointer;
+    background: rgba(100, 255, 100, 0.35);
+    transition: .4s ease;
+} .choose-group:nth-child(3):hover {
+    cursor: pointer;
+    background: rgba(50, 50, 255, 0.35);
+    transition: .4s ease;
+} .choose-group:nth-child(4):hover {
+    cursor: pointer;
+    background: rgba(255, 200, 0, 0.35);
+    transition: .4s ease;
+}
+
+.playerA {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+} .playerB {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+} .playerC {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+} .playerD {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
 }
