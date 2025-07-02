@@ -84,11 +84,13 @@ body {
       width: 200px;
       height: 30px;
 } .w {
-    color: darkseagreen;
+    color: limegreen;
     text-decoration: none;
+    cursor: default;
 } .l {
     color: indianred;
     text-decoration: none;
+    cursor: default;
 } .w:hover {
     text-decoration: underline;
 } .l:hover {
@@ -153,4 +155,27 @@ body {
     width: 200px;
     height: 30px;
     background: rgba(100, 100, 100, 0.25);
+}
+
+.p3 {
+    color: limegreen;
+    font-size: 125%;
+}
+.p2 {
+    color: mediumseagreen;
+    font-size: 125%;
+}
+.p1 {
+    color: darkseagreen;
+    font-size: 125%;
+}
+.p0 {
+    color: darkgray;
+    font-size: 125%;
+}
+
+.q {
+    color: limegreen;
+    text-decoration: none;
+    cursor: default;
 }
