@@ -179,3 +179,17 @@ body {
     text-decoration: none;
     cursor: default;
 }
+
+a.q {
+    color: limegreen;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fullQ {
+    border: 1px white solid;
+    width: 300px;
+    height: 40px;
+    background: rgba(100, 100, 100, 0.25);
+    font-size: 130%;
+}
