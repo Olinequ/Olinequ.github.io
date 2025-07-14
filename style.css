@@ -14,16 +14,22 @@ body {
     font-family: "Trebuchet MS", sans-serif;
     color: #BBBBBB;
     text-shadow: 5px 5px 5px #000000;
-}  #title > img {
+}
+
+#title > img {
     float: left;
     border-radius: 25px;
     border: 5px #393939 solid;
     background-color: #606060;
-}  #title > h1 {
+}
+
+#title > h1 {
     font-size: 275%;
     float: left;
     padding: 20px;
-}  #title > * {
+}
+
+#title > * {
     background-color: #393939;
 }
 
@@ -34,18 +40,26 @@ body {
     font-weight: bold;
     color: #BBBBBB;
     scale: 0.99;
-} .bracket > h1 {
+}
+
+.bracket > h1 {
     font-family: "Trebuchet MS", sans-serif;
     color: white;
-} .bracket > hr {
+}
+
+.bracket > hr {
     color: white;
     width: 1000%;
     margin-bottom: 2.5%;
-} .rounds {
+}
+
+.rounds {
     font-size: 150%;
     text-align: center;
     color: goldenrod;
-} .rounds-group {
+}
+
+.rounds-group {
     font-size: 150%;
     text-align: center;
     color: goldenrod;
@@ -53,7 +67,9 @@ body {
     width: 200px;
     height: 30px;
     background: rgba(100, 100, 100, 0.25);
-} .points {
+}
+
+.points {
     font-size: 150%;
     text-align: center;
     color: yellow;
@@ -61,63 +77,95 @@ body {
     width: 30px;
     height: 30px;
     background: rgba(100, 100, 100, 0.25);
-}  td {
+}
+
+td {
     padding: 10px;
     font-size: 100%;
-} .blank {
+}
+
+.blank {
     border: 0;
-} .full {
+}
+
+.full {
     border: 1px white solid;
     width: 200px;
     height: 30px;
     background: rgba(100, 100, 100, 0.25);
-} .arrow_a {
+}
+
+.arrow_a {
     border-top: white 1px solid;
     width: 200px;
     height: 30px;
-} .arrow_b {
+}
+
+.arrow_b {
     border-bottom: white 1px solid;
     width: 200px;
     height: 30px;
-} .arrow_c {
-      border-right: white 1px solid;
-      width: 200px;
-      height: 30px;
-} .w {
+}
+
+.arrow_c {
+    border-right: white 1px solid;
+    width: 200px;
+    height: 30px;
+}
+
+.w {
     color: limegreen;
     text-decoration: none;
     cursor: default;
-} .l {
+}
+
+.l {
     color: indianred;
     text-decoration: none;
     cursor: default;
-} .w:hover {
+}
+
+.w:hover {
     text-decoration: underline;
-} .l:hover {
+}
+
+.l:hover {
     text-decoration: underline;
-} a {
+}
+
+a {
     text-decoration: none;
     color: #DDDDDD;
-} .choose-group {
+}
+
+.choose-group {
     font-size: 175%;
     text-align: center;
     border: 1px white solid;
     width: 250px;
     height: 40px;
     background: rgba(100, 100, 100, 0.25);
-} .choose-group:nth-child(1):hover {
+}
+
+.choose-group:nth-child(1):hover {
     cursor: pointer;
     background: rgba(255, 0, 0, 0.35);
     transition: .4s ease;
-} .choose-group:nth-child(2):hover {
+}
+
+.choose-group:nth-child(2):hover {
     cursor: pointer;
     background: rgba(100, 255, 100, 0.35);
     transition: .4s ease;
-} .choose-group:nth-child(3):hover {
+}
+
+.choose-group:nth-child(3):hover {
     cursor: pointer;
     background: rgba(50, 50, 255, 0.35);
     transition: .4s ease;
-} .choose-group:nth-child(4):hover {
+}
+
+.choose-group:nth-child(4):hover {
     cursor: pointer;
     background: rgba(255, 200, 0, 0.35);
     transition: .4s ease;
@@ -131,23 +179,9 @@ body {
     width: 200px;
     height: 30px;
     background: rgba(100, 100, 100, 0.25);
-} .playerB {
-    font-size: 150%;
-    text-align: center;
-    color: yellow;
-    border: 1px white solid;
-    width: 200px;
-    height: 30px;
-    background: rgba(100, 100, 100, 0.25);
-} .playerC {
-    font-size: 150%;
-    text-align: center;
-    color: yellow;
-    border: 1px white solid;
-    width: 200px;
-    height: 30px;
-    background: rgba(100, 100, 100, 0.25);
-} .playerD {
+}
+
+.playerB {
     font-size: 150%;
     text-align: center;
     color: yellow;
@@ -157,18 +191,51 @@ body {
     background: rgba(100, 100, 100, 0.25);
 }
 
+.playerC {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+}
+
+.playerD {
+    font-size: 150%;
+    text-align: center;
+    color: yellow;
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(100, 100, 100, 0.25);
+}
+
+.p5 {
+    color: #00FF00;
+    font-size: 125%;
+}
+
+.p4 {
+    color: #00DD00;
+    font-size: 125%;
+}
+
 .p3 {
-    color: limegreen;
+    color: #00BB00;
     font-size: 125%;
 }
+
 .p2 {
-    color: mediumseagreen;
+    color: #009900;
     font-size: 125%;
 }
+
 .p1 {
-    color: darkseagreen;
+    color: #007700;
     font-size: 125%;
 }
+
 .p0 {
     color: darkgray;
     font-size: 125%;
