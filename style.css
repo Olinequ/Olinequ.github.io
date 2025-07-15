@@ -217,28 +217,32 @@ a {
 }
 
 .p4 {
-    color: #00DD00;
-    font-size: 125%;
-}
-
-.p3 {
-    color: #00BB00;
-    font-size: 125%;
-}
-
-.p2 {
     color: #009900;
     font-size: 125%;
 }
 
+.p3 {
+    color: #bbBB00;
+    font-size: 125%;
+}
+
+.p2 {
+    color: #FF6600;
+    font-size: 125%;
+}
+
 .p1 {
-    color: #007700;
+    color: #AA0000;
     font-size: 125%;
 }
 
 .p0 {
     color: darkgray;
     font-size: 125%;
+}
+
+a.p1, a.p2, a.p3, a.p4, a.p5 {
+    text-decoration: underline;
 }
 
 .q {
