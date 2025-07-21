@@ -171,6 +171,28 @@ a {
     transition: .4s ease;
 }
 
+#btn.not_active {
+    font-size: 175%;
+    text-align: center;
+    border: 1px white solid;
+    width: 250px;
+    height: 40px;
+    background: rgba(100, 100, 100, 0.25);
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+#btn.active {
+    font-size: 175%;
+    text-align: center;
+    border: 1px white solid;
+    width: 250px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.35);
+    transition: .4s ease;
+    cursor: pointer;
+}
+
 .playerA {
     font-size: 150%;
     text-align: center;

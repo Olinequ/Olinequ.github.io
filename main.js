@@ -1,4 +1,5 @@
 function showGroup(groupName) {
+
     let a = document.getElementById('groupA');
     let b = document.getElementById('groupB');
     let c = document.getElementById('groupC');
@@ -30,10 +31,64 @@ function showGroup(groupName) {
 }
 
 function showBracket(bracketNumber) {
+
     let br = document.getElementsByClassName('bracket');
     br[0].style.display = 'none';
     br[1].style.display = 'none';
     br[2].style.display = 'none';
     br[bracketNumber].style.display = 'block';
+}
+
+const tempA = document.getElementById('groupA').innerHTML;
+const tempB = document.getElementById('groupB').innerHTML;
+const tempC = document.getElementById('groupC').innerHTML;
+const tempD = document.getElementById('groupD').innerHTML;
+
+function sort() {
+
+    let btn = document.getElementById('btn');
+    let points = document.getElementsByClassName('points');
+
+    if (btn.className === 'not_active') {
+
+        btn.className = 'active';
+        for (let j = 0; j < 16; j++) {
+            for (let i = 0; i < 15; i++) {
+                if (points[i+1].innerHTML > points[i].innerHTML) {
+                    let temp = points[i+1].parentElement.innerHTML;
+                    points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
+                    points[i].parentElement.innerHTML = temp;
+                }
+            }
+            for (let i = 16; i < 31; i++) {
+                if (points[i+1].innerHTML > points[i].innerHTML) {
+                    let temp = points[i+1].parentElement.innerHTML;
+                    points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
+                    points[i].parentElement.innerHTML = temp;
+                }
+            }
+            for (let i = 32; i < 47; i++) {
+                if (points[i+1].innerHTML > points[i].innerHTML) {
+                    let temp = points[i+1].parentElement.innerHTML;
+                    points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
+                    points[i].parentElement.innerHTML = temp;
+                }
+            }
+            for (let i = 48; i < 63; i++) {
+                if (points[i+1].innerHTML > points[i].innerHTML) {
+                    let temp = points[i+1].parentElement.innerHTML;
+                    points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
+                    points[i].parentElement.innerHTML = temp;
+                }
+            }
+        }
+
+    } else if (btn.className === 'active') {
+        btn.className = 'not_active';
+        document.getElementById('groupA').innerHTML = tempA;
+        document.getElementById('groupB').innerHTML = tempB;
+        document.getElementById('groupC').innerHTML = tempC;
+        document.getElementById('groupD').innerHTML = tempD;
+    }
 }
 
