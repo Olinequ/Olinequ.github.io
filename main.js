@@ -54,28 +54,28 @@ function sort() {
         btn.className = 'active';
         for (let j = 0; j < 16; j++) {
             for (let i = 0; i < 15; i++) {
-                if (points[i+1].innerHTML > points[i].innerHTML) {
+                if (parseInt(points[i+1].innerHTML) > parseInt(points[i].innerHTML)) {
                     let temp = points[i+1].parentElement.innerHTML;
                     points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
                     points[i].parentElement.innerHTML = temp;
                 }
             }
             for (let i = 16; i < 31; i++) {
-                if (points[i+1].innerHTML > points[i].innerHTML) {
+                if (parseInt(points[i+1].innerHTML) > parseInt(points[i].innerHTML)) {
                     let temp = points[i+1].parentElement.innerHTML;
                     points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
                     points[i].parentElement.innerHTML = temp;
                 }
             }
             for (let i = 32; i < 47; i++) {
-                if (points[i+1].innerHTML > points[i].innerHTML) {
+                if (parseInt(points[i+1].innerHTML) > parseInt(points[i].innerHTML)) {
                     let temp = points[i+1].parentElement.innerHTML;
                     points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
                     points[i].parentElement.innerHTML = temp;
                 }
             }
             for (let i = 48; i < 63; i++) {
-                if (points[i+1].innerHTML > points[i].innerHTML) {
+                if (parseInt(points[i+1].innerHTML) > parseInt(points[i].innerHTML)) {
                     let temp = points[i+1].parentElement.innerHTML;
                     points[i+1].parentElement.innerHTML = points[i].parentElement.innerHTML;
                     points[i].parentElement.innerHTML = temp;
@@ -90,5 +90,7 @@ function sort() {
         document.getElementById('groupC').innerHTML = tempC;
         document.getElementById('groupD').innerHTML = tempD;
     }
+
+
 }
 
