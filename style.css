@@ -95,6 +95,37 @@ td {
     background: rgba(100, 100, 100, 0.25);
 }
 
+.full2 {
+    border: 1px white solid;
+    width: 200px;
+    height: 30px;
+    background: rgba(200, 200, 200, 0.25);
+}
+
+.Pfull {
+    border: 1px white solid;
+    width: 250px;
+    height: 40px;
+    background: rgba(100, 100, 100, 0.25);
+}
+
+.Pfull2 {
+    border: 1px white solid;
+    width: 250px;
+    height: 40px;
+    background: rgba(200, 200, 200, 0.25);
+}
+
+.Pfull > a {
+    color: yellow;
+    font-size: 125%;
+}
+
+.Pfull2 > a {
+    color: yellow;
+    font-size: 125%;
+}
+
 .arrow_a {
     border-top: white 1px solid;
     width: 200px;
