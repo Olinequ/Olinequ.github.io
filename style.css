@@ -118,12 +118,12 @@ td {
 
 .Pfull > a {
     color: yellow;
-    font-size: 125%;
+    font-size: 120%;
 }
 
 .Pfull2 > a {
     color: yellow;
-    font-size: 125%;
+    font-size: 120%;
 }
 
 .arrow_a {
@@ -150,7 +150,31 @@ td {
     cursor: default;
 }
 
+.Pfull > .w {
+    color: limegreen;
+    text-decoration: none;
+    cursor: default;
+}
+
+.Pfull2 > .w {
+    color: limegreen;
+    text-decoration: none;
+    cursor: default;
+}
+
 .l {
+    color: indianred;
+    text-decoration: none;
+    cursor: default;
+}
+
+.Pfull > .l {
+    color: indianred;
+    text-decoration: none;
+    cursor: default;
+}
+
+.Pfull2 > .l {
     color: indianred;
     text-decoration: none;
     cursor: default;
