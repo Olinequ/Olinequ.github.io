@@ -90,7 +90,9 @@ function sort() {
         document.getElementById('groupC').innerHTML = tempC;
         document.getElementById('groupD').innerHTML = tempD;
     }
+}
 
-
+function returnHome() {
+    document.URL = "../Main_Site/index.html";
 }
 

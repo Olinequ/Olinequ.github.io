@@ -4,6 +4,33 @@ body {
     overflow-x: hidden;
 }
 
+.btn_choose {
+    background: rgb(50, 50, 50);
+    padding: 1% 3%;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 120%;
+    color: #EEEEEE;
+    text-shadow: 5px 5px 5px #000000;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.btn_choose:hover {
+    color: goldenrod;
+    transition: .2s ease-in-out;
+}
+
+.btn_choose_active {
+    color: goldenrod;
+    background: rgb(50, 50, 50);
+    padding: 1% 3%;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 120%;
+    text-shadow: 5px 5px 5px #000000;
+    margin-right: 2%;
+    text-align: center;
+}
+
 #title {
     background-color: #393939;
     float: left;
