@@ -25,16 +25,7 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-document.querySelector('body').addEventListener('keypress', (e) => {
-    if (e.key === '=') {
-        deleteCookie("correct_number");
-        for (let i = 1; i <= 7; i++) {
-            deleteCookie("guess" + i);
-        }
-        deleteCookie("amountOfTries")
-        alert("cookies deleted")
-    }
-})
+
 
 //Utility functions + main class for bloonsle
 class Monkey {
