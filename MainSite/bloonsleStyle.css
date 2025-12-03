@@ -1,0 +1,166 @@
+#bloonsle {
+    display: none;
+}
+
+#bl_title {
+    background-color: rgb(50, 50, 50, 0.7);
+    margin-top: 5%;
+    color: white;
+    font-family: "Bahnschrift", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    padding: 1.5%;
+    border: 3px white solid;
+    border-radius: 15px;
+}
+
+#bl_title > h3 {
+    font-size: 220%;
+    text-shadow: 10px 10px 10px #000000;
+    margin-bottom: -0.5%;
+    margin-top: 0;
+    color: goldenrod;
+    float: left;
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+#bl_title > p {
+    font-size: 130%;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+#bl_board {
+    display: flex;
+    clear: both;
+    justify-content: center;
+}
+
+#bl_board > table {
+    position: absolute;
+    margin-top: 10%;
+}
+
+td.hint {
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 140%;
+    text-align: center;
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    background: rgb(30, 30, 30);
+    color: white;
+    border: 3px white solid;
+    border-radius: 15px;
+}
+
+td.hint_png {
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    background: transparent;
+}
+
+td.hint_type {
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 160%;
+    text-align: center;
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+    background: url("IMG/hint.png");
+    color: white;
+}
+
+td.filler {
+    width: 15px;
+    max-width: 15px;
+    height: 15px;
+    max-height: 15px;
+    background: none;
+    border: none;
+}
+
+#input_guess {
+    padding: 0.5% 1.5% 1.5%;
+    border: 3px white solid;
+    border-radius: 15px;
+    background-color: rgb(50, 50, 50, 0.7);
+    font-family: "Luckiest Guy", sans-serif;
+    display: block;
+    float: right;
+    color: goldenrod;
+    margin-right: 5%;
+    margin-top: 15%;
+}
+
+#input_guess > h1 {
+    text-shadow: 10px 10px 10px #000000;
+    font-size: 180%;
+}
+
+#input_guess > input {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    font-family: "Bahnschrift", sans-serif;
+    margin-right: 5%;
+    font-size: 120%;
+    width: 100%;
+}
+
+#input_guess > span {
+    color: red;
+    font-size: 140%;
+}
+
+#guess:focus {
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+#refresh {
+    text-shadow: 10px 10px 10px #000000;
+    font-family: "Bahnschrift", sans-serif;
+    color: limegreen;
+    font-size: 250%;
+    margin-top: 2.5%;
+}
+
+#no_more_guesses {
+    font-size: 150%;
+}
+
+#winning_screen {
+    background-color: rgb(50, 50, 50, 0.7);
+    color: white;
+    font-family: "Bahnschrift", sans-serif;
+    margin: 55% 35% 10%;
+    width: auto;
+    height: auto;
+    padding: 1%;
+    border: 3px white solid;
+    border-radius: 15px;
+    display: block;
+    text-shadow: 10px 10px 10px #000000;
+    text-align: center;
+}
+
+#winning_screen > h1 {
+    font-size: 250%;
+}
+
+#winning_screen > p {
+    font-size: 180%;
+}
+
+#highlight_answer {
+    color: limegreen;
+    text-shadow: 2px 2px 2px mediumseagreen;
+    font-size: 110%;
+    font-weight: bold;
+}

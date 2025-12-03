@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="Shortcut Icon" href="#"> -->
+    <link rel="stylesheet" href="mainStyle.css">
+    <link rel="stylesheet" href="bloonsleStyle.css">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="header">
+    <div id="title">
+        <a href="index.html"><img src="IMG/pfp.png" alt="png"></a>
+        <h1>Olinequ.github.io</h1>
+    </div>
+    <div id="menu">
+        <ul>
+            <li onclick="menu(0)" class="menu_active">Home</li>
+            <li></li>
+            <li onclick="menu(1)">Tournaments</li>
+            <li></li>
+            <li onclick="menu(2)">Bloonsle</li>
+        </ul>
+    </div>
+</div>
+
+<div id="main">
+    <div id="home">
+        <h3>Welcome!</h3> <br> <br> <br>
+        <p>This site is still under construction, I published it early to test if Bloonsle works so far.</p>
+    </div>
+
+    <div id="tournaments">
+        <div class="tournament_list" onclick="chooseTournament(1)">
+            <img src="IMG/tournament_logo.png" alt="tournament_logo1">
+            <h3>Boss Tournament #1</h3> <br> <br> <br>
+            <p>First Boss Tournament, hosted by: Olinequ, 06bob, Spani, and SGB, with the financial help from Barbitos. <br>Lasted for 10 rounds, and the winner was Felicia.</p>
+        </div>
+
+        <div class="tournament_list">
+            <img src="IMG/tournament_unknown.png" alt="tournament_unknown">
+            <h3> </h3> <br> <br> <br>
+            <p> </p>
+        </div>
+    </div>
+
+    <div id="bloonsle">
+        <div id="bl_title">
+            <h3>Bloonsle</h3> <br> <br> <br>
+            <p>Welcome to bloonsle! Please input your towers in this form: 500dart, 050dart, etc.
+                <br>So far there are only tier 5 darts, boomerangs, tacks, and engis in the pool, and prices are from medium mode.
+                <br><u>Remember that this site is not meant to 100% work in the current state.</u></p>
+        </div>
+
+        <div id="bl_board">
+            <h1 id="refresh">Refreshes in: </h1>
+            <table style="padding-bottom: 10%">
+                <tr>
+                    <td class="hint_type">Type<td class="filler">
+                    <td class="hint_type">Price<td class="filler">
+                    <td class="hint_type">Ability<td class="filler">
+                    <td class="hint_type">Paragon<td class="filler">
+                    <td class="hint_type">Tier<td class="filler">
+                    <td class="hint_type">Damage Type<td class="filler">
+
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                <tr><td class="filler">
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                <tr><td class="filler">
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                <tr><td class="filler">
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                <tr><td class="filler">
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                <tr><td class="filler">
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+            </table>
+
+        </div>
+
+        <div id="input_guess">
+            <h1>Type Your guess here:</h1>
+            <input type="text" name="guess_input" id="guess_input"><span id="no_more_guesses"></span>
+        </div>
+
+        <div id="winning_screen" style="display: none">
+            <h1> </h1>
+            <p> </p>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+<script src="bloonsleJS.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+_500dart Primary 15000 false true 5 normal
+_050dart Primary 45000 true true 5 sharp,plasma,camo
+_005dart Primary 21500 false true 5 normal,camo
+_500boomerang Primary 32500 false true 5 normal,sharp,camo
+_050boomerang Primary 35000 true true 5 sharp
+_005boomerang Primary 50000 false true 5 normal
+_500tack Primary 45500 false true 5 fire
+_050tack Primary 45500 true true 5 normal,shatter
+_005tack Primary 20000 false true 5 sharp
+_500engi Support 32000 false true 5 sharp,plasma
+_050engi Support 72000 true true 5 sharp
+_005engi Support 45000 false true 5 shatter,normal

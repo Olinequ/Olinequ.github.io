@@ -1,0 +1,177 @@
+body {
+    background: url("IMG/BlackBackground.png");
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#title {
+    background: linear-gradient(to right, black, slategray, rgb(40, 40, 40), black);
+    float: left;
+    padding: 30px 20px 20px;
+    border-bottom: floralwhite 5px solid;
+    width: 100%;
+    margin: -1% -1% 0;
+    font-family: "Lucida Handwriting", sans-serif;
+    color: floralwhite;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+#title > a > img {
+    float: left;
+    border-radius: 150px;
+    background-color: floralwhite;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#title > h1 {
+    font-size: 190%;
+    float: left;
+    padding: 20px;
+}
+
+#menu {
+    background: linear-gradient(to bottom, rgb(112, 128, 144, 0.50), rgb(112, 128, 144, 0.42), rgb(112, 128, 144, 0.34), rgb(112, 128, 144, 0.26), rgb(112, 128, 144, 0.18), transparent);
+    clear: both;
+    padding: 1px 10px 30px 10px;
+    width: 101%;
+    height: 100px;
+    margin: -1%;
+    font-family: "Bahnschrift", sans-serif;
+    color: floralwhite;
+    text-shadow: 10px 10px 10px #000000;
+    text-align: center;
+}
+
+#menu > ul {
+    list-style-type: none;
+    margin-top: 1%;
+    font-size: 200%;
+}
+
+#menu > ul > li {
+    display: inline-block;
+}
+
+#menu > ul > li:nth-child(even) {
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 0.2%;
+    border-radius: 15px;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+#menu > ul > li:nth-child(odd) {
+    padding: 0.75% 0.5%;
+    transition: color 1s;
+}
+
+#menu > ul > li:nth-child(odd):hover {
+    cursor: pointer;
+    color: goldenrod;
+    transition: color .5s;
+}
+
+.menu_active {
+    color: goldenrod;
+}
+
+#menu > ul > li:nth-child(5) {
+    font-family: "Luckiest Guy", sans-serif;
+}
+
+
+
+#tournaments {
+    display: none;
+    margin-top: 5%;
+    color: white;
+    font-family: "Bahnschrift", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    padding: 2.5%;
+}
+
+.tournament_list {
+    background-color: rgb(50, 50, 50, 0.7);
+    width: 99.5%;
+    height: 200px;
+    border: 3px white solid;
+    border-radius: 15px;
+    margin-bottom: 2.5%;
+    scale: 1;
+    transition: scale 0.5s;
+}
+
+.tournament_list > img {
+    border-right: 3px white solid;
+    margin-right: 1%;
+    float: left;
+}
+
+.tournament_list > h3 {
+    font-size: 220%;
+    text-shadow: 10px 10px 10px #000000;
+    margin-bottom: -0.5%;
+    margin-top: 1.25%;
+    color: goldenrod;
+    float: left;
+}
+
+.tournament_list > p {
+    font-size: 130%;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+.tournament_list:hover {
+    scale: 1.05;
+    transition: scale 0.5s;
+    cursor: pointer;
+}
+
+
+
+#home {
+    background-color: rgb(50, 50, 50, 0.7);
+    margin-top: 5%;
+    color: white;
+    font-family: "Bahnschrift", sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    padding: 1.5%;
+    border: 3px white solid;
+    border-radius: 15px;
+}
+
+#home > h3 {
+    font-size: 220%;
+    text-shadow: 10px 10px 10px #000000;
+    margin-bottom: -0.5%;
+    margin-top: 0;
+    color: goldenrod;
+    float: left;
+}
+
+#home > p {
+    font-size: 130%;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+
+
+.default_a {
+    text-decoration: none;
+    color: floralwhite;
+    text-shadow: 10px 10px 10px #000000;
+}
+
+.default_a:hover {
+    cursor: pointer;
+    color: goldenrod;
+    transition: color .5s;
+}
