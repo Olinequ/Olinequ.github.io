@@ -93,6 +93,6 @@ function sort() {
 }
 
 function returnHome() {
-    location.href = "../MainSite/index.html";
+    location.href = "../index.html";
 }
 

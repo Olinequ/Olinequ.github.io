@@ -33,7 +33,7 @@ function menu(number) {
 
 function chooseTournament(number) {
     if (number === 1) {
-        location.href = "../Tournament_1/index.html"
+        location.href = "Tournament_1/index.html"
     }
 }
 
