@@ -25,7 +25,16 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-
+document.querySelector('body').addEventListener('keypress', (e) => {
+    if (e.key === '=') {
+        deleteCookie("correct_number");
+        for (let i = 1; i <= 7; i++) {
+            deleteCookie("guess" + i);
+        }
+        deleteCookie("amountOfTries")
+        alert("cookies deleted")
+    }
+})
 
 //Utility functions + main class for bloonsle
 class Monkey {
@@ -344,12 +353,13 @@ guess_input.addEventListener('keypress', (e) => {
     guess(e);
 })
 
-
 const winning_screen = document.querySelector("#winning_screen");
 
 function lose(correct) {
     document.getElementById('no_more_guesses').innerHTML = "No more guesses left!";
     document.getElementById('guess_input').style.display = "none";
+    document.getElementById('input_guess').style.display = "none";
+    document.getElementById('winning_screen').style.marginTop = "47.5%";
     document.getElementById('no_more_guesses').style.color = "red";
     document.getElementById('no_more_guesses').style.textShadow = "text-shadow: 2px 2px 2px firebrick";
 
@@ -367,6 +377,8 @@ function lose(correct) {
 function win(tries, correct) {
     document.getElementById('no_more_guesses').innerHTML = "You won!";
     document.getElementById('guess_input').style.display = "none";
+    document.getElementById('input_guess').style.display = "none";
+    document.getElementById('winning_screen').style.marginTop = "47.5%";
     document.getElementById('no_more_guesses').style.color = "limegreen";
     document.getElementById('no_more_guesses').style.textShadow = "text-shadow: 2px 2px 2px green";
 
