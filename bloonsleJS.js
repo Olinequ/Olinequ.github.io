@@ -173,7 +173,6 @@ async function guess(e) {
         const correct_data = lines[cn].split(' ');
         let correct = new Monkey(correct_data[0], correct_data[1], correct_data[2], correct_data[3], correct_data[4], correct_data[5], formatDmg(correct_data[6]));
 
-
         correct_types = 0;
         let guess = guess_input.value;
         guess_input.value = '';
@@ -205,7 +204,14 @@ async function guess(e) {
                 } else {
                     hints[(tries * 6) + 1].style.background = "red";
                 }
-                hints[(tries * 6) + 1].innerHTML = formatPrice(guess.price);
+                if (parseInt(guess.price) > parseInt(correct.price)) {
+                    hints[(tries * 6) + 1].innerHTML = "< " + formatPrice(guess.price);
+                } else if (parseInt(guess.price) < parseInt(correct.price)) {
+                    hints[(tries * 6) + 1].innerHTML = "> " + formatPrice(guess.price);
+                } else {
+                    hints[(tries * 6) + 1].innerHTML = formatPrice(guess.price);
+                }
+
 
                 if (guess.ability === correct.ability) {
                     hints[(tries * 6) + 2].style.background = "green";
@@ -296,7 +302,13 @@ async function old_guess(guess) {
     } else {
         hints[(tries * 6) + 1].style.background = "red";
     }
-    hints[(tries * 6) + 1].innerHTML = formatPrice(guess.price);
+    if (parseInt(guess.price) > parseInt(correct.price)) {
+        hints[(tries * 6) + 1].innerHTML = "< " + formatPrice(guess.price);
+    } else if (parseInt(guess.price) < parseInt(correct.price)) {
+        hints[(tries * 6) + 1].innerHTML = "> " + formatPrice(guess.price);
+    } else {
+        hints[(tries * 6) + 1].innerHTML = formatPrice(guess.price);
+    }
 
     if (guess.ability === correct.ability) {
         hints[(tries * 6) + 2].style.background = "green";
