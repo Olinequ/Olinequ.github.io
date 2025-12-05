@@ -148,7 +148,7 @@ setInterval(() => {
 
 //86400000
 if (getCookie("correct_number") === '') {
-    cn = Math.floor(Math.random() * 11);
+    cn = Math.floor(Math.random() * 27);
     setCookie("correct_number", cn, getExpireDate());
 } else {
     cn = getCookie("correct_number");

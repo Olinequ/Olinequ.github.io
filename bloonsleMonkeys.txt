@@ -1,12 +1,225 @@
+_300dart Primary 320 false true 3 shatter
+_400dart Primary 1800 false true 4 normal
 _500dart Primary 15000 false true 5 normal
+_030dart Primary 450 false true 3 sharp
+_040dart Primary 7200 true true 4 sharp
 _050dart Primary 45000 true true 5 sharp,plasma,camo
+_003dart Primary 575 false true 3 sharp,camo
+_004dart Primary 2050 false true 4 sharp,camo
 _005dart Primary 21500 false true 5 normal,camo
+_300boomerang Primary 600 false true 3 sharp
+_400boomerang Primary 2000 false true 4 sharp
 _500boomerang Primary 32500 false true 5 normal,sharp,camo
+_030boomerang Primary 1250 false true 3 sharp
+_040boomerang Primary 4200 true true 4 sharp
 _050boomerang Primary 35000 true true 5 sharp
+_003boomerang Primary 1300 false true 3 normal
+_004boomerang Primary 2400 false true 4 normal
 _005boomerang Primary 50000 false true 5 normal
+_300tack Primary 600 false true 3 normal
+_400tack Primary 3500 false true 4 fire
 _500tack Primary 45500 false true 5 fire
-_050tack Primary 45500 true true 5 normal,shatter
+_030tack Primary 550 false true 3 shatter
+_040tack Primary 2700 true true 4 shatter
+_050tack Primary 15000 true true 5 normal,shatter
+_003tack Primary 450 false true 3 sharp
+_004tack Primary 3200 false true 4 sharp
 _005tack Primary 20000 false true 5 sharp
+_300bomb Primary false true 3
+_400bomb Primary false true 4
+_500bomb Primary false true 5
+_030bomb Primary false true 3
+_040bomb Primary true true 4
+_050bomb Primary true true 5
+_003bomb Primary false true 3
+_004bomb Primary false true 4
+_005bomb Primary false true 5
+_300ice Primary false true 3
+_400ice Primary false true 4
+_500ice Primary false true 5
+_030ice Primary false true 3
+_040ice Primary true true 4
+_050ice Primary true true 5
+_003ice Primary false true 3
+_004ice Primary false true 4
+_005ice Primary false true 5
+_300desperado Primary false false 3
+_400desperado Primary 5800 false false 4
+_500desperado Primary 16500 false false 5
+_030desperado Primary true false 3
+_040desperado Primary true false 4
+_050desperado Primary true false 5
+_003desperado Primary false false 3
+_004desperado Primary 6500 false false 4
+_005desperado Primary false false 5
+_300glue Primary false false 3
+_400glue Primary false false 4
+_500glue Primary false false 5
+_030glue Primary false false 3
+_040glue Primary true false 4
+_050glue Primary true false 5
+_003glue Primary false false 3
+_004glue Primary false false 4
+_005glue Primary false false 5
+_300sub Military
+_400sub Military
+_500sub Military
+_030sub Military
+_040sub Military
+_050sub Military
+_003sub Military
+_004sub Military
+_005sub Military
+_300sniper Military
+_400sniper Military
+_500sniper Military
+_030sniper Military
+_040sniper Military
+_050sniper Military
+_003sniper Military
+_004sniper Military
+_005sniper Military
+_300boat Military
+_400boat Military
+_500boat Military
+_030boat Military
+_040boat Military
+_050boat Military
+_003boat Military
+_004boat Military
+_005boat Military
+_300heli Military
+_400heli Military
+_500heli Military
+_030heli Military
+_040heli Military
+_050heli Military
+_003heli Military
+_004heli Military
+_005heli Military
+_300mortar Military
+_400mortar Military
+_500mortar Military
+_030mortar Military
+_040mortar Military
+_050mortar Military
+_003mortar Military
+_004mortar Military
+_005mortar Military
+_300dartling Military
+_400dartling Military
+_500dartling Military
+_030dartling Military
+_040dartling Military
+_050dartling Military
+_003dartling Military
+_004dartling Military
+_005dartling Military
+_300ace Military
+_400ace Military
+_500ace Military
+_030ace Military
+_040ace Military
+_050ace Military
+_003ace Military
+_004ace Military
+_005ace Military
+_300wizard Magic
+_400wizard Magic
+_500wizard Magic
+_030wizard Magic
+_040wizard Magic
+_050wizard Magic
+_003wizard Magic
+_004wizard Magic
+_005wizard Magic
+_300druid Magic
+_400druid Magic
+_500druid Magic
+_030druid Magic
+_040druid Magic
+_050druid Magic
+_003druid Magic
+_004druid Magic
+_005druid Magic
+_300super Magic
+_400super Magic
+_500super Magic
+_030super Magic
+_040super Magic
+_050super Magic
+_003super Magic
+_004super Magic
+_005super Magic
+_300alch Magic
+_400alch Magic
+_500alch Magic
+_030alch Magic
+_040alch Magic
+_050alch Magic
+_003alch Magic
+_004alch Magic
+_005alch Magic
+_300mermonkey Magic
+_400mermonkey Magic
+_500mermonkey Magic
+_030mermonkey Magic
+_040mermonkey Magic
+_050mermonkey Magic
+_003mermonkey Magic
+_004mermonkey Magic
+_005mermonkey Magic
+_300ninja Magic
+_400ninja Magic
+_500ninja Magic
+_030ninja Magic
+_040ninja Magic
+_050ninja Magic
+_003ninja Magic
+_004ninja Magic
+_005ninja Magic
+_300spike Support
+_400spike Support
+_500spike Support
+_030spike Support
+_040spike Support
+_050spike Support
+_003spike Support
+_004spike Support
+_005spike Support
+_300banana Support
+_400banana Support
+_500banana Support
+_030banana Support
+_040banana Support
+_050banana Support
+_003banana Support
+_004banana Support
+_005banana Support
+_300handler Support
+_400handler Support
+_500handler Support
+_030handler Support
+_040handler Support
+_050handler Support
+_003handler Support
+_004handler Support
+_005handler Support
+_300village Support
+_400village Support
+_500village Support
+_030village Support
+_040village Support
+_050village Support
+_003village Support
+_004village Support
+_005village Support
+_300engi Support 575 false true 3 sharp
+_400engi Support 2500 false true 4 explosive,cold,energy...
 _500engi Support 32000 false true 5 sharp,plasma
+_030engi Support 900 false true 3 sharp,normal,camo
+_040engi Support 13500 true true 4 sharp,normal,camo
 _050engi Support 72000 true true 5 sharp
+_003engi Support 450 false true 3 shatter
+_004engi Support 3600 false true 4 shatter
 _005engi Support 45000 false true 5 shatter,normal
