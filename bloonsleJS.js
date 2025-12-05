@@ -139,7 +139,7 @@ setInterval(() => {
 
 //Cookies
 if (getCookie("correct_number") === '') {
-    cn = Math.floor(Math.random() * 27);
+    cn = Math.floor(Math.random() * 63);
     setCookie("correct_number", cn, getExpireDate());
 } else {
     cn = getCookie("correct_number");

@@ -25,51 +25,51 @@ _050tack Primary 15000 true true 5 normal,shatter
 _003tack Primary 450 false true 3 sharp
 _004tack Primary 3200 false true 4 sharp
 _005tack Primary 20000 false true 5 sharp
-_300bomb Primary false true 3
-_400bomb Primary false true 4
-_500bomb Primary false true 5
-_030bomb Primary false true 3
-_040bomb Primary true true 4
-_050bomb Primary true true 5
-_003bomb Primary false true 3
-_004bomb Primary false true 4
-_005bomb Primary false true 5
-_300ice Primary false true 3
-_400ice Primary false true 4
-_500ice Primary false true 5
-_030ice Primary false true 3
-_040ice Primary true true 4
-_050ice Primary true true 5
-_003ice Primary false true 3
-_004ice Primary false true 4
-_005ice Primary false true 5
-_300desperado Primary false false 3
-_400desperado Primary 5800 false false 4
-_500desperado Primary 16500 false false 5
-_030desperado Primary true false 3
-_040desperado Primary true false 4
-_050desperado Primary true false 5
-_003desperado Primary false false 3
-_004desperado Primary 6500 false false 4
-_005desperado Primary false false 5
-_300glue Primary false false 3
-_400glue Primary false false 4
-_500glue Primary false false 5
-_030glue Primary false false 3
-_040glue Primary true false 4
-_050glue Primary true false 5
-_003glue Primary false false 3
-_004glue Primary false false 4
-_005glue Primary false false 5
-_300sub Military
-_400sub Military
-_500sub Military
-_030sub Military
-_040sub Military
-_050sub Military
-_003sub Military
-_004sub Military
-_005sub Military
+_300bomb Primary 1100 false true 3 explosive
+_400bomb Primary 2800 false true 4 explosive
+_500bomb Primary 55000 false true 5 normal
+_030bomb Primary 1000 false true 3 explosive
+_040bomb Primary 3450 true true 4 explosive
+_050bomb Primary 28000 true true 5 explosive
+_003bomb Primary 700 false true 3 explosive
+_004bomb Primary 2500 false true 4 explosive
+_005bomb Primary 23000 false true 5 explosive
+_300ice Primary 1500 false true 3 m.freeze,camo,shatter
+_400ice Primary 2300 false true 4 m.freeze,camo,shatter
+_500ice Primary 28000 false true 5 normal,camo,shatter
+_030ice Primary 2750 false true 3 cold
+_040ice Primary 4000 true true 4 cold
+_050ice Primary 19000 true true 5 cold
+_003ice Primary 1900 false true 3 glacier
+_004ice Primary 2750 false true 4 glacier
+_005ice Primary 30000 false true 5 shatter
+_300desperado Primary 1200 false false 3 sharp
+_400desperado Primary 5800 false false 4 sharp
+_500desperado Primary 16500 false false 5 sharp
+_030desperado Primary 3000 true false 3 normal,camo
+_040desperado Primary 6500 true false 4 normal,camo
+_050desperado Primary 42000 true false 5 normal,camo
+_003desperado Primary 2100 false false 3 sharp,shatter
+_004desperado Primary 6500 false false 4 sharp,shatter
+_005desperado Primary 31000 false false 5 sharp,shatter
+_300glue Primary 2000 false false 3 normal
+_400glue Primary 5000 false false 4 normal
+_500glue Primary 22500 false false 5 normal
+_030glue Primary 1950 false false 3 normal
+_040glue Primary 4000 true false 4 normal
+_050glue Primary 16000 true false 5 normal
+_003glue Primary 3600 false false 3 normal
+_004glue Primary 4000 false false 4 normal
+_005glue Primary 24000 false false 5 normal
+_300sub Military 700 false true 3 sharp,normal
+_400sub Military 2300 false true 4 sharp,normal,shatter
+_500sub Military 28000 false true 5 sharp,normal,shatter
+_030sub Military 1350 false true 3 normal,explosive
+_040sub Military 13000 true true 4 normal,explosive
+_050sub Military 29000 true true 5 normal,explosive
+_003sub Military 1100 false true 3 sharp
+_004sub Military 2500 false true 4 sharp
+_005sub Military 25000 false true 5 sharp
 _300sniper Military
 _400sniper Military
 _500sniper Military
@@ -215,7 +215,7 @@ _003village Support
 _004village Support
 _005village Support
 _300engi Support 575 false true 3 sharp
-_400engi Support 2500 false true 4 explosive,cold,energy...
+_400engi Support 2500 false true 4 sharp,energy,cold...
 _500engi Support 32000 false true 5 sharp,plasma
 _030engi Support 900 false true 3 sharp,normal,camo
 _040engi Support 13500 true true 4 sharp,normal,camo

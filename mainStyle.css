@@ -1,7 +1,8 @@
 body {
-    background: url("IMG/BlackBackground.png");
     box-sizing: border-box;
     overflow-x: hidden;
+    background: url("IMG/enchantedGlade.png") no-repeat fixed;
+    background-size: cover;
 }
 
 #title {
@@ -38,7 +39,7 @@ body {
     width: 101%;
     height: 100px;
     margin: -1%;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: floralwhite;
     text-shadow: 10px 10px 10px #000000;
     text-align: center;
@@ -88,7 +89,7 @@ body {
     display: none;
     margin-top: 5%;
     color: white;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     width: auto;
@@ -139,7 +140,7 @@ body {
     background-color: rgb(50, 50, 50, 0.7);
     margin-top: 5%;
     color: white;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     width: auto;
@@ -149,7 +150,7 @@ body {
     border-radius: 15px;
 }
 
-#home > h3 {
+#home_h3 {
     font-size: 220%;
     text-shadow: 10px 10px 10px #000000;
     margin-bottom: -0.5%;
@@ -158,11 +159,17 @@ body {
     float: left;
 }
 
-#home > p {
-    font-size: 130%;
+#home_p {
+    font-size: 140%;
     text-shadow: 10px 10px 10px #000000;
 }
 
+
+#home_img {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
 
 
 .default_a {

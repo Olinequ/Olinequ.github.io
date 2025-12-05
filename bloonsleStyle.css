@@ -12,7 +12,7 @@
     background-color: rgb(50, 50, 50, 0.7);
     margin-top: 5%;
     color: white;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     margin-left: 5%;
     margin-right: 5%;
     width: auto;
@@ -29,11 +29,11 @@
     margin-top: 0;
     color: goldenrod;
     float: left;
-    font-family: "Luckiest Guy", sans-serif;
+    font-family: "Oswald", sans-serif;
 }
 
 #bl_title > p {
-    font-size: 130%;
+    font-size: 140%;
     text-shadow: 10px 10px 10px #000000;
 }
 
@@ -41,7 +41,7 @@
     display: flex;
     clear: both;
     justify-content: center;
-    height: 200px;
+    height: 250px;
 }
 
 #bl_board > table {
@@ -93,7 +93,7 @@ td.filler {
 
 #input_guess {
     padding: 0.5% 1.5% 1.5%;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     display: block;
     float: right;
     color: goldenrod;
@@ -111,7 +111,7 @@ td.filler {
     background: transparent;
     border-bottom: 2px solid white;
     color: white;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     margin-right: 5%;
     font-size: 120%;
     width: 100%;
@@ -129,7 +129,7 @@ td.filler {
 
 #refresh {
     text-shadow: 10px 10px 10px #000000;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: limegreen;
     font-size: 250%;
     margin-top: 2.5%;
@@ -142,7 +142,7 @@ td.filler {
 #winning_screen {
     background-color: rgb(50, 50, 50, 0.7);
     color: white;
-    font-family: "Bahnschrift", sans-serif;
+    font-family: "Oswald", sans-serif;
     width: auto;
     height: auto;
     padding: 1%;
@@ -163,12 +163,13 @@ td.filler {
 #winning_screen_div {
     display: flex;
     justify-content: center;
-    margin-top: 1%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 #highlight_answer {
+    text-shadow: 10px 10px 10px #000000;
     color: limegreen;
-    text-shadow: 2px 2px 2px mediumseagreen;
     font-size: 110%;
     font-weight: bold;
 }
