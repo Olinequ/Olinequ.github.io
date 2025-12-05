@@ -11,7 +11,8 @@ body {
     border-bottom: floralwhite 5px solid;
     width: 100%;
     margin: -1% -1% 0;
-    font-family: "Lucida Handwriting", sans-serif;
+    font-family: "Story Script", sans-serif;
+    letter-spacing: 4px;
     color: floralwhite;
     text-shadow: 10px 10px 10px #000000;
 }

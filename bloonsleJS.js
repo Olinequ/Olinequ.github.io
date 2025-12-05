@@ -25,16 +25,7 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-document.querySelector('body').addEventListener('keypress', (e) => {
-    if (e.key === '=') {
-        deleteCookie("correct_number");
-        for (let i = 1; i <= 7; i++) {
-            deleteCookie("guess" + i);
-        }
-        deleteCookie("amountOfTries")
-        alert("cookies deleted")
-    }
-})
+
 
 //Utility functions + main class for bloonsle
 class Monkey {
@@ -146,7 +137,7 @@ setInterval(() => {
 }, 1000)
 
 
-//86400000
+//Cookies
 if (getCookie("correct_number") === '') {
     cn = Math.floor(Math.random() * 27);
     setCookie("correct_number", cn, getExpireDate());
@@ -154,10 +145,19 @@ if (getCookie("correct_number") === '') {
     cn = getCookie("correct_number");
 }
 
-if (getCookie("amountOfTries") !== '')
+if (getCookie("amountOfTries") !== '') {
     for (let i = 1; i <= getCookie(`amountOfTries`); i++)
         old_guess(getCookie(`guess${i}`))
+}
 
+//Animations
+function anim1(element) {
+    element.style.transition = "scale .65s"
+    element.style.scale = "1.15"
+    setTimeout(function () {
+        element.style.scale = "1"
+    }, 650)
+}
 
 let tries = 0;
 let correct_types = 0;
@@ -188,6 +188,7 @@ async function guess(e) {
             alert("Please provide a correct guess!")
         } else {
             if (tries <= 5) {
+                anim1(hints[tries * 6])
                 if (guess.type === correct.type) {
                     hints[tries * 6].style.background = "green";
                     correct_types++;
@@ -196,73 +197,91 @@ async function guess(e) {
                 }
                 hints[tries * 6].innerHTML = guess.type;
 
-                if (guess.price === correct.price) {
-                    hints[(tries * 6) + 1].style.background = "green";
-                    correct_types++;
-                } else if (returnDifference(guess.price, correct.price) <= 5000) {
-                    hints[(tries * 6) + 1].style.background = "orange";
-                } else {
-                    hints[(tries * 6) + 1].style.background = "red";
-                }
-                if (parseInt(guess.price) > parseInt(correct.price)) {
-                    hints[(tries * 6) + 1].innerHTML = "< " + formatPrice(guess.price);
-                } else if (parseInt(guess.price) < parseInt(correct.price)) {
-                    hints[(tries * 6) + 1].innerHTML = "> " + formatPrice(guess.price);
-                } else {
-                    hints[(tries * 6) + 1].innerHTML = formatPrice(guess.price);
-                }
+                setTimeout(function () {
+                    anim1(hints[(tries * 6) + 1])
+                    if (guess.price === correct.price) {
+                        hints[(tries * 6) + 1].style.background = "green";
+                        correct_types++;
+                    } else if (returnDifference(guess.price, correct.price) <= 5000) {
+                        hints[(tries * 6) + 1].style.background = "orange";
+                    } else {
+                        hints[(tries * 6) + 1].style.background = "red";
+                    }
+                    if (parseInt(guess.price) > parseInt(correct.price)) {
+                        hints[(tries * 6) + 1].innerHTML = "< " + formatPrice(guess.price);
+                    } else if (parseInt(guess.price) < parseInt(correct.price)) {
+                        hints[(tries * 6) + 1].innerHTML = "> " + formatPrice(guess.price);
+                    } else {
+                        hints[(tries * 6) + 1].innerHTML = formatPrice(guess.price);
+                    }
+                }, 250)
+
+                setTimeout(function () {
+                    anim1(hints[(tries * 6) + 2])
+                    if (guess.ability === correct.ability) {
+                        hints[(tries * 6) + 2].style.background = "green";
+                        correct_types++;
+                    } else {
+                        hints[(tries * 6) + 2].style.background = "red";
+                    }
+                    hints[(tries * 6) + 2].innerHTML = guess.ability;
+                }, 500)
+
+                setTimeout(function () {
+                    anim1(hints[(tries * 6) + 3])
+                    if (guess.paragon === correct.paragon) {
+                        hints[(tries * 6) + 3].style.background = "green";
+                        correct_types++;
+                    } else {
+                        hints[(tries * 6) + 3].style.background = "red";
+                    }
+                    hints[(tries * 6) + 3].innerHTML = guess.paragon;
+                }, 750)
+
+                setTimeout(function () {
+                    anim1(hints[(tries * 6) + 4])
+                    if (guess.tier === correct.tier) {
+                        hints[(tries * 6) + 4].style.background = "green";
+                        correct_types++;
+                    } else {
+                        hints[(tries * 6) + 4].style.background = "red";
+                    }
+                    hints[(tries * 6) + 4].innerHTML = guess.tier;
+                }, 1000)
+
+                setTimeout(function () {
+                    anim1(hints[(tries * 6) + 5])
+                    if (guess.dmg === correct.dmg) {
+                        hints[(tries * 6) + 5].style.background = "green";
+                        correct_types++;
+                    } else if (guess.dmg !== correct.dmg && checkDamageType(guess.dmg, correct.dmg)) {
+                        hints[(tries * 6) + 5].style.background = "orange";
+                    } else {
+                        hints[(tries * 6) + 5].style.background = "red";
+                    }
+                    hints[(tries * 6) + 5].innerHTML = guess.dmg;
+
+                    tries++;
+                    setCookie(`guess${tries}`, guess.code, getExpireDate())
+                    setCookie(`amountOfTries`, tries, getExpireDate())
 
 
-                if (guess.ability === correct.ability) {
-                    hints[(tries * 6) + 2].style.background = "green";
-                    correct_types++;
-                } else {
-                    hints[(tries * 6) + 2].style.background = "red";
-                }
-                hints[(tries * 6) + 2].innerHTML = guess.ability;
+                    if (tries === 6) {
+                        if (correct_types === 6) {
+                            win(tries, correct.code);
+                        } else {
+                            lose(correct.code)
+                        }
+                    }
 
-                if (guess.paragon === correct.paragon) {
-                    hints[(tries * 6) + 3].style.background = "green";
-                    correct_types++;
-                } else {
-                    hints[(tries * 6) + 3].style.background = "red";
-                }
-                hints[(tries * 6) + 3].innerHTML = guess.paragon;
-
-                if (guess.tier === correct.tier) {
-                    hints[(tries * 6) + 4].style.background = "green";
-                    correct_types++;
-                } else {
-                    hints[(tries * 6) + 4].style.background = "red";
-                }
-                hints[(tries * 6) + 4].innerHTML = guess.tier;
-
-                if (guess.dmg === correct.dmg) {
-                    hints[(tries * 6) + 5].style.background = "green";
-                    correct_types++;
-                } else if (guess.dmg !== correct.dmg && checkDamageType(guess.dmg, correct.dmg)) {
-                    hints[(tries * 6) + 5].style.background = "orange";
-                } else {
-                    hints[(tries * 6) + 5].style.background = "red";
-                }
-                hints[(tries * 6) + 5].innerHTML = guess.dmg;
-
-                tries++;
-
-                setCookie(`guess${tries}`, guess.code, getExpireDate())
-                setCookie(`amountOfTries`, tries, getExpireDate())
-
-                if (tries === 6) {
                     if (correct_types === 6) {
                         win(tries, correct.code);
-                    } else {
-                        lose(correct.code)
                     }
-                }
 
-                if (correct_types === 6) {
-                    win(tries, correct.code);
-                }
+                    document.getElementById('guess_input').disabled = false;
+
+                }, 1250)
+                document.getElementById('guess_input').disabled = true;
             }
         }
     }
@@ -403,11 +422,5 @@ function win(tries, correct) {
         left: 0,
         behavior: "smooth",
     });
-}
-
-
-/*Animations*/
-{
-
 }
 
