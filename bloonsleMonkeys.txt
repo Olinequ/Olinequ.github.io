@@ -1,225 +1,225 @@
-_300dart Primary 320 false true 3 shatter
-_400dart Primary 1800 false true 4 normal
-_500dart Primary 15000 false true 5 normal
-_030dart Primary 450 false true 3 sharp
-_040dart Primary 7200 true true 4 sharp
-_050dart Primary 45000 true true 5 sharp,plasma,camo
-_003dart Primary 575 false true 3 sharp,camo
-_004dart Primary 2050 false true 4 sharp,camo
-_005dart Primary 21500 false true 5 normal,camo
-_300boomerang Primary 600 false true 3 sharp
-_400boomerang Primary 2000 false true 4 sharp
-_500boomerang Primary 32500 false true 5 normal,sharp,camo
-_030boomerang Primary 1250 false true 3 sharp
-_040boomerang Primary 4200 true true 4 sharp
-_050boomerang Primary 35000 true true 5 sharp
-_003boomerang Primary 1300 false true 3 normal
-_004boomerang Primary 2400 false true 4 normal
-_005boomerang Primary 50000 false true 5 normal
-_300tack Primary 600 false true 3 normal
-_400tack Primary 3500 false true 4 fire
-_500tack Primary 45500 false true 5 fire
-_030tack Primary 550 false true 3 shatter
-_040tack Primary 2700 true true 4 shatter
-_050tack Primary 15000 true true 5 normal,shatter
-_003tack Primary 450 false true 3 sharp
-_004tack Primary 3200 false true 4 sharp
-_005tack Primary 20000 false true 5 sharp
-_300bomb Primary 1100 false true 3 explosive
-_400bomb Primary 2800 false true 4 explosive
-_500bomb Primary 55000 false true 5 normal
-_030bomb Primary 1000 false true 3 explosive
-_040bomb Primary 3450 true true 4 explosive
-_050bomb Primary 28000 true true 5 explosive
-_003bomb Primary 700 false true 3 explosive
-_004bomb Primary 2500 false true 4 explosive
-_005bomb Primary 23000 false true 5 explosive
-_300ice Primary 1500 false true 3 m.freeze,camo,shatter
-_400ice Primary 2300 false true 4 m.freeze,camo,shatter
-_500ice Primary 28000 false true 5 normal,camo,shatter
-_030ice Primary 2750 false true 3 cold
-_040ice Primary 4000 true true 4 cold
-_050ice Primary 19000 true true 5 cold
-_003ice Primary 1900 false true 3 glacier
-_004ice Primary 2750 false true 4 glacier
-_005ice Primary 30000 false true 5 shatter
-_300desperado Primary 1200 false false 3 sharp
-_400desperado Primary 5800 false false 4 sharp
-_500desperado Primary 16500 false false 5 sharp
-_030desperado Primary 3000 true false 3 normal,camo
-_040desperado Primary 6500 true false 4 normal,camo
-_050desperado Primary 42000 true false 5 normal,camo
-_003desperado Primary 2100 false false 3 sharp,shatter
-_004desperado Primary 6500 false false 4 sharp,shatter
-_005desperado Primary 31000 false false 5 sharp,shatter
-_300glue Primary 2000 false false 3 normal
-_400glue Primary 5000 false false 4 normal
-_500glue Primary 22500 false false 5 normal
-_030glue Primary 1950 false false 3 normal
-_040glue Primary 4000 true false 4 normal
-_050glue Primary 16000 true false 5 normal
-_003glue Primary 3600 false false 3 normal
-_004glue Primary 4000 false false 4 normal
-_005glue Primary 24000 false false 5 normal
-_300sub Military 700 false true 3 sharp,normal
-_400sub Military 2300 false true 4 sharp,normal,shatter
-_500sub Military 28000 false true 5 sharp,normal,shatter
-_030sub Military 1350 false true 3 normal,explosive
-_040sub Military 13000 true true 4 normal,explosive
-_050sub Military 29000 true true 5 normal,explosive
-_003sub Military 1100 false true 3 sharp
-_004sub Military 2500 false true 4 sharp
-_005sub Military 25000 false true 5 sharp
-_300sniper Military
-_400sniper Military
-_500sniper Military
-_030sniper Military
-_040sniper Military
-_050sniper Military
-_003sniper Military
-_004sniper Military
-_005sniper Military
-_300boat Military
-_400boat Military
-_500boat Military
-_030boat Military
-_040boat Military
-_050boat Military
-_003boat Military
-_004boat Military
-_005boat Military
-_300heli Military
-_400heli Military
-_500heli Military
-_030heli Military
-_040heli Military
-_050heli Military
-_003heli Military
-_004heli Military
-_005heli Military
-_300mortar Military
-_400mortar Military
-_500mortar Military
-_030mortar Military
-_040mortar Military
-_050mortar Military
-_003mortar Military
-_004mortar Military
-_005mortar Military
-_300dartling Military
-_400dartling Military
-_500dartling Military
-_030dartling Military
-_040dartling Military
-_050dartling Military
-_003dartling Military
-_004dartling Military
-_005dartling Military
-_300ace Military
-_400ace Military
-_500ace Military
-_030ace Military
-_040ace Military
-_050ace Military
-_003ace Military
-_004ace Military
-_005ace Military
-_300wizard Magic
-_400wizard Magic
-_500wizard Magic
-_030wizard Magic
-_040wizard Magic
-_050wizard Magic
-_003wizard Magic
-_004wizard Magic
-_005wizard Magic
-_300druid Magic
-_400druid Magic
-_500druid Magic
-_030druid Magic
-_040druid Magic
-_050druid Magic
-_003druid Magic
-_004druid Magic
-_005druid Magic
-_300super Magic
-_400super Magic
-_500super Magic
-_030super Magic
-_040super Magic
-_050super Magic
-_003super Magic
-_004super Magic
-_005super Magic
-_300alch Magic
-_400alch Magic
-_500alch Magic
-_030alch Magic
-_040alch Magic
-_050alch Magic
-_003alch Magic
-_004alch Magic
-_005alch Magic
-_300mermonkey Magic
-_400mermonkey Magic
-_500mermonkey Magic
-_030mermonkey Magic
-_040mermonkey Magic
-_050mermonkey Magic
-_003mermonkey Magic
-_004mermonkey Magic
-_005mermonkey Magic
-_300ninja Magic
-_400ninja Magic
-_500ninja Magic
-_030ninja Magic
-_040ninja Magic
-_050ninja Magic
-_003ninja Magic
-_004ninja Magic
-_005ninja Magic
-_300spike Support
-_400spike Support
-_500spike Support
-_030spike Support
-_040spike Support
-_050spike Support
-_003spike Support
-_004spike Support
-_005spike Support
-_300banana Support
-_400banana Support
-_500banana Support
-_030banana Support
-_040banana Support
-_050banana Support
-_003banana Support
-_004banana Support
-_005banana Support
-_300handler Support
-_400handler Support
-_500handler Support
-_030handler Support
-_040handler Support
-_050handler Support
-_003handler Support
-_004handler Support
-_005handler Support
-_300village Support
-_400village Support
-_500village Support
-_030village Support
-_040village Support
-_050village Support
-_003village Support
-_004village Support
-_005village Support
-_300engi Support 575 false true 3 sharp
-_400engi Support 2500 false true 4 sharp,energy,cold...
-_500engi Support 32000 false true 5 sharp,plasma
-_030engi Support 900 false true 3 sharp,normal,camo
-_040engi Support 13500 true true 4 sharp,normal,camo
-_050engi Support 72000 true true 5 sharp
-_003engi Support 450 false true 3 shatter
-_004engi Support 3600 false true 4 shatter
-_005engi Support 45000 false true 5 shatter,normal
+_300dart Primary 320 false true 3 shatter top
+_400dart Primary 1800 false true 4 normal top
+_500dart Primary 15000 false true 5 normal top
+_030dart Primary 450 false true 3 sharp middle
+_040dart Primary 7200 true true 4 sharp middle
+_050dart Primary 45000 true true 5 sharp,plasma,camo middle
+_003dart Primary 575 false true 3 sharp,camo bottom
+_004dart Primary 2050 false true 4 sharp,camo bottom
+_005dart Primary 21500 false true 5 normal,camo bottom
+_300boomerang Primary 600 false true 3 sharp top
+_400boomerang Primary 2000 false true 4 sharp top
+_500boomerang Primary 32500 false true 5 normal,sharp,camo top
+_030boomerang Primary 1250 false true 3 sharp middle
+_040boomerang Primary 4200 true true 4 sharp middle
+_050boomerang Primary 35000 true true 5 sharp middle
+_003boomerang Primary 1300 false true 3 normal bottom
+_004boomerang Primary 2400 false true 4 normal bottom
+_005boomerang Primary 50000 false true 5 normal bottom
+_300tack Primary 600 false true 3 normal top
+_400tack Primary 3500 false true 4 fire top
+_500tack Primary 45500 false true 5 fire top
+_030tack Primary 550 false true 3 shatter middle
+_040tack Primary 2700 true true 4 shatter middle
+_050tack Primary 15000 true true 5 normal,shatter middle
+_003tack Primary 450 false true 3 sharp bottom
+_004tack Primary 3200 false true 4 sharp bottom
+_005tack Primary 20000 false true 5 sharp bottom
+_300bomb Primary 1100 false true 3 explosive top
+_400bomb Primary 2800 false true 4 explosive top
+_500bomb Primary 55000 false true 5 normal top
+_030bomb Primary 1000 false true 3 explosive middle
+_040bomb Primary 3450 true true 4 explosive middle
+_050bomb Primary 28000 true true 5 explosive middle
+_003bomb Primary 700 false true 3 explosive bottom
+_004bomb Primary 2500 false true 4 explosive bottom
+_005bomb Primary 23000 false true 5 explosive bottom
+_300ice Primary 1500 false true 3 m.freeze,camo,shatter top
+_400ice Primary 2300 false true 4 m.freeze,camo,shatter top
+_500ice Primary 28000 false true 5 normal,camo,shatter top
+_030ice Primary 2750 false true 3 cold middle
+_040ice Primary 4000 true true 4 cold middle
+_050ice Primary 19000 true true 5 cold middle
+_003ice Primary 1900 false true 3 glacier bottom
+_004ice Primary 2750 false true 4 glacier bottom
+_005ice Primary 30000 false true 5 shatter bottom
+_300desperado Primary 1200 false false 3 sharp top
+_400desperado Primary 5800 false false 4 sharp top
+_500desperado Primary 16500 false false 5 sharp top
+_030desperado Primary 3000 true false 3 normal,camo middle
+_040desperado Primary 6500 true false 4 normal,camo middle
+_050desperado Primary 42000 true false 5 normal,camo middle
+_003desperado Primary 2100 false false 3 sharp,shatter bottom
+_004desperado Primary 6500 false false 4 sharp,shatter bottom
+_005desperado Primary 31000 false false 5 sharp,shatter bottom
+_300glue Primary 2000 false false 3 normal top
+_400glue Primary 5000 false false 4 normal top
+_500glue Primary 22500 false false 5 normal top
+_030glue Primary 1950 false false 3 normal middle
+_040glue Primary 4000 true false 4 normal middle
+_050glue Primary 16000 true false 5 normal middle
+_003glue Primary 3600 false false 3 normal bottom
+_004glue Primary 4000 false false 4 normal bottom
+_005glue Primary 24000 false false 5 normal bottom
+_300sub Military 700 false true 3 sharp,normal top
+_400sub Military 2300 false true 4 sharp,normal,shatter top
+_500sub Military 28000 false true 5 sharp,normal,shatter top
+_030sub Military 1350 false true 3 normal,explosive middle
+_040sub Military 13000 true true 4 normal,explosive middle
+_050sub Military 29000 true true 5 normal,explosive middle
+_003sub Military 1100 false true 3 sharp bottom
+_004sub Military 2500 false true 4 sharp bottom
+_005sub Military 25000 false true 5 sharp bottom
+_300sniper Military 2500 false false 3 normal top
+_400sniper Military 6000 false false 4 normal top
+_500sniper Military 32000 false false 5 normal top
+_030sniper Military 2100 false false 3 sharp,camo middle
+_040sniper Military 7600 true false 4 normal,camo middle
+_050sniper Military 12000 true false 5 normal,camo middle
+_003sniper Military 2700 false false 3 sharp bottom
+_004sniper Military 4100 false false 4 sharp bottom
+_005sniper Military 14900 false false 5 sharp bottom
+_300boat Military 3050 false true 3 sharp top
+_400boat Military 8000 false true 4 sharp,explosive top
+_500boat Military 24500 false true 5 sharp,normal top
+_030boat Military 900 false true 3 fire,explosive,sharp middle
+_040boat Military 3900 true true 4 fire,explosive,sharp middle
+_050boat Military 27000 true true 5 fire,explosive,sharp middle
+_003boat Military 2400 false true 3 sharp bottom
+_004boat Military 5500 false true 4 sharp bottom
+_005boat Military 23000 false true 5 sharp bottom
+_300heli Military 1850 false false 3 sharp,normal top
+_400heli Military 19600 false false 4 sharp,normal,explosive top
+_500heli Military 45000 false false 5 energy,explosive,plasma top
+_030heli Military 3500 false false 3 sharp,normal,camo middle
+_040heli Military 9500 true false 4 sharp,normal,camo middle
+_050heli Military 30000 true false 5 sharp,normal,camo middle
+_003heli Military 3400 false false 3 sharp,explosive bottom
+_004heli Military 8500 false false 4 sharp,explosive bottom
+_005heli Military 35000 false false 5 sharp,explosive bottom
+_300mortar Military 825 false false 3 explosive top
+_400mortar Military 7000 false false 4 explosive,normal top
+_500mortar Military 36000 false false 5 explosive,normal top
+_030mortar Military 900 false false 3 normal middle
+_040mortar Military 6500 true false 4 normal middle
+_050mortar Military 38000 true false 5 normal middle
+_003mortar Military 1100 false false 3 explosive,camo bottom
+_004mortar Military 9500 false false 4 explosive,camo bottom
+_005mortar Military 40000 false false 5 normal,camo bottom
+_300dartling Military 3000 false false 3 energy top
+_400dartling Military 11750 false false 4 plasma top
+_500dartling Military 75000 false false 5 normal top
+_030dartling Military 4500 false false 3 normal,camo middle
+_040dartling Military 5850 true false 4 normal,camo middle
+_050dartling Military 65000 true false 5 normal,camo middle
+_003dartling Military 3400 false false 3 shatter bottom
+_004dartling Military 12000 false false 4 shatter bottom
+_005dartling Military 58000 false false 5 shatter bottom
+_300ace Military 1000 false true 3 sharp,explosive top
+_400ace Military 3300 false true 4 sharp,explosive top
+_500ace Military 42500 false true 5 normal top
+_030ace Military 900 false true 3 sharp,explosive,camo middle
+_040ace Military 18000 true true 4 sharp,explosive,camo middle
+_050ace Military 26000 true true 5 sharp,explosive,camo middle
+_003ace Military 2550 false true 3 sharp bottom
+_004ace Military 23400 false true 4 sharp,explosive bottom
+_005ace Military 85000 false true 5 sharp,normal bottom
+_300wizard Magic 1450 false true 3 energy top
+_400wizard Magic 10000 false true 4 plasma top
+_500wizard Magic 32000 false true 5 plasma,fire,normal top
+_030wizard Magic 3300 false true 3 energy,fire,explosive middle
+_040wizard Magic 6000 true true 4 energy,fire,explosive middle
+_050wizard Magic 50000 true true 5 energy,fire,explosive middle
+_003wizard Magic 1500 false true 3 energy,camo,normal bottom
+_004wizard Magic 2800 false true 4 energy,camo,normal bottom
+_005wizard Magic 26500 false true 5 energy,camo,normal bottom
+_300druid Magic 1700 false false 3 normal,plasma,shatter top
+_400druid Magic 4500 false false 4 normal,plasma,glacier top
+_500druid Magic 60000 false false 5 normal,plasma,glacier top
+_030druid Magic 1050 false false 3 sharp middle
+_040druid Magic 4900 true false 4 sharp middle
+_050druid Magic 35000 true false 5 sharp middle
+_003druid Magic 600 false false 3 sharp bottom
+_004druid Magic 2350 false false 4 sharp bottom
+_005druid Magic 45000 false false 5 sharp bottom
+_300super Magic 20000 false false 3 plasma top
+_400super Magic 100000 false false 4 normal top
+_500super Magic 500000 false false 5 normal top
+_030super Magic 7500 false false 3 sharp middle
+_040super Magic 25000 true false 4 plasma,normal,camo middle
+_050super Magic 70000 true false 5 plasma,normal,camo middle
+_003super Magic 5600 true false 3 sharp,camo bottom
+_004super Magic 55555 true false 4 normal,camo bottom
+_005super Magic 165650 true false 5 normal,camo bottom
+_300alch Magic 1400 false false 3 normal top
+_400alch Magic 2850 false false 4 normal top
+_500alch Magic 48000 false false 5 normal top
+_030alch Magic 2800 false false 3 normal middle
+_040alch Magic 4200 true false 4 normal,plasma middle
+_050alch Magic 45000 true false 5 normal,plasma middle
+_003alch Magic 1000 false false 3 normal bottom
+_004alch Magic 2750 false false 4 normal bottom
+_005alch Magic 40000 false false 5 normal bottom
+_300mermonkey Magic 1600 false false 3 shatter top
+_400mermonkey Magic 4200 false false 4 shatter top
+_500mermonkey Magic 23000 false false 5 shatter top
+_030mermonkey Magic 1100 false false 3 energy middle
+_040mermonkey Magic 8000 true false 4 frigid middle
+_050mermonkey Magic 48000 true false 5 frigid,shatter,camo middle
+_003mermonkey Magic 2000 false false 3 camo,shatter,plasma bottom
+_004mermonkey Magic 7600 false false 4 camo,shatter,plasma bottom
+_005mermonkey Magic 25000 false false 5 camo,shatter,plasma bottom
+_300ninja Magic 900 false true 3 sharp,camo top
+_400ninja Magic 2750 false true 4 sharp,camo top
+_500ninja Magic 35000 false true 5 sharp,camo top
+_030ninja Magic 1200 false true 3 sharp,camo middle
+_040ninja Magic 5200 true true 4 sharp,camo middle
+_050ninja Magic 22000 true true 5 sharp,camo middle
+_003ninja Magic 2250 false true 3 sharp,camo,normal bottom
+_004ninja Magic 5000 false true 4 sharp,camo,normal bottom
+_005ninja Magic 40000 false true 5 sharp,camo,normal bottom
+_300spike Support 2300 false true 3 normal,camo top
+_400spike Support 9500 false true 4 normal,camo,fire top
+_500spike Support 125000 false true 5 normal,camo,fire top
+_030spike Support 2500 false true 3 sharp,camo middle
+_040spike Support 7000 true true 4 sharp,camo middle
+_050spike Support 41000 true true 5 sharp,camo middle
+_003spike Support 1300 false true 3 sharp,camo bottom
+_004spike Support 3600 false true 4 sharp,camo bottom
+_005spike Support 30000 false true 5 sharp,camo bottom
+_300banana Support 3000 false false 3 none top
+_400banana Support 19000 false false 4 none top
+_500banana Support 115000 false false 5 none top
+_030banana Support 3650 false false 3 none middle
+_040banana Support 7200 true false 4 none middle
+_050banana Support 100000 true false 5 none middle
+_003banana Support 2700 false false 3 none bottom
+_004banana Support 15000 false false 4 none bottom
+_005banana Support 70000 false false 5 none bottom
+_300handler Support 2010 false false 3 normal top
+_400handler Support 12500 false false 4 normal top
+_500handler Support 45000 false false 5 normal top
+_030handler Support 2065 false false 3 normal middle
+_040handler Support 9500 true false 4 normal middle
+_050handler Support 60000 true false 5 normal middle
+_003handler Support 2120 false false 3 shatter,camo bottom
+_004handler Support 9000 false false 4 shatter,camo bottom
+_005handler Support 30000 false false 5 normal,camo bottom
+_300village Support 800 false false 3 none top
+_400village Support 2500 false false 4 none top
+_500village Support 25000 false false 5 normal,camo top
+_030village Support 7500 false false 3 none middle
+_040village Support 20000 true false 4 none middle
+_050village Support 40000 true false 5 none middle
+_003village Support 10000 false false 3 none bottom
+_004village Support 3000 false false 4 none bottom
+_005village Support 5000 false false 5 none bottom
+_300engi Support 575 false true 3 sharp top
+_400engi Support 2500 false true 4 sharp,energy,cold top
+_500engi Support 32000 false true 5 sharp,plasma top
+_030engi Support 900 false true 3 sharp,normal,camo middle
+_040engi Support 13500 true true 4 sharp,normal,camo middle
+_050engi Support 72000 true true 5 sharp middle
+_003engi Support 450 false true 3 shatter bottom
+_004engi Support 3600 false true 4 shatter bottom
+_005engi Support 45000 false true 5 shatter,normal bottom
