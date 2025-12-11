@@ -23,7 +23,7 @@
             <li></li>
             <li onclick="menu(1)">Tournaments</li>
             <li></li>
-            <li onclick="menu(2)">Bloonsle</li>
+            <li onclick="menu(2)" id="menu_bloonsle">Bloonsle</li>
         </ul>
     </div>
 </div>
@@ -34,7 +34,7 @@
             <tr>
                 <td>
                     <h3 id="home_h3">Hello!</h3> <br> <br>
-                    <p id="home_p">If you have any issues, or want to report a bug, find me on discord!</p>
+                    <p id="home_p">If you have any issues, ideas, or want to report a bug, find me on discord!</p>
                 </td>
                 <td>
                     <a href="https://discord.gg/KE44ppX5ZA"><img id="home_img" src="IMG/discord.png" alt="dc"></a>
@@ -48,7 +48,8 @@
         <div class="tournament_list" onclick="chooseTournament(1)">
             <img src="IMG/tournament_logo.png" alt="tournament_logo1">
             <h3>Boss Tournament #1</h3> <br> <br> <br>
-            <p>First Boss Tournament, hosted by: Olinequ, 06bob, Spani, and SGB, with the financial help from Barbitos. <br>The Tournament lasted for 10 rounds, and the winner was Felicia.</p>
+            <p>First Boss Tournament, hosted by: Olinequ, 06bob, Spani, and SGB, with the financial help from Barbitos. The Tournament lasted for 10 rounds, and the winner was Felicia.
+                <br>Check out Mackan Rules, ISAB, and Ryan Mechalic's channels for some tournament gameplay!</p>
         </div>
 
         <div class="tournament_list">
@@ -61,13 +62,24 @@
     <div id="bloonsle">
         <div id="bl_title">
             <h3>Welcome to Bloonsle!</h3> <br> <br>
-            <p>Enter a monkey below in a format like this: 500tack, 030sniper, 004boomerang etc. <br>
-                Upgrade details are taken from v.51 <br>
-            </p>
+            <p>Enter a monkey below in a format like this: 500tack, 030sniper, 004boomerang etc. <u>Only tier 3-5 towers are available!</u><br></p>
+            <p>Upgrade details are taken from v51.0 <br></p>
+            <span onclick="dropdown()" id="bloonsle_guide_button">Guide</span>
+            <ul id="bloonsle_guide">
+                <li>Type: Primary, Military, etc.</li>
+                <li>Price: only for chosen upgrade, not counting all the previous tiers</li>
+                <li>Ability: does this upgrade have an ability</li>
+                <li>Paragon: does this tower have a paragon</li>
+                <li>Tier: 3/4/5, tier 1 and 2 upgrades aren't available</li>
+                <li>Damage: damage types of a tower, like normal, camo, plasma, shatter etc. (only up to 3 show here, but it can have more damage types, for example, sentry expert)</li>
+                <li>Path: top/middle/bottom</li>
+            </ul>
+
         </div>
 
         <div id="bl_board">
             <h1 id="refresh">Refreshes in: </h1>
+
             <table style="padding-bottom: 10%">
                 <tr>
                     <td class="hint_type">Type<td class="filler">
@@ -86,14 +98,7 @@
                     <td class="hint_type"><img src="IMG/hintDmg.png" alt="hintPng"><td class="filler">
                     <td class="hint_type"><img src="IMG/hintTiers.png" alt="hintPng"><td class="filler">
                 <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                <tr><td class="filler">
+                    <td class="answer" colspan="14">
                 <tr>
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
@@ -102,7 +107,8 @@
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
-                <tr><td class="filler">
+                <tr>
+                    <td class="answer" colspan="14">
                 <tr>
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
@@ -111,7 +117,8 @@
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
-                <tr><td class="filler">
+                <tr>
+                    <td class="answer" colspan="14">
                 <tr>
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
@@ -120,7 +127,8 @@
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
-                <tr><td class="filler">
+                <tr>
+                    <td class="answer" colspan="14">
                 <tr>
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
@@ -129,7 +137,18 @@
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">
-                <tr><td class="filler">
+                <tr>
+                    <td class="answer" colspan="14">
+                <tr>
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                    <td class="hint"> <td class="filler">
+                <tr>
+                    <td class="answer" colspan="14">
                 <tr>
                     <td class="hint"> <td class="filler">
                     <td class="hint"> <td class="filler">

@@ -51,6 +51,7 @@
 
 td.hint {
     font-family: "Luckiest Guy", sans-serif;
+    text-shadow: 2px 2px 2px #000000;
     font-size: 140%;
     text-align: center;
     width: 100px;
@@ -73,6 +74,7 @@ td.hint_png {
 
 td.hint_type {
     font-family: "Luckiest Guy", sans-serif;
+    text-shadow: 3px 3px 3px #000000;
     font-size: 160%;
     text-align: center;
     width: 100px;
@@ -83,10 +85,10 @@ td.hint_type {
 }
 
 td.filler {
-    width: 15px;
-    max-width: 15px;
-    height: 15px;
-    max-height: 15px;
+    width: 5px;
+    max-width: 5px;
+    height: 5px;
+    max-height: 5px;
     background: none;
     border: none;
 }
@@ -172,6 +174,36 @@ td.filler {
     color: limegreen;
     font-size: 110%;
     font-weight: bold;
+}
+
+#bloonsle_guide {
+    display: none;
+    animation: display 1.5s ease;
+    font-size: 130%;
+    color: lightgreen;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+#bloonsle_guide_button {
+    text-shadow: 10px 10px 10px #000000;
+    color: limegreen;
+    font-size: 200%;
+}
+
+#bloonsle_guide_button:hover {
+    transition: font-size 0.2s ease-in-out;
+    font-size: 225%;
+    cursor: pointer;
+}
+
+.answer {
+    font-family: "Luckiest Guy", sans-serif;
+    text-shadow: 2px 2px 2px #000000;
+    color: white;
+    font-size: 140%;
+    position: relative;
+    height: 30px;
 }
 
 @media all and (min-width:960px) and (max-width: 1024px) {

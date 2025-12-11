@@ -108,6 +108,77 @@ function checkDamageType(guessDmg, correctDmg) {
     }
 }
 
+function formatGuess(guess) {
+    let part1 = guess[0]+guess[1]+guess[2]+guess[3];
+    let part2 = guess.substring(4, guess.length);
+    switch (part2) {
+        case "dartmonkey":
+            return part1+"dart";
+        case "boomer":
+            return part1+"boomerang";
+        case "tackshooter":
+            return part1+"tack";
+        case "bombtower":
+            return part1+"bomb";
+        case "bombshooter":
+            return part1+"bomb";
+        case "icemonkey":
+            return part1+"ice";
+        case "desp":
+            return part1+"desperado";
+        case "despacito":
+            return part1+"desperado";
+        case "gluegunner":
+            return part1+"glue";
+        case "submonkey":
+            return part1+"sub";
+        case "snipermonkey":
+            return part1+"sniper";
+        case "buccaneer":
+            return part1+"boat";
+        case "helipilot":
+            return part1+"heli";
+        case "mortarmonkey":
+            return part1+"mortar";
+        case "dartlinggunner":
+            return part1+"dartling";
+        case "acemonkey":
+            return part1+"ace";
+        case "wiz":
+            return part1+"wizard";
+        case "wizardmonkey":
+            return part1+"wizard";
+        case "druidmonkey":
+            return part1+"druid";
+        case "supermonkey":
+            return part1+"super";
+        case "alchemist":
+            return part1+"alch";
+        case "alchemistmonkey":
+            return part1+"alch";
+        case "merm":
+            return part1+"mermonkey";
+        case "ninjamonkey":
+            return part1+"ninja";
+        case "spikefactory":
+            return part1+"spike";
+        case "bananafarm":
+            return part1+"banana";
+        case "farm":
+            return part1+"banana";
+        case "beasthandler":
+            return part1+"handler";
+        case "bh":
+            return part1+"handler";
+        case "engineer":
+            return part1+"engi";
+        case "engineermonkey":
+            return part1+"engi";
+    }
+
+    return guess;
+}
+
 //Timer
 const timer = document.querySelector("#refresh")
 
@@ -161,6 +232,36 @@ function anim1(element) {
     }, 650)
 }
 
+function anim2(element) {
+    element.style.transition = "color .5s"
+    element.style.color = "orangered"
+    setTimeout(function () {
+        element.style.color = "darkorange"
+    }, 750)
+    setTimeout(function () {
+        element.style.color = "orange"
+    }, 1500)
+    setTimeout(function () {
+        element.style.color = "darkorange"
+    }, 2250)
+}
+
+anim2(document.getElementById("menu_bloonsle"))
+setInterval(() => {
+    anim2(document.getElementById("menu_bloonsle"))
+}, 3000)
+
+function dropdown() {
+    let guide = document.getElementById("bloonsle_guide")
+    if (guide.style.display === "none") {
+        guide.style.display = "block"
+    } else {
+        guide.style.display = "none"
+    }
+
+}
+
+//Main
 let tries = 0;
 let correct_types = 0;
 
@@ -180,15 +281,18 @@ async function guess(e) {
         guess_input.value = '';
         guess = guess.toLowerCase();
         guess = "_" + guess;
+        guess = formatGuess(guess);
         for (let i = 0; i < lines.length; i++) {
             let temp = lines[i].split(' ');
             if (temp[0] === guess) {
                 guess = new Monkey(temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], formatDmg(temp[6]), temp[7]);
             }
         }
+
         if (guess.code === undefined) {
             alert("Please provide a correct guess!")
         } else {
+            document.getElementsByClassName("answer")[tries].innerHTML = formatCode(guess.code);
             if (tries <= 5) {
                 anim1(hints[tries * 7])
                 if (guess.type === correct.type) {
@@ -292,9 +396,12 @@ async function guess(e) {
                     }
 
                     document.getElementById('guess_input').disabled = false;
+                    document.getElementById('guess_input').focus()
 
                 }, 1500)
                 document.getElementById('guess_input').disabled = true;
+
+
             }
         }
     }
@@ -317,6 +424,8 @@ async function old_guess(guess) {
             guess = new Monkey(temp[0], temp[1], temp[2], temp[3], temp[4], temp[5], formatDmg(temp[6]), temp[7]);
         }
     }
+
+    document.getElementsByClassName("answer")[tries].innerHTML = formatCode(guess.code);
 
     if (guess.type === correct.type) {
         hints[tries * 7].style.background = "green";
