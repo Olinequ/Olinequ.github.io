@@ -562,24 +562,6 @@ guess_input.addEventListener('keypress', (e) => {
 
 const winning_screen = document.querySelector("#winning_screen");
 
-function lose(correct) {
-    document.getElementById('no_more_guesses').innerHTML = "No more guesses left!";
-    document.getElementById('guess_input').style.display = "none";
-    document.getElementById('input_guess').style.display = "none";
-    document.getElementById('winning_screen').style.marginTop = "47.5%";
-    document.getElementById('no_more_guesses').style.color = "red";
-    document.getElementById('no_more_guesses').style.textShadow = "text-shadow: 2px 2px 2px firebrick";
-
-    winning_screen.style.display = "block";
-    winning_screen.children[0].innerHTML = "Skill issue!";
-    winning_screen.children[0].style.color = "red";
-    winning_screen.children[1].innerHTML = `Unfortunately, you couldn't solve today's Bloonsle :(<br>The correct answer was <span id="highlight_answer">${formatCode(correct)}</span>`;
-    window.scrollBy({
-        top: winning_screen.offsetTop,
-        left: 0,
-        behavior: "smooth",
-    });
-}
 
 function share(answers) {
     let date = new Date();
@@ -591,6 +573,27 @@ function share(answers) {
         }, 1500)
     })
 }
+
+function lose(correct) {
+    document.getElementById('no_more_guesses').innerHTML = "No more guesses left!";
+    document.getElementById('guess_input').style.display = "none";
+    document.getElementById('input_guess').style.display = "none";
+    document.getElementById('winning_screen').style.marginTop = "47.5%";
+    document.getElementById('no_more_guesses').style.color = "red";
+    document.getElementById('no_more_guesses').style.textShadow = "text-shadow: 2px 2px 2px firebrick";
+
+    winning_screen.style.display = "block";
+    winning_screen.children[0].innerHTML = "Skill issue!";
+    winning_screen.children[0].style.color = "red";
+    winning_screen.children[1].innerHTML = `Unfortunately, you couldn't solve today's Bloonsle :(<br>The correct answer was <span id="highlight_answer">${formatCode(correct)}</span><br>
+<button onclick="share(answers)" id="share_button">Share</button>`;
+    window.scrollBy({
+        top: winning_screen.offsetTop,
+        left: 0,
+        behavior: "smooth",
+    });
+}
+
 
 function win(tries, correct) {
     for (let i = 1; i < 7-tries; i++) {
