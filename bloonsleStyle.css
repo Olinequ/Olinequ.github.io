@@ -202,8 +202,26 @@ td.filler {
     text-shadow: 2px 2px 2px #000000;
     color: white;
     font-size: 140%;
-    position: relative;
     height: 30px;
+}
+
+#share_button {
+    margin-top: 5%;
+    font-family: "Luckiest Guy", sans-serif;
+    text-shadow: 2px 2px 2px #000000;
+    color: white;
+    font-size: 100%;
+    padding: 15px;
+    letter-spacing: 1px;
+    background-color: rgb(50, 50, 50, 0.7);
+    width: 40%;
+    transition: color .5s;
+}
+
+#share_button:hover {
+    cursor: pointer;
+    color: goldenrod;
+    transition: color .5s;
 }
 
 @media all and (min-width:960px) and (max-width: 1024px) {

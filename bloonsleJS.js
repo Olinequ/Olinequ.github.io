@@ -25,7 +25,18 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-
+/*
+document.querySelector('body').addEventListener('keypress', (e) => {
+    if (e.key === '=') {
+        deleteCookie("correct_number");
+        for (let i = 1; i <= 7; i++) {
+            deleteCookie("guess" + i);
+        }
+        deleteCookie("amountOfTries")
+        alert("cookies deleted")
+    }
+})
+ */
 
 //Utility functions + main class for bloonsle
 class Monkey {
@@ -264,6 +275,7 @@ function dropdown() {
 //Main
 let tries = 0;
 let correct_types = 0;
+let answers = "";
 
 const hints = document.getElementsByClassName("hint");
 const guess_input = document.querySelector('#guess_input');
@@ -298,8 +310,10 @@ async function guess(e) {
                 if (guess.type === correct.type) {
                     hints[tries * 7].style.background = "green";
                     correct_types++;
+                    answers += "🟩";
                 } else {
                     hints[tries * 7].style.background = "red";
+                    answers += "🟥";
                 }
                 hints[tries * 7].innerHTML = guess.type;
 
@@ -308,10 +322,13 @@ async function guess(e) {
                     if (guess.price === correct.price) {
                         hints[(tries * 7) + 1].style.background = "green";
                         correct_types++;
+                        answers += "🟩";
                     } else if (returnDifference(guess.price, correct.price) <= 5000) {
                         hints[(tries * 7) + 1].style.background = "orange";
+                        answers += "🟧";
                     } else {
                         hints[(tries * 7) + 1].style.background = "red";
+                        answers += "🟥";
                     }
                     if (parseInt(guess.price) > parseInt(correct.price)) {
                         hints[(tries * 7) + 1].innerHTML = "< " + formatPrice(guess.price);
@@ -327,8 +344,10 @@ async function guess(e) {
                     if (guess.ability === correct.ability) {
                         hints[(tries * 7) + 2].style.background = "green";
                         correct_types++;
+                        answers += "🟩";
                     } else {
                         hints[(tries * 7) + 2].style.background = "red";
+                        answers += "🟥";
                     }
                     hints[(tries * 7) + 2].innerHTML = guess.ability;
                 }, 500)
@@ -338,8 +357,10 @@ async function guess(e) {
                     if (guess.paragon === correct.paragon) {
                         hints[(tries * 7) + 3].style.background = "green";
                         correct_types++;
+                        answers += "🟩";
                     } else {
                         hints[(tries * 7) + 3].style.background = "red";
+                        answers += "🟥";
                     }
                     hints[(tries * 7) + 3].innerHTML = guess.paragon;
                 }, 750)
@@ -349,8 +370,10 @@ async function guess(e) {
                     if (guess.tier === correct.tier) {
                         hints[(tries * 7) + 4].style.background = "green";
                         correct_types++;
+                        answers += "🟩";
                     } else {
                         hints[(tries * 7) + 4].style.background = "red";
+                        answers += "🟥";
                     }
                     hints[(tries * 7) + 4].innerHTML = guess.tier;
                 }, 1000)
@@ -360,10 +383,13 @@ async function guess(e) {
                     if (guess.dmg === correct.dmg) {
                         hints[(tries * 7) + 5].style.background = "green";
                         correct_types++;
+                        answers += "🟩";
                     } else if (guess.dmg !== correct.dmg && checkDamageType(guess.dmg, correct.dmg)) {
                         hints[(tries * 7) + 5].style.background = "orange";
+                        answers += "🟧";
                     } else {
                         hints[(tries * 7) + 5].style.background = "red";
+                        answers += "🟥";
                     }
                     hints[(tries * 7) + 5].innerHTML = guess.dmg;
                 }, 1250)
@@ -373,14 +399,17 @@ async function guess(e) {
                     if (guess.path === correct.path) {
                         hints[(tries * 7) + 6].style.background = "green";
                         correct_types++;
+                        answers += "🟩";
                     } else {
                         hints[(tries * 7) + 6].style.background = "red";
+                        answers += "🟥";
                     }
                     hints[(tries * 7) + 6].innerHTML = guess.path;
 
                     tries++;
                     setCookie(`guess${tries}`, guess.code, getExpireDate())
                     setCookie(`amountOfTries`, tries, getExpireDate())
+                    answers += "\n"
 
 
                     if (tries === 6) {
@@ -430,18 +459,23 @@ async function old_guess(guess) {
     if (guess.type === correct.type) {
         hints[tries * 7].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else {
         hints[tries * 7].style.background = "red";
+        answers += "🟥";
     }
     hints[tries * 7].innerHTML = guess.type;
 
     if (guess.price === correct.price) {
         hints[(tries * 7) + 1].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else if (returnDifference(guess.price, correct.price) <= 5000) {
         hints[(tries * 7) + 1].style.background = "orange";
+        answers += "🟧";
     } else {
         hints[(tries * 7) + 1].style.background = "red";
+        answers += "🟥";
     }
     if (parseInt(guess.price) > parseInt(correct.price)) {
         hints[(tries * 7) + 1].innerHTML = "< " + formatPrice(guess.price);
@@ -454,46 +488,58 @@ async function old_guess(guess) {
     if (guess.ability === correct.ability) {
         hints[(tries * 7) + 2].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else {
         hints[(tries * 7) + 2].style.background = "red";
+        answers += "🟥";
     }
     hints[(tries * 7) + 2].innerHTML = guess.ability;
 
     if (guess.paragon === correct.paragon) {
         hints[(tries * 7) + 3].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else {
         hints[(tries * 7) + 3].style.background = "red";
+        answers += "🟥";
     }
     hints[(tries * 7) + 3].innerHTML = guess.paragon;
 
     if (guess.tier === correct.tier) {
         hints[(tries * 7) + 4].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else {
         hints[(tries * 7) + 4].style.background = "red";
+        answers += "🟥";
     }
     hints[(tries * 7) + 4].innerHTML = guess.tier;
 
     if (guess.dmg === correct.dmg) {
         hints[(tries * 7) + 5].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else if (guess.dmg !== correct.dmg && checkDamageType(guess.dmg, correct.dmg)) {
         hints[(tries * 7) + 5].style.background = "orange";
+        answers += "🟧";
     } else {
         hints[(tries * 7) + 5].style.background = "red";
+        answers += "🟥";
     }
     hints[(tries * 7) + 5].innerHTML = guess.dmg;
 
     if (guess.path === correct.path) {
         hints[(tries * 7) + 6].style.background = "green";
         correct_types++;
+        answers += "🟩";
     } else {
         hints[(tries * 7) + 6].style.background = "red";
+        answers += "🟥";
     }
     hints[(tries * 7) + 6].innerHTML = guess.path;
 
     tries++;
+    answers += "\n"
 
     if (tries === 6) {
         if (correct_types === 7) {
@@ -535,7 +581,21 @@ function lose(correct) {
     });
 }
 
+function share(answers) {
+    let date = new Date();
+    date = date.toString().split(" ");
+    navigator.clipboard.writeText(`**Bloonsle - ${date[2]} ${date[1]} ${date[3]}**\nhttps://olinequ.github.io/\n**-----------------------**\n${answers}`).then(() => {
+        document.getElementById("share_button").innerHTML = "Copied!";
+        setTimeout(() => {
+            document.getElementById("share_button").innerHTML = "Share";
+        }, 1500)
+    })
+}
+
 function win(tries, correct) {
+    for (let i = 1; i < 7-tries; i++) {
+        answers += "⬜⬜⬜⬜⬜⬜⬜\n";
+    }
     document.getElementById('no_more_guesses').innerHTML = "You won!";
     document.getElementById('guess_input').style.display = "none";
     document.getElementById('input_guess').style.display = "none";
@@ -546,7 +606,8 @@ function win(tries, correct) {
     winning_screen.style.display = "block";
     winning_screen.children[0].innerHTML = "Congrats!";
     winning_screen.children[0].style.color = "limegreen";
-    winning_screen.children[1].innerHTML = `You solved today's Bloonsle in ${tries} tries!<br>The correct answer is <span id="highlight_answer">${formatCode(correct)}</span>`;
+    winning_screen.children[1].innerHTML = `You solved today's Bloonsle in ${tries} tries!<br>The correct answer is <span id="highlight_answer">${formatCode(correct)}</span><br>
+<button onclick="share(answers)" id="share_button">Share</button>`;
     window.scrollBy({
         top: winning_screen.offsetTop,
         left: 0,
