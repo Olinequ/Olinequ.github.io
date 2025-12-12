@@ -36,7 +36,7 @@ document.querySelector('body').addEventListener('keypress', (e) => {
         alert("cookies deleted")
     }
 })
- */
+*/
 
 //Utility functions + main class for bloonsle
 class Monkey {
@@ -220,10 +220,17 @@ setInterval(() => {
     updateTimer();
 }, 1000)
 
-
 //Cookies
+
+function random(){
+    let day = new Date().getDate();
+    let month = new Date().getMonth();
+    let num = Math.round((day+4) / month * 39163).toString();
+    return +(num[2] + num[3]) % 225;
+}
+
 if (getCookie("correct_number") === '') {
-    cn = Math.floor(Math.random() * 225);
+    cn = random() - 1
     setCookie("correct_number", cn, getExpireDate());
 } else {
     cn = getCookie("correct_number");
