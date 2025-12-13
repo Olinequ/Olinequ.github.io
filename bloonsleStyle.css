@@ -8,46 +8,6 @@
     padding-bottom: 15%;
 }
 
-#bl_title {
-    background-color: rgb(50, 50, 50, 0.7);
-    margin-top: 5%;
-    color: white;
-    font-family: "Oswald", sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: auto;
-    height: auto;
-    padding: 1.5%;
-    border: 3px white solid;
-    border-radius: 15px;
-}
-
-#bl_title > h3 {
-    font-size: 220%;
-    text-shadow: 10px 10px 10px #000000;
-    margin-bottom: -0.5%;
-    margin-top: 0;
-    color: goldenrod;
-    float: left;
-    font-family: "Oswald", sans-serif;
-}
-
-#bl_title > p {
-    font-size: 140%;
-    text-shadow: 10px 10px 10px #000000;
-}
-
-#bl_board {
-    display: flex;
-    clear: both;
-    justify-content: center;
-}
-
-#bl_board > table {
-    position: absolute;
-    margin-top: 10%;
-}
-
 td.hint {
     font-family: "Luckiest Guy", sans-serif;
     text-shadow: 2px 2px 2px #000000;
@@ -92,19 +52,39 @@ td.filler {
     border: none;
 }
 
-#input_guess {
-    padding: 0.5% 1.5% 1.5%;
+#bl_title {
+    background-color: rgb(50, 50, 50, 0.7);
+    margin-top: 5%;
+    color: white;
     font-family: "Oswald", sans-serif;
-    display: block;
-    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    padding: 1.5%;
+    border: 3px white solid;
+    border-radius: 15px;
+}
+
+#bl_title > h3 {
+    font-size: 220%;
+    text-shadow: 10px 10px 10px #000000;
+    margin-bottom: -0.5%;
+    margin-top: 0;
     color: goldenrod;
-    margin-right: 2.5%;
-    margin-top: 15%;
+    float: left;
+    font-family: "Oswald", sans-serif;
+}
+
+#bl_title > p {
+    font-size: 140%;
+    text-shadow: 10px 10px 10px #000000;
 }
 
 #input_guess > h1 {
     text-shadow: 10px 10px 10px #000000;
     font-size: 180%;
+    margin-left: auto;
 }
 
 #input_guess > input {
@@ -113,9 +93,58 @@ td.filler {
     border-bottom: 2px solid white;
     color: white;
     font-family: "Oswald", sans-serif;
-    margin-right: 5%;
     font-size: 120%;
+    width: 250px;
+    height: fit-content;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+}
+
+#input_guess {
+    padding: 0.5% 1.5% 1.5%;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    color: goldenrod;
+
+}
+
+#bl_board {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
     width: 100%;
+}
+
+#winning_screen_div {
+    margin-top: -55%;
+    margin-bottom: 2.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#winning_screen {
+    background-color: rgb(50, 50, 50, 0.7);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    padding: 1%;
+    border: 3px white solid;
+    border-radius: 15px;
+    text-shadow: 10px 10px 10px #000000;
+    text-align: center;
+    position: absolute;
+}
+
+#winning_screen > h1 {
+    font-size: 250%;
+}
+
+#winning_screen > p {
+    font-size: 180%;
 }
 
 #input_guess > span {
@@ -136,37 +165,10 @@ td.filler {
     margin-top: 2.5%;
 }
 
-#no_more_guesses {
-    font-size: 150%;
-}
-
-#winning_screen {
-    background-color: rgb(50, 50, 50, 0.7);
-    color: white;
-    font-family: "Oswald", sans-serif;
-    padding: 1%;
-    border: 3px white solid;
-    border-radius: 15px;
-    display: block;
-    text-shadow: 10px 10px 10px #000000;
-    text-align: center;
-    position: absolute;
-}
-
-#winning_screen > h1 {
-    font-size: 250%;
-}
-
-#winning_screen > p {
-    font-size: 180%;
-}
-#winning_screen_div {
+#refresh_div {
     display: flex;
     justify-content: center;
-    margin-top: 10%;
-    margin-bottom: 2.5%;
 }
-
 
 #highlight_answer {
     text-shadow: 10px 10px 10px #000000;
@@ -224,91 +226,49 @@ td.filler {
 }
 
 @media all and (min-width:960px) and (max-width: 1024px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }
 }
 
 @media all and (min-width:801px) and (max-width: 959px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }
 }
 
 @media all and (min-width:769px) and (max-width: 800px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }
 }
 
 @media all and (min-width:569px) and (max-width: 768px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }
 }
 
 @media all and (min-width:481px) and (max-width: 568px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }
 }
 
 @media all and (min-width:321px) and (max-width: 480px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }
 }
 
 @media all and (min-width:0px) and (max-width: 320px) {
-    #input_guess {
-        float: left;
-        margin-top: 70%;
-    }
-    #winning_screen_div {
-        margin-top: 40%;
-    }
+
     #bl_board {
         scale: 0.8;
     }

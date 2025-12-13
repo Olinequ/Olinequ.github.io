@@ -25,7 +25,7 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-/*
+
 document.querySelector('body').addEventListener('keypress', (e) => {
     if (e.key === '=') {
         deleteCookie("correct_number");
@@ -36,7 +36,7 @@ document.querySelector('body').addEventListener('keypress', (e) => {
         alert("cookies deleted")
     }
 })
-*/
+
 
 //Utility functions + main class for bloonsle
 class Monkey {
@@ -297,6 +297,9 @@ async function guess(e) {
 
         correct_types = 0;
         let guess = guess_input.value;
+        if (guess === "kanon") {
+            alert('grubas')
+        }
         guess_input.value = '';
         guess = guess.toLowerCase();
         guess = "_" + guess;
@@ -582,12 +585,9 @@ function share(answers) {
 }
 
 function lose(correct) {
-    document.getElementById('no_more_guesses').innerHTML = "No more guesses left!";
-    document.getElementById('guess_input').style.display = "none";
-    document.getElementById('input_guess').style.display = "none";
+    document.getElementById('guess_input').style.opacity = "0";
+    document.getElementById('input_guess').style.opacity = "0";
     document.getElementById('winning_screen').style.marginTop = "47.5%";
-    document.getElementById('no_more_guesses').style.color = "red";
-    document.getElementById('no_more_guesses').style.textShadow = "text-shadow: 2px 2px 2px firebrick";
 
     winning_screen.style.display = "block";
     winning_screen.children[0].innerHTML = "Skill issue!";
@@ -603,15 +603,9 @@ function lose(correct) {
 
 
 function win(tries, correct) {
-    for (let i = 1; i < 7-tries; i++) {
-        answers += "⬜⬜⬜⬜⬜⬜⬜\n";
-    }
-    document.getElementById('no_more_guesses').innerHTML = "You won!";
-    document.getElementById('guess_input').style.display = "none";
-    document.getElementById('input_guess').style.display = "none";
+    document.getElementById('guess_input').style.opacity = "0";
+    document.getElementById('input_guess').style.opacity = "0";
     document.getElementById('winning_screen').style.marginTop = "47.5%";
-    document.getElementById('no_more_guesses').style.color = "limegreen";
-    document.getElementById('no_more_guesses').style.textShadow = "text-shadow: 2px 2px 2px green";
 
     winning_screen.style.display = "block";
     winning_screen.children[0].innerHTML = "Congrats!";
