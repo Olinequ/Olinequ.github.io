@@ -435,8 +435,10 @@ async function guess(e) {
                         win(tries, correct.code);
                     }
 
-                    document.getElementById('guess_input').disabled = false;
-                    document.getElementById('guess_input').focus()
+                    if (tries !== 6 || correct_types !== 7) {
+                        document.getElementById('guess_input').disabled = false;
+                        document.getElementById('guess_input').focus()
+                    }
 
                 }, 1500)
                 document.getElementById('guess_input').disabled = true;
