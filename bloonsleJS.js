@@ -25,7 +25,7 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-
+/*
 document.querySelector('body').addEventListener('keypress', (e) => {
     if (e.key === '=') {
         deleteCookie("correct_number");
@@ -36,6 +36,7 @@ document.querySelector('body').addEventListener('keypress', (e) => {
         alert("cookies deleted")
     }
 })
+*/
 
 
 //Utility functions + main class for bloonsle
@@ -587,7 +588,7 @@ function share(answers) {
 function lose(correct) {
     document.getElementById('guess_input').style.opacity = "0";
     document.getElementById('input_guess').style.opacity = "0";
-    document.getElementById('winning_screen').style.marginTop = "47.5%";
+    document.getElementById('guess_input').disabled = true;
 
     winning_screen.style.display = "block";
     winning_screen.children[0].innerHTML = "Skill issue!";
@@ -605,7 +606,7 @@ function lose(correct) {
 function win(tries, correct) {
     document.getElementById('guess_input').style.opacity = "0";
     document.getElementById('input_guess').style.opacity = "0";
-    document.getElementById('winning_screen').style.marginTop = "47.5%";
+    document.getElementById('guess_input').disabled = true;
 
     winning_screen.style.display = "block";
     winning_screen.children[0].innerHTML = "Congrats!";
