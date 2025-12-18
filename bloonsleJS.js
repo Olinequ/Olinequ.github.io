@@ -227,7 +227,7 @@ function random(){
     let day = new Date().getDate();
     let month = new Date().getMonth();
     let num = Math.round((day+4) / month * 39163).toString();
-    return +(num[2] + num[3]) % 225;
+    return +(num[2] + num[3] + num[4]) % 225;
 }
 
 if (getCookie("correct_number") === '') {
@@ -251,25 +251,6 @@ function anim1(element) {
     }, 650)
 }
 
-function anim2(element) {
-    element.style.transition = "color .5s"
-    element.style.color = "orangered"
-    setTimeout(function () {
-        element.style.color = "darkorange"
-    }, 750)
-    setTimeout(function () {
-        element.style.color = "orange"
-    }, 1500)
-    setTimeout(function () {
-        element.style.color = "darkorange"
-    }, 2250)
-}
-
-anim2(document.getElementById("menu_bloonsle"))
-setInterval(() => {
-    anim2(document.getElementById("menu_bloonsle"))
-}, 3000)
-
 function dropdown() {
     let guide = document.getElementById("bloonsle_guide")
     if (guide.style.display === "none") {
@@ -284,6 +265,7 @@ function dropdown() {
 let tries = 0;
 let correct_types = 0;
 let answers = "";
+const winning_screen = document.querySelector("#winning_screen");
 
 const hints = document.getElementsByClassName("hint");
 const guess_input = document.querySelector('#guess_input');
@@ -334,7 +316,7 @@ async function guess(e) {
                         hints[(tries * 7) + 1].style.background = "green";
                         correct_types++;
                         answers += "🟩";
-                    } else if (returnDifference(guess.price, correct.price) <= 5000) {
+                    } else if (correct.price / returnDifference(guess.price, correct.price) >= 10) {
                         hints[(tries * 7) + 1].style.background = "orange";
                         answers += "🟧";
                     } else {
@@ -483,7 +465,7 @@ async function old_guess(guess) {
         hints[(tries * 7) + 1].style.background = "green";
         correct_types++;
         answers += "🟩";
-    } else if (returnDifference(guess.price, correct.price) <= 5000) {
+    } else if (correct.price / returnDifference(guess.price, correct.price) >= 10) {
         hints[(tries * 7) + 1].style.background = "orange";
         answers += "🟧";
     } else {
@@ -573,9 +555,6 @@ guess_input.addEventListener('keypress', (e) => {
     guess(e);
 })
 
-const winning_screen = document.querySelector("#winning_screen");
-
-
 function share(answers) {
     let date = new Date();
     date = date.toString().split(" ");
@@ -603,7 +582,6 @@ function lose(correct) {
         behavior: "smooth",
     });
 }
-
 
 function win(tries, correct) {
     document.getElementById('guess_input').style.opacity = "0";
