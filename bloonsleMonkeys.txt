@@ -219,7 +219,7 @@ _400engi Support 2500 false true 4 sharp,energy,cold top
 _500engi Support 32000 false true 5 sharp,plasma top
 _030engi Support 900 false true 3 sharp,normal,camo middle
 _040engi Support 13500 true true 4 sharp,normal,camo middle
-_050engi Support 72000 true true 5 sharp middle
+_050engi Support 72000 true true 5 sharp,normal,camo middle
 _003engi Support 450 false true 3 shatter bottom
 _004engi Support 3600 false true 4 shatter bottom
 _005engi Support 45000 false true 5 shatter,normal bottom
