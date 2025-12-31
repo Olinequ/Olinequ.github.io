@@ -174,6 +174,10 @@ function formatGuess(guess) {
             return part1+"ninja";
         case "spikefactory":
             return part1+"spike";
+        case "spac":
+            return part1+"spike";
+        case "spactory":
+            return part1+"spike";
         case "bananafarm":
             return part1+"banana";
         case "farm":
