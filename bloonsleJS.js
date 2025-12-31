@@ -25,7 +25,7 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-
+/*
 document.querySelector('body').addEventListener('keypress', (e) => {
     if (e.key === '=') {
         deleteCookie("correct_number");
@@ -36,7 +36,7 @@ document.querySelector('body').addEventListener('keypress', (e) => {
         alert("cookies deleted")
     }
 })
-
+*/
 
 
 //Utility functions + main class for bloonsle
@@ -233,7 +233,7 @@ function random(){
     let num = Math.round((day+4) / (month+3) * 39163).toString();
     return +(num[1] + num[2] + num[3]) % 225;
 }
-alert(random());
+
 if (getCookie("correct_number") === '') {
     cn = random() - 1
     setCookie("correct_number", cn, getExpireDate());
