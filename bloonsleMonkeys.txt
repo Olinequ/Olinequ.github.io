@@ -135,7 +135,7 @@ _004wizard Magic 2800 false true 4 energy,camo,normal bottom
 _005wizard Magic 26500 false true 5 energy,camo,normal bottom
 _300druid Magic 1700 false false 3 normal,plasma,shatter top
 _400druid Magic 4500 false false 4 normal,plasma,glacier top
-_500druid Magic 60000 false false 5 normal,plasma,glacier top
+_500druid Magic 60000 false false 5 normal,plasma,camo top
 _030druid Magic 1050 false false 3 sharp middle
 _040druid Magic 4900 true false 4 sharp middle
 _050druid Magic 35000 true false 5 sharp middle
