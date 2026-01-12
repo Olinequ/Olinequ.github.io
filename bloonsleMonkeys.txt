@@ -85,9 +85,9 @@ _500boat Military 24500 false true 5 sharp,normal top
 _030boat Military 900 false true 3 fire,explosive,sharp middle
 _040boat Military 3900 true true 4 fire,explosive,sharp middle
 _050boat Military 27000 true true 5 fire,explosive,sharp middle
-_003boat Military 2400 false true 3 sharp bottom
-_004boat Military 5500 false true 4 sharp bottom
-_005boat Military 23000 false true 5 sharp bottom
+_003boat Military 2400 false true 3 sharp,camo bottom
+_004boat Military 5500 false true 4 sharp,camo bottom
+_005boat Military 23000 false true 5 sharp,camo bottom
 _300heli Military 1850 false false 3 sharp,normal top
 _400heli Military 19600 false false 4 sharp,normal,explosive top
 _500heli Military 45000 false false 5 energy,explosive,plasma top
