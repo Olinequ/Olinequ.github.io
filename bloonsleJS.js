@@ -184,6 +184,8 @@ function formatGuess(guess) {
             return part1+"banana";
         case "beasthandler":
             return part1+"handler";
+        case "beast":
+            return part1+"handler";
         case "bh":
             return part1+"handler";
         case "engineer":
