@@ -103,8 +103,8 @@ _500mortar Military 36000 false false 5 explosive,normal top
 _030mortar Military 900 false false 3 normal middle
 _040mortar Military 6500 true false 4 normal middle
 _050mortar Military 38000 true false 5 normal middle
-_003mortar Military 1100 false false 3 explosive,camo bottom
-_004mortar Military 9500 false false 4 explosive,camo bottom
+_003mortar Military 1100 false false 3 explosive,normal,camo bottom
+_004mortar Military 9500 false false 4 explosive,normal,camo bottom
 _005mortar Military 40000 false false 5 normal,camo bottom
 _300dartling Military 3000 false false 3 energy top
 _400dartling Military 11750 false false 4 plasma top
