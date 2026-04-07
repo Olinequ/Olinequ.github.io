@@ -144,15 +144,12 @@ body {
         padding-bottom: 120px;
     }
 
-
-    .backgroundImage {
-        width: 1920px;
-        height: 1280px;
-        background-size: contain;
-        margin: -10px;
-        position: fixed;
-        animation: fadeIn 2s;
+    /* Ensure images scale down to fit viewport */
+    img {
+        max-width: 100%;
+        height: auto;
     }
+
 }
 
 /* Reduce motion for users who prefer less motion */
