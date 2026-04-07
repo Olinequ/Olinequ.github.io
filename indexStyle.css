@@ -8,23 +8,28 @@ body {
     display: flex;
     justify-content: center;
     zoom: 0.9;
+
     table {
         margin-top: 100px;
         width: 1400px;
+
         tr {
             td {
                 border: 4px outset #DDDDDD;
                 width: 670px;
                 background: rgb(50, 50, 50, 0.85);
                 transition: scale .5s;
+
                 div {
                     display: flex;
+
                     p {
                         color: #DDDDDD;
                         font-size: 23px;
                         font-family: "Josefin Sans", sans-serif;
                         padding: 5px;
                         margin-top: -2px;
+
                         .golden {
                             font-size: 31px;
                             color: goldenrod;
@@ -33,6 +38,7 @@ body {
                     }
                 }
             }
+
             .filler {
                 width: 60px;
                 height: 50px;
@@ -40,6 +46,7 @@ body {
                 background: none;
             }
         }
+
         tr:nth-child(1) {
             img {
                 margin-left: 25px;
@@ -47,10 +54,12 @@ body {
                 width: 150px;
                 height: 150px;
             }
+
             td {
                 height: 250px;
             }
         }
+
         tr:nth-child(3) {
             img {
                 margin-left: 25px;
@@ -58,15 +67,18 @@ body {
                 width: 150px;
                 height: 150px;
             }
+
             td {
                 height: 200px;
             }
+
             td:hover {
                 transition: scale .5s;
                 scale: 1.05;
                 cursor: pointer;
             }
         }
+
         tr:nth-child(5) {
             img {
                 margin-left: 25px;
@@ -76,9 +88,11 @@ body {
                 border: 5px solid #DDDDDD;
                 border-radius: 25px;
             }
+
             td {
                 height: 200px;
             }
+
             td:hover {
                 transition: scale .5s;
                 scale: 1.05;
@@ -86,6 +100,7 @@ body {
             }
         }
     }
+
     .imgBorder {
         border: 5px solid #DDDDDD;
         border-radius: 50%;
@@ -95,55 +110,62 @@ body {
 
 /* ===== Mobile accessibility + layout adjustments for index (non-destructive) ===== */
 @media (max-width: 768px) {
-  /* Avoid zoomed-out layout on small screens */
-  #main { zoom: 1; }
-
-  /* Stack content vertically with comfortable spacing */
-  #main table {
-    width: 100%;
-    margin-top: 70px;
-    border-collapse: separate; /* keep existing borders */
-  }
-  #main table tr, 
-  #main table td {
-    display: block;
-    width: auto;
-  }
-  #main table td.element {
-    margin: 12px 12px 16px;       /* side gutters and vertical rhythm */
-    border-width: 3px;         /* slightly thinner on small screens */
-  }
-  #main table td.filler {      /* remove empty spacer cells */
-    display: none;
-  }
-
-  /* Make card content easier to read and tap */
-  #main table td.element div {
-    align-items: center;
-    gap: 12px;
-    padding: 12px;             /* larger tap target */
-  }
-  #main table td.element div p {
-    font-size: 18px;
-    line-height: 1.45;
-  }
-  #main table td.element div p .golden {
-    font-size: 24px;
-  }
-
-  /* Right-size images inside cards */
-  #main table tr img {
-    width: 96px;
-    height: 96px;
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-
-  /* Disable hover scaling on touch devices for stability */
-  @media (pointer: coarse) {
-    #main table tr:nth-child(3) td:hover,
-    #main table tr:nth-child(5) td:hover {
-      scale: 1;
+    /* Avoid zoomed-out layout on small screens */
+    #main {
+        zoom: 1;
     }
-  }
+
+    /* Stack content vertically with comfortable spacing */
+    #main table {
+        width: 100%;
+        margin-top: 70px;
+        border-collapse: separate; /* keep existing borders */
+    }
+
+    #main table tr,
+    #main table td {
+        display: block;
+        width: auto;
+    }
+
+    #main table td.element {
+        margin: 12px 12px 16px; /* side gutters and vertical rhythm */
+        border-width: 3px; /* slightly thinner on small screens */
+    }
+
+    #main table td.filler { /* remove empty spacer cells */
+        display: none;
+    }
+
+    /* Make card content easier to read and tap */
+    #main table td.element div {
+        align-items: center;
+        gap: 12px;
+        padding: 12px; /* larger tap target */
+    }
+
+    #main table td.element div p {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    #main table td.element div p .golden {
+        font-size: 24px;
+    }
+
+    /* Right-size images inside cards */
+    #main table tr img {
+        width: 96px;
+        height: 96px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    /* Disable hover scaling on touch devices for stability */
+    @media (pointer: coarse) {
+        #main table tr:nth-child(3) td:hover,
+        #main table tr:nth-child(5) td:hover {
+            scale: 1;
+        }
+    }
 }
