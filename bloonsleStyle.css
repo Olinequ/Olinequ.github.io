@@ -203,6 +203,10 @@
 
 /* ===== Mobile accessibility + layout adjustments for Bloonsle (non-destructive) ===== */
 @media (max-width: 768px) {
+    @font-face {
+        font-family: 'Luckiest Guy';
+        src: url('LuckiestGuy-Regular.ttf') format('truetype');
+    }
   /* Avoid zoomed-out layout on small screens */
   #main { margin-top: 0; }
 

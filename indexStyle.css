@@ -104,7 +104,7 @@
     width: auto;
   }
   #main table td.element {
-    margin: 0 12px 16px;       /* side gutters and vertical rhythm */
+    margin: 12px 12px 16px;       /* side gutters and vertical rhythm */
     border-width: 3px;         /* slightly thinner on small screens */
   }
   #main table td.filler {      /* remove empty spacer cells */
