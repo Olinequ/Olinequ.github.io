@@ -56,17 +56,15 @@ body {
 
     table {
         border-collapse: collapse;
-
-        td:nth-child(3) {
-            width: 150px;
-        }
+        margin-left: -20px;
+        padding-left: 0;
 
         td {
             box-sizing: border-box;
             height: 67px;
-            width: 300px;
             text-align: center;
             font-size: 35px;
+            width: 225px;
 
             a {
                 text-shadow: #000 3px 3px 3px;
@@ -83,6 +81,9 @@ body {
             a.active {
                 color: goldenrod;
             }
+        }
+        td:nth-child(3) {
+            text-indent: -20px;
         }
     }
 }
@@ -106,6 +107,8 @@ body {
     /* Avoid tiny default zoom on small screens for readability */
     body {
         zoom: 1;
+        background: url("IMG/BlackBackground.png") repeat;
+        background-size: cover;
     }
 
     /* Make navbar more compact and readable on small screens */
