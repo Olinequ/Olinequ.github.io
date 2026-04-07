@@ -83,7 +83,7 @@ body {
             }
         }
         td:nth-child(3) {
-            text-indent: -20px;
+            text-indent: -30px;
         }
     }
 }
@@ -107,7 +107,6 @@ body {
     /* Avoid tiny default zoom on small screens for readability */
     body {
         zoom: 1;
-        background: url("IMG/BlackBackground.png") repeat;
         background-size: cover;
     }
 
