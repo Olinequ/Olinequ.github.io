@@ -14,7 +14,7 @@ _030boomerang Primary 1250 false true 3 sharp middle
 _040boomerang Primary 4200 true true 4 sharp middle
 _050boomerang Primary 35000 true true 5 sharp middle
 _003boomerang Primary 1300 false true 3 normal bottom
-_004boomerang Primary 2400 false true 4 normal bottom
+_004boomerang Primary 2700 false true 4 normal bottom
 _005boomerang Primary 50000 false true 5 normal bottom
 _300tack Primary 600 false true 3 normal top
 _400tack Primary 3500 false true 4 fire top
@@ -33,13 +33,13 @@ _040bomb Primary 3450 true true 4 explosive middle
 _050bomb Primary 28000 true true 5 explosive middle
 _003bomb Primary 700 false true 3 explosive bottom
 _004bomb Primary 2500 false true 4 explosive bottom
-_005bomb Primary 23000 false true 5 explosive bottom
+_005bomb Primary 30000 false true 5 explosive bottom
 _300ice Primary 1500 false true 3 m.freeze,camo,shatter top
 _400ice Primary 2300 false true 4 m.freeze,camo,shatter top
 _500ice Primary 28000 false true 5 normal,camo,shatter top
 _030ice Primary 2750 false true 3 cold middle
 _040ice Primary 4000 true true 4 cold middle
-_050ice Primary 19000 true true 5 cold middle
+_050ice Primary 21000 true true 5 cold middle
 _003ice Primary 1900 false true 3 glacier bottom
 _004ice Primary 2750 false true 4 glacier bottom
 _005ice Primary 30000 false true 5 shatter bottom
@@ -50,7 +50,7 @@ _030desperado Primary 3000 true false 3 normal,camo middle
 _040desperado Primary 6500 true false 4 normal,camo middle
 _050desperado Primary 42000 true false 5 normal,camo middle
 _003desperado Primary 2100 false false 3 sharp,shatter bottom
-_004desperado Primary 6500 false false 4 sharp,shatter bottom
+_004desperado Primary 9500 false false 4 sharp,shatter bottom
 _005desperado Primary 31000 false false 5 sharp,shatter bottom
 _300glue Primary 2000 false false 3 normal top
 _400glue Primary 5000 false false 4 normal top
@@ -62,7 +62,7 @@ _003glue Primary 3600 false false 3 normal bottom
 _004glue Primary 4000 false false 4 normal bottom
 _005glue Primary 24000 false false 5 normal bottom
 _300sub Military 700 false true 3 sharp,normal top
-_400sub Military 2300 false true 4 sharp,normal,shatter top
+_400sub Military 2400 false true 4 sharp,normal,shatter top
 _500sub Military 28000 false true 5 sharp,normal,shatter top
 _030sub Military 1350 false true 3 normal,explosive middle
 _040sub Military 13000 true true 4 normal,explosive middle
@@ -70,8 +70,8 @@ _050sub Military 29000 true true 5 normal,explosive middle
 _003sub Military 1100 false true 3 sharp bottom
 _004sub Military 2500 false true 4 sharp bottom
 _005sub Military 25000 false true 5 sharp bottom
-_300sniper Military 2500 false false 3 normal top
-_400sniper Military 6000 false false 4 normal top
+_300sniper Military 2200 false false 3 normal top
+_400sniper Military 6300 false false 4 normal top
 _500sniper Military 32000 false false 5 normal top
 _030sniper Military 2100 false false 3 sharp,camo middle
 _040sniper Military 7600 true false 4 normal,camo middle
@@ -79,7 +79,7 @@ _050sniper Military 12000 true false 5 normal,camo middle
 _003sniper Military 2700 false false 3 sharp bottom
 _004sniper Military 4100 false false 4 sharp bottom
 _005sniper Military 14900 false false 5 sharp bottom
-_300boat Military 3050 false true 3 sharp top
+_300boat Military 3350 false true 3 sharp top
 _400boat Military 8000 false true 4 sharp,explosive top
 _500boat Military 24500 false true 5 sharp,normal top
 _030boat Military 900 false true 3 fire,explosive,sharp middle
@@ -103,8 +103,8 @@ _500mortar Military 36000 false false 5 explosive,normal top
 _030mortar Military 900 false false 3 normal middle
 _040mortar Military 6500 true false 4 normal middle
 _050mortar Military 38000 true false 5 normal middle
-_003mortar Military 1100 false false 3 explosive,normal,camo bottom
-_004mortar Military 9500 false false 4 explosive,normal,camo bottom
+_003mortar Military 1100 false false 3 explosive,camo bottom
+_004mortar Military 9500 false false 4 explosive,camo bottom
 _005mortar Military 40000 false false 5 normal,camo bottom
 _300dartling Military 3000 false false 3 energy top
 _400dartling Military 11750 false false 4 plasma top
@@ -119,7 +119,7 @@ _300ace Military 1000 false true 3 sharp,explosive top
 _400ace Military 3300 false true 4 sharp,explosive top
 _500ace Military 42500 false true 5 normal top
 _030ace Military 900 false true 3 sharp,explosive,camo middle
-_040ace Military 18000 true true 4 sharp,explosive,camo middle
+_040ace Military 16000 true true 4 sharp,explosive,camo middle
 _050ace Military 26000 true true 5 sharp,explosive,camo middle
 _003ace Military 2550 false true 3 sharp bottom
 _004ace Military 23400 false true 4 sharp,explosive bottom
@@ -163,9 +163,9 @@ _005alch Magic 40000 false false 5 normal bottom
 _300mermonkey Magic 1600 false false 3 shatter top
 _400mermonkey Magic 4200 false false 4 shatter top
 _500mermonkey Magic 23000 false false 5 shatter top
-_030mermonkey Magic 1100 false false 3 energy middle
+_030mermonkey Magic 1400 false false 3 energy middle
 _040mermonkey Magic 8000 true false 4 frigid middle
-_050mermonkey Magic 48000 true false 5 frigid,shatter,camo middle
+_050mermonkey Magic 52000 true false 5 frigid,shatter,camo middle
 _003mermonkey Magic 2000 false false 3 camo,shatter,plasma bottom
 _004mermonkey Magic 7600 false false 4 camo,shatter,plasma bottom
 _005mermonkey Magic 25000 false false 5 camo,shatter,plasma bottom

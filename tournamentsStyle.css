@@ -1,0 +1,116 @@
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        .tournament {
+            transition: scale 0.5s;
+            margin-bottom: 25px;
+            table {
+                font-family: "Josefin Sans", sans-serif;
+                height: 200px;
+                width: 800px;
+                border-collapse: collapse;
+                background: rgb(50, 50, 50, 0.85);
+                tr {
+                    td {
+                        border: 4px #DDDDDD solid;
+                        img {
+                            margin: -1px -1px -5px;
+                        }
+                        h1 {
+                            color: goldenrod;
+                            margin: 10px;
+                        }
+                        p {
+                            color: #DDDDDD;
+                            margin: 10px;
+                            .golden {
+                                font-size: 25px;
+                                color: gold;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                    td:nth-child(1) {
+                        width: 198px;
+                    }
+                    td:nth-child(2) {
+                        vertical-align: top;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .tournament:hover {
+            transition: scale 0.5s;
+            scale: 1.05;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/* ===== Mobile accessibility + layout adjustments for Tournaments (non-destructive) ===== */
+@media (max-width: 768px) {
+  /* Center content but allow full-width cards */
+  #main { padding: 0 10px; }
+
+  ul { padding-left: 0; }
+  ul li .tournament { margin-bottom: 16px; }
+
+  /* Make tournament tables fluid and stack content vertically */
+  ul li .tournament table {
+    width: 100%;
+    height: auto;
+    table-layout: fixed; /* avoid overflow */
+  }
+  ul li .tournament table tr,
+  ul li .tournament table tr td {
+    display: block;
+    width: auto;
+  }
+  ul li .tournament table tr td {
+    border-width: 3px;           /* slightly slimmer borders on mobile */
+    padding: 10px;               /* larger tap target and breathing room */
+  }
+
+  /* Image cell goes full-width on top; image scales to container */
+  ul li .tournament table tr td:nth-child(1) {
+    width: auto;
+  }
+  ul li .tournament table tr td:nth-child(1) img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Text styles for readability */
+  ul li .tournament table tr td h1 {
+    font-size: 22px;
+    margin: 6px 0;
+  }
+  ul li .tournament table tr td p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 6px 0;
+  }
+  ul li .tournament table tr td p .golden {
+    font-size: 20px;
+  }
+
+  /* Disable hover scale on mobile to prevent motion/jank */
+  @media (pointer: coarse) {
+    ul li .tournament:hover { scale: 1; }
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  ul li .tournament, 
+  ul li .tournament:hover {
+    transition-duration: 0.01ms !important;
+  }
+}

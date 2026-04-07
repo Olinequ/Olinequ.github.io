@@ -25,7 +25,7 @@ function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
 
-/*
+
 document.querySelector('body').addEventListener('keypress', (e) => {
     if (e.key === '=') {
         deleteCookie("correct_number");
@@ -33,10 +33,13 @@ document.querySelector('body').addEventListener('keypress', (e) => {
             deleteCookie("guess" + i);
         }
         deleteCookie("amountOfTries")
+        deleteCookie("hideGuide")
         alert("cookies deleted")
     }
 })
-*/
+
+
+
 
 
 //Utility functions + main class for bloonsle
@@ -257,16 +260,6 @@ function anim1(element) {
     }, 650)
 }
 
-function dropdown() {
-    let guide = document.getElementById("bloonsle_guide")
-    if (guide.style.display === "none") {
-        guide.style.display = "block"
-    } else {
-        guide.style.display = "none"
-    }
-
-}
-
 //Main
 let tries = 0;
 let correct_types = 0;
@@ -322,7 +315,7 @@ async function guess(e) {
                         hints[(tries * 7) + 1].style.background = "green";
                         correct_types++;
                         answers += "🟩";
-                    } else if (correct.price / returnDifference(guess.price, correct.price) >= 10) {
+                    } else if (correct.price*0.20 >= returnDifference(guess.price, correct.price)) {
                         hints[(tries * 7) + 1].style.background = "orange";
                         answers += "🟧";
                     } else {
@@ -471,7 +464,7 @@ async function old_guess(guess) {
         hints[(tries * 7) + 1].style.background = "green";
         correct_types++;
         answers += "🟩";
-    } else if (correct.price / returnDifference(guess.price, correct.price) >= 10) {
+    } else if (correct.price*0.20 >= returnDifference(guess.price, correct.price)) {
         hints[(tries * 7) + 1].style.background = "orange";
         answers += "🟧";
     } else {
@@ -568,19 +561,19 @@ function share(answers) {
         document.getElementById("share_button").innerHTML = "Copied!";
         setTimeout(() => {
             document.getElementById("share_button").innerHTML = "Share";
-        }, 1500)
+        }, 2000)
     })
 }
 
 function lose(correct) {
     document.getElementById('guess_input').style.opacity = "0";
-    document.getElementById('input_guess').style.opacity = "0";
+    document.getElementById('input_div').style.opacity = "0";
     document.getElementById('guess_input').disabled = true;
 
     winning_screen.style.display = "block";
-    winning_screen.children[0].innerHTML = "Skill issue!";
+    winning_screen.children[0].innerHTML = "<h1>Skill issue!</h1>";
     winning_screen.children[0].style.color = "red";
-    winning_screen.children[1].innerHTML = `Unfortunately, you couldn't solve today's Bloonsle :(<br>The correct answer was <span id="highlight_answer">${formatCode(correct)}</span><br>
+    winning_screen.children[1].innerHTML = `<p>Unfortunately, you couldn't solve today's Bloonsle :(<br>The correct answer was <span id="highlight_answer">${formatCode(correct)}</span></p>
 <button onclick="share(answers)" id="share_button">Share</button>`;
     window.scrollBy({
         top: winning_screen.offsetTop,
@@ -591,18 +584,28 @@ function lose(correct) {
 
 function win(tries, correct) {
     document.getElementById('guess_input').style.opacity = "0";
-    document.getElementById('input_guess').style.opacity = "0";
+    document.getElementById('input_div').style.opacity = "0";
     document.getElementById('guess_input').disabled = true;
 
     winning_screen.style.display = "block";
-    winning_screen.children[0].innerHTML = "Congrats!";
+    winning_screen.children[0].innerHTML = "<h1>Congrats!</h1>";
     winning_screen.children[0].style.color = "limegreen";
-    winning_screen.children[1].innerHTML = `You solved today's Bloonsle in ${tries} tries!<br>The correct answer is <span id="highlight_answer">${formatCode(correct)}</span><br>
+    winning_screen.children[1].innerHTML = `<p>You solved today's Bloonsle in ${tries} tries!<br>The correct answer is <span id="highlight_answer">${formatCode(correct)}</span></p>
 <button onclick="share(answers)" id="share_button">Share</button>`;
     window.scrollBy({
-        top: winning_screen.offsetTop,
+        top: innerHeight,
         left: 0,
         behavior: "smooth",
     });
+}
+
+hideGuide = () => {
+    document.getElementById('tutorial').style.display = "none";
+    document.getElementById('hide').style.display = "none";
+    setCookie("hideGuide", true, 30*24*60*60*1000)
+}
+
+if (getCookie("hideGuide")) {
+    hideGuide();
 }
 

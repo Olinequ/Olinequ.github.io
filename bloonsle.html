@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="Shortcut Icon" href="IMG/VortexElite.png">
+  <link rel="stylesheet" href="mainStyle.css">
+  <link rel="stylesheet" href="bloonsleStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Playwrite+NZ+Basic:wght@100..400&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <title>Olinequ</title>
+</head>
+<body>
+
+<img src="IMG/enchantedGlade.png" alt="background" class="backgroundImage">
+
+
+
+<div id="main">
+  <table id="mainTable">
+    <tr>
+      <td>
+        <div id="title_div">
+          <h1><span>B</span>loonsle</h1>
+          <div id="tutorial">
+            <p>Enter a monkey below in a format like this: 500tack, 030sniper, etc.</p>
+            <p><u>Only tier 3-5 towers are available!</u></p>
+            <p>Guide</p>
+            <ul>
+              <li>Type: Primary, Military, etc.</li>
+              <li>Price: only for chosen upgrade, not counting all the previous tiers. It will light up in orange if you're close to the correct price (20% of correct tower's price).</li>
+              <li>Ability: does this upgrade have an ability.</li>
+              <li>Paragon: does this tower have a paragon.</li>
+              <li>Tier: 3/4/5. Tier 1 and 2 upgrades aren't available because I felt like it might be a bit too detailed for some upgrades.</li>
+              <li>Damage: damage types of a tower, like normal, camo, plasma, shatter etc. (only up to 3 show here, but it can have more damage types, for example, sentry expert). It will light up in orange if at least one of the damage types is correct.</li>
+              <li>Path: top/middle/bottom</li>
+            </ul>
+            <p>Upgrade details are taken from v53.2</p>
+            <div id="hide" onclick="hideGuide()">Hide guide</div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="refresh_div">
+          <h1 id="refresh">Refreshes in: </h1>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="input_div">
+          <h1>Type Your guess here:</h1>
+          <input type="text" name="guess_input" id="guess_input">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="bloonsle_div">
+          <table>
+            <tr>
+              <td class="fillerSide" rowspan="14">
+              <td class="hint_type">Type<td class="filler">
+              <td class="hint_type">Price<td class="filler">
+              <td class="hint_type">Ability<td class="filler">
+              <td class="hint_type">Paragon<td class="filler">
+              <td class="hint_type">Tier<td class="filler">
+              <td class="hint_type">Damage<td class="filler">
+              <td class="hint_type">Path
+              <td class="fillerSide" rowspan="14">
+            <tr>
+              <td class="hint_png"><img src="IMG/hintType.png" alt="hintPng"><td class="filler">
+              <td class="hint_png"><img src="IMG/hintCash.png" alt="hintPng"><td class="filler">
+              <td class="hint_png"><img src="IMG/hintAbility.png" alt="hintPng"><td class="filler">
+              <td class="hint_png"><img src="IMG/hintParagon.png" alt="hintPng"><td class="filler">
+              <td class="hint_png"><img src="IMG/hintTiers.png" alt="hintPng"><td class="filler">
+              <td class="hint_png"><img src="IMG/hintDmg.png" alt="hintPng"><td class="filler">
+              <td class="hint_png"><img src="IMG/hintPath.png" alt="hintPng">
+
+
+
+            <tr>
+              <td class="answer" colspan="13">
+            <tr>
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint">
+            <tr>
+              <td class="answer" colspan="13">
+            <tr>
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint">
+            <tr>
+              <td class="answer" colspan="13">
+            <tr>
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint">
+            <tr>
+              <td class="answer" colspan="13">
+            <tr>
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint">
+            <tr>
+              <td class="answer" colspan="13">
+            <tr>
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint">
+            <tr>
+              <td class="answer" colspan="13">
+            <tr>
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint"> <td class="filler">
+              <td class="hint">
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="winningScreen_div">
+          <div id="winning_screen" style="display: none">
+            <h1> </h1>
+            <p> </p>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div id="navbar">
+  <img src="IMG/pfp.png" alt="pfp" onclick="home()">
+  <table>
+    <tr>
+      <td><a href=""></a></td>
+      <td><a href="tournaments.html">Tournaments</a></td>
+      <td></td>
+      <td><a href="bloonsle.html" class="active">Bloonsle</a></td>
+      <td><a href=""></a></td>
+    </tr>
+  </table>
+</div>
+
+<script src="main.js"></script>
+<script src="bloonsleJS.js"></script>
+
+</body>
+</html>

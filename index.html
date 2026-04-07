@@ -2,192 +2,72 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="Shortcut Icon" href="Tournament_1/VortexElite.png">
+    <link rel="Shortcut Icon" href="IMG/VortexElite.png">
     <link rel="stylesheet" href="mainStyle.css">
-    <link rel="stylesheet" href="bloonsleStyle.css">
+    <link rel="stylesheet" href="indexStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Oswald:wght@200..700&family=Story+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Playwrite+NZ+Basic:wght@100..400&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <title>Olinequ</title>
 </head>
 <body>
 
-<div id="header">
-    <div id="title">
-        <a href="index.html"><img src="IMG/pfp.png" alt="png"></a>
-        <h1>Olinequ.github.io</h1>
-    </div>
-    <div id="menu">
-        <ul>
-            <li onclick="menu(0)" class="menu_active">Home</li>
-            <li></li>
-            <li onclick="menu(1)">Tournaments</li>
-            <li></li>
-            <li onclick="menu(2)" id="menu_bloonsle">Bloonsle</li>
-        </ul>
-    </div>
-</div>
+<img src="IMG/enchantedGlade.png" alt="background" class="backgroundImage">
 
 <div id="main">
-    <div id="home">
-        <table style="width:100%">
-            <tr>
-                <td>
-                    <h3 id="home_h3">Hello!</h3> <br> <br>
-                    <p id="home_p">If you have any issues, ideas, or want to report a bug, find me on discord!</p>
-                </td>
-                <td>
-                    <a href="https://discord.gg/KE44ppX5ZA"><img id="home_img" src="IMG/discord.png" alt="dc"></a>
-                </td>
-            </tr>
-        </table>
-
-    </div>
-
-    <div id="tournaments">
-        <div class="tournament_list" onclick="chooseTournament(1)">
-            <img src="IMG/tournament_logo.png" alt="tournament_logo1">
-            <h3>Boss Tournament #1</h3> <br> <br> <br>
-            <p>First Boss Tournament, hosted by: Olinequ, 06bob, Spani, and SGB, with the financial help from Barbitos. The Tournament lasted for 10 rounds, and the winner was Felicia.
-                <br>Check out Mackan Rules, ISAB, and Ryan Mechalic's channels for some tournament gameplay!
-                <br>Most of the other contestants' runs are also available by clicking on their scores on the site!</p>
-        </div>
-
-        <div class="tournament_list">
-            <img src="IMG/tournament_unknown.png" alt="tournament_unknown">
-            <h3> </h3> <br> <br> <br>
-            <p> </p>
-        </div>
-    </div>
-
-    <div id="bloonsle">
-
-        <div id="refresh_div">
-            <h1 id="refresh">Refreshes in: </h1>
-        </div>
-
-        <div id="bl_title">
-            <h3>Welcome to Bloonsle!</h3> <br> <br>
-            <p>Enter a monkey below in a format like this: 500tack, 030sniper, 004boomerang etc. <u>Only tier 3-5 towers are available!</u><br></p>
-            <p>Upgrade details are taken from v52.0 <br></p>
-            <span onclick="dropdown()" id="bloonsle_guide_button">Guide</span>
-            <ul id="bloonsle_guide">
-                <li>Type: Primary, Military, etc.</li>
-                <li>Price: only for chosen upgrade, not counting all the previous tiers. It will light up in orange if you're close to the correct price (10% of correct tower's price).</li>
-                <li>Ability: does this upgrade have an ability.</li>
-                <li>Paragon: does this tower have a paragon.</li>
-                <li>Tier: 3/4/5, tier 1 and 2 upgrades aren't available because I felt like it might be a bit too detailed for some upgrades.</li>
-                <li>Damage: damage types of a tower, like normal, camo, plasma, shatter etc. (only up to 3 show here, but it can have more damage types, for example, sentry expert). It will light up in orange if at least one of the damage types is correct.</li>
-                <li>Path: top/middle/bottom</li>
-            </ul>
-
-        </div>
-
-        <div id="input_guess">
-            <h1>Type Your guess here:</h1>
-            <input type="text" name="guess_input" id="guess_input">
-        </div>
-
-        <div id="bl_board">
-
-            <table style="padding-bottom: 10%">
-                <tr>
-                    <td class="hint_type">Type<td class="filler">
-                    <td class="hint_type">Price<td class="filler">
-                    <td class="hint_type">Ability<td class="filler">
-                    <td class="hint_type">Paragon<td class="filler">
-                    <td class="hint_type">Tier<td class="filler">
-                    <td class="hint_type">Damage<td class="filler">
-                    <td class="hint_type">Path<td class="filler">
-                <tr>
-                    <td class="hint_type"><img src="IMG/hintType.png" alt="hintPng"><td class="filler">
-                    <td class="hint_type"><img src="IMG/hintCash.png" alt="hintPng"><td class="filler">
-                    <td class="hint_type"><img src="IMG/hintAbility.png" alt="hintPng"><td class="filler">
-                    <td class="hint_type"><img src="IMG/hintParagon.png" alt="hintPng"><td class="filler">
-                    <td class="hint_type"><img src="IMG/hintTiers.png" alt="hintPng"><td class="filler">
-                    <td class="hint_type"><img src="IMG/hintDmg.png" alt="hintPng"><td class="filler">
-                    <td class="hint_type"><img src="IMG/hintPath.png" alt="hintPng"><td class="filler">
-                <tr>
-                    <td class="answer" colspan="14">
-                <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                <tr>
-                    <td class="answer" colspan="14">
-                <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                <tr>
-                    <td class="answer" colspan="14">
-                <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                <tr>
-                    <td class="answer" colspan="14">
-                <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                <tr>
-                    <td class="answer" colspan="14">
-                <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                <tr>
-                    <td class="answer" colspan="14">
-                <tr>
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-                    <td class="hint"> <td class="filler">
-            </table>
-            <br>
-
-        </div>
-
-        <div id="winning_screen_div">
-            <div id="winning_screen" style="display: none">
-                <h1> </h1>
-                <p> </p>
+    <table>
+        <tr>
+            <td class="element" colspan="3">
+                <div>
+                    <img src="IMG/trophy.png" alt="trophy">
+                    <p style="font-size: 28px"><span class="golden" style="font-size: 38px">Welcome!</span> <br> <br>
+                        Here you can find some of my projects, such as Boss Tournaments, Bloonsle, or other things related to BTD6
+                    </p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="filler">
+        </tr>
+        <tr>
+            <td class="element">
+                <div onclick="link('https://discord.gg/KE44ppX5ZA', '_blank')">
+                    <img src="IMG/discord.png" alt="discord" class="imgBorder">
+                    <p><span class="golden">Boss Tournament Discord</span> <br> <br>
+                        A place where all the tournaments take
+                        place! The easiest way to contact me, if you have any issues with the site.
+                    </p>
+                </div>
+            </td>
+            <td class="filler">
+            <td class="element">
+            <div onclick="link('bloonsle.html', '_self')">
+                <img src="IMG/superMonkey.png" alt="bloonsle">
+                <p><span class="golden">Bloonsle</span> <br> <br>
+                    Check out Bloonsle! A game where you can test your game knowledge, by guessing an upgrade every day using hints.
+                </p>
             </div>
-        </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="filler">
+        </tr>
+    </table>
+</div>
 
-
-
-
-
-    </div>
+<div id="navbar">
+    <img src="IMG/pfp.png" alt="pfp" onclick="home()">
+    <table>
+        <tr>
+            <td><a href=""></a></td>
+            <td><a href="tournaments.html">Tournaments</a></td>
+            <td></td>
+            <td><a href="bloonsle.html">Bloonsle</a></td>
+            <td><a href=""></a></td>
+        </tr>
+    </table>
 </div>
 
 <script src="main.js"></script>
-<script src="bloonsleJS.js"></script>
-
 </body>
 </html>
