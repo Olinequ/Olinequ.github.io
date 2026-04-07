@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+url('LuckiestGuy-Regular.ttf')  format('truetype');
+}
+
 body {
     background-image: url("IMG/enchantedGlade.png");
     background-repeat: no-repeat;
@@ -96,6 +101,7 @@ body {
         font-family: "Luckiest Guy", sans-serif;
         font-size: 120px;
         letter-spacing: 8px;
+
         span {
             font-size: 160px;
         }
@@ -210,108 +216,157 @@ body {
 /* ===== Mobile accessibility + layout adjustments for Bloonsle (non-destructive) ===== */
 @media (max-width: 768px) {
 
-  /* Avoid zoomed-out layout on small screens */
-  #main { margin-top: 0; }
+    /* Avoid zoomed-out layout on small screens */
+    #main {
+        margin-top: 0;
+    }
 
-  /* Make the main table fluid */
-  #main #mainTable {
-    width: 100%;
-  }
+    /* Make the main table fluid */
+    #main #mainTable {
+        width: 100%;
+    }
 
-  /* Reflow the hints area into a wrapping grid with comfortable tap targets */
-  #main #mainTable #bloonsle_div {
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 8px 10px;
-  }
-  #main #mainTable #bloonsle_div .filler,
-  #main #mainTable #bloonsle_div .fillerSide {
-    display: none; /* remove spacer cells on mobile */
-  }
-  #main #mainTable #bloonsle_div .hint_type {
-    width: 84px;
-    font-size: 18px;
-  }
-  #main #mainTable #bloonsle_div .hint_png {
-    width: 84px;
-    height: 84px;
-  }
-  #main #mainTable #bloonsle_div .hint_png img {
-    width: 48px;
-    height: 48px;
-  }
-  #main #mainTable #bloonsle_div .hint {
-    width: 84px;
-    height: 84px;
-    font-size: 16px;
-    border-width: 2px;          /* slightly slimmer borders */
-  }
-  #main #mainTable #bloonsle_div .hint:nth-child(11n) {
-    width: 84px;
-    height: 84px;
-    font-size: 15px;
-    border-width: 2px;
-  }
-  #main #mainTable #bloonsle_div .answer {
-    font-size: 20px;
-    height: auto;
-    padding: 2px 0;
-  }
+    /* Reflow the hints area into a wrapping grid with comfortable tap targets */
+    #main #mainTable #bloonsle_div {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 8px 10px;
+    }
 
-  /* Title section: scale down for narrow screens */
-  #title_div { scale: 1; padding: 8px; }
-  #title_div h1 {
-    font-size: 56px;
-    letter-spacing: 3px;
-  }
-  #title_div h1 span { font-size: 80px; }
+    #main #mainTable #bloonsle_div .filler,
+    #main #mainTable #bloonsle_div .fillerSide {
+        display: none; /* remove spacer cells on mobile */
+    }
 
-  /* Tutorial block: improve readability within viewport */
-  #title_div #tutorial {
-    padding: 12px;
-    border-width: 3px;
-  }
-  #title_div #tutorial p { font-size: 18px; line-height: 1.45; }
-  #title_div #tutorial li { font-size: 18px; line-height: 1.45; }
-  #title_div #hide { font-size: 26px; }
+    #main #mainTable #bloonsle_div .hint_type {
+        width: 84px;
+        font-size: 18px;
+    }
 
-  /* Refresh and input sections */
-  #refresh_div { font-size: 18px; padding-top: 16px; }
-  #input_div { padding: 16px; }
-  #input_div input {
-    font-size: 20px;
-    height: 32px;
-  }
+    #main #mainTable #bloonsle_div .hint_png {
+        width: 84px;
+        height: 84px;
+    }
 
-  /* Winning screen adjustments */
-  #winningScreen_div { margin-top: 24px; }
-  #winningScreen_div #winning_screen {
-    padding: 8px 14px;
-  }
-  #winningScreen_div #winning_screen h1 { font-size: 28px; }
-  #winningScreen_div #winning_screen p { font-size: 18px; }
-  #winningScreen_div #winning_screen #share_button {
-    width: 120px;
-    font-size: 22px;
-    padding: 10px 8px;
-    transition: .5s scale;
-  }
+    #main #mainTable #bloonsle_div .hint_png img {
+        width: 48px;
+        height: 48px;
+    }
 
-  /* Ensure images scale to container width */
-  img { max-width: 100%; height: auto; }
+    #main #mainTable #bloonsle_div .hint {
+        width: 84px;
+        height: 84px;
+        font-size: 16px;
+        border-width: 2px; /* slightly slimmer borders */
+    }
+
+    #main #mainTable #bloonsle_div .hint:nth-child(11n) {
+        width: 84px;
+        height: 84px;
+        font-size: 15px;
+        border-width: 2px;
+    }
+
+    #main #mainTable #bloonsle_div .answer {
+        font-size: 20px;
+        height: auto;
+        padding: 2px 0;
+    }
+
+    /* Title section: scale down for narrow screens */
+    #title_div {
+        scale: 1;
+        padding: 8px;
+    }
+
+    #title_div h1 {
+        font-size: 56px;
+        letter-spacing: 3px;
+    }
+
+    #title_div h1 span {
+        font-size: 80px;
+    }
+
+    /* Tutorial block: improve readability within viewport */
+    #title_div #tutorial {
+        padding: 12px;
+        border-width: 3px;
+    }
+
+    #title_div #tutorial p {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    #title_div #tutorial li {
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    #title_div #hide {
+        font-size: 26px;
+    }
+
+    /* Refresh and input sections */
+    #refresh_div {
+        font-size: 18px;
+        padding-top: 16px;
+    }
+
+    #input_div {
+        padding: 16px;
+    }
+
+    #input_div input {
+        font-size: 20px;
+        height: 32px;
+    }
+
+    /* Winning screen adjustments */
+    #winningScreen_div {
+        margin-top: 24px;
+    }
+
+    #winningScreen_div #winning_screen {
+        padding: 8px 14px;
+    }
+
+    #winningScreen_div #winning_screen h1 {
+        font-size: 28px;
+    }
+
+    #winningScreen_div #winning_screen p {
+        font-size: 18px;
+    }
+
+    #winningScreen_div #winning_screen #share_button {
+        width: 120px;
+        font-size: 22px;
+        padding: 10px 8px;
+        transition: .5s scale;
+    }
+
+    /* Ensure images scale to container width */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 /* Respect reduced motion preference for Bloonsle page */
 @media (prefers-reduced-motion: reduce) {
-  #winningScreen_div #winning_screen #share_button,
-  #main #mainTable #bloonsle_div .hint,
-  #main #mainTable #bloonsle_div .hint_png img {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+    #winningScreen_div #winning_screen #share_button,
+    #main #mainTable #bloonsle_div .hint,
+    #main #mainTable #bloonsle_div .hint_png img {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
 
 /* Neutralize hover-driven scale on touch devices for stability */
 @media (pointer: coarse) {
-  #winningScreen_div #winning_screen #share_button:hover { scale: 1; }
+    #winningScreen_div #winning_screen #share_button:hover {
+        scale: 1;
+    }
 }
