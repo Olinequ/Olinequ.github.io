@@ -1,18 +1,14 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    url('LuckiestGuy-Regular.ttf')  format('truetype');
+}
+
 body {
     box-sizing: border-box;
     overflow-x: hidden;
     background: #000;
     display: block;
     zoom: 0.9;
-}
-
-.backgroundImage {
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
-    background-size: contain;
-    margin: -10px;
-    position: fixed;
-    animation: fadeIn 2s;
 }
 
 @keyframes fadeIn {
