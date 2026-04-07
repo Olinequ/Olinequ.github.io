@@ -144,11 +144,6 @@ body {
         padding-bottom: 120px;
     }
 
-    /* Ensure images scale down to fit viewport */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
 
     .backgroundImage {
         width: 1920px;
