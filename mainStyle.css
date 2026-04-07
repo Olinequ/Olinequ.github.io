@@ -20,6 +20,7 @@ body {
         opacity: 0;
     }
 }
+
 @keyframes fadeOut {
     0% {
         opacity: 1;
@@ -59,15 +60,18 @@ body {
 
     table {
         border-collapse: collapse;
+
         td:nth-child(3) {
             width: 150px;
         }
+
         td {
             box-sizing: border-box;
             height: 67px;
             width: 300px;
             text-align: center;
             font-size: 35px;
+
             a {
                 text-shadow: #000 3px 3px 3px;
                 text-decoration: none;
@@ -97,55 +101,58 @@ body {
 
 /* ===== Mobile accessibility enhancements (non-destructive) ===== */
 @media (max-width: 768px) {
-  /* Improve visible focus for keyboard/switch users on mobile */
-  :focus-visible {
-    outline: 3px solid #FFD54F;
-    outline-offset: 3px;
-  }
+    /* Improve visible focus for keyboard/switch users on mobile */
+    :focus-visible {
+        outline: 3px solid #FFD54F;
+        outline-offset: 3px;
+    }
 
-  /* Avoid tiny default zoom on small screens for readability */
-  body {
-    zoom: 1;
-  }
+    /* Avoid tiny default zoom on small screens for readability */
+    body {
+        zoom: 1;
+    }
 
-  /* Make navbar more compact and readable on small screens */
-  #navbar {
-    height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  #navbar img {
-    width: 72px;
-    height: 72px;
-    margin-top: 4px;
-  }
-  #navbar table {
-    display: block;            /* allow horizontal scroll if needed */
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  #navbar table td {
-    width: auto;               /* don’t force large fixed widths */
-    height: auto;
-    padding: 10px 14px;        /* larger tap targets */
-    font-size: 22px;           /* better legibility */
-  }
+    /* Make navbar more compact and readable on small screens */
+    #navbar {
+        height: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 
-  /* Adjust main content offset to match smaller navbar */
-  #main {
-    top: 120px;
-    padding-bottom: 120px;
-  }
+    #navbar img {
+        width: 72px;
+        height: 72px;
+        margin-top: 4px;
+    }
 
-  /* Ensure images scale down to fit viewport */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+    #navbar table {
+        display: block; /* allow horizontal scroll if needed */
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #navbar table td {
+        width: auto; /* don’t force large fixed widths */
+        height: auto;
+        padding: 10px 14px; /* larger tap targets */
+        font-size: 22px; /* better legibility */
+    }
+
+    /* Adjust main content offset to match smaller navbar */
+    #main {
+        top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* Ensure images scale down to fit viewport */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     .backgroundImage {
-        width: -webkit-fill-available;
-        height: -webkit-fill-available;
+        width: 1920px;
+        height: 1280px;
         background-size: contain;
         margin: -10px;
         position: fixed;
@@ -155,21 +162,22 @@ body {
 
 /* Reduce motion for users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* On touch devices, neutralize hover-driven scale effects for stability */
 @media (pointer: coarse) {
-  #navbar img:hover {
-    scale: 1;
-  }
-  /* Common hover scale patterns in content */
-  #main table tr td:hover {
-    scale: 1;
-  }
+    #navbar img:hover {
+        scale: 1;
+    }
+
+    /* Common hover scale patterns in content */
+    #main table tr td:hover {
+        scale: 1;
+    }
 }
