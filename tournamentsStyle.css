@@ -63,7 +63,10 @@ ul {
 /* ===== Mobile accessibility + layout adjustments for Tournaments (non-destructive) ===== */
 @media (max-width: 768px) {
   /* Center content but allow full-width cards */
-  #main { padding: 0 10px; }
+  #main {
+      padding: 0 10px;
+      zoom: 1.15
+  }
 
   ul { padding-left: 0; }
   ul li .tournament { margin-bottom: 16px; }
