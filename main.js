@@ -14,3 +14,11 @@ chooseTournament = (tournamentNumber) => {
 link = (link, target) => {
     window.open(link, target);
 }
+
+copyCode = () => {
+    navigator.clipboard.writeText("olinequ");
+    document.getElementById('code').innerText = 'Copied!';
+    setTimeout(function (){
+        document.getElementById('code').innerText = 'olinequ';
+    }, 500);
+}

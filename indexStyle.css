@@ -21,6 +21,7 @@ body {
                 width: 670px;
                 background: rgb(50, 50, 50, 0.85);
                 transition: scale .5s;
+                padding-right: 10px;
 
                 div {
                     display: flex;
@@ -33,6 +34,7 @@ body {
                         margin-top: -2px;
 
                         .golden {
+                            font-family: "Josefin Sans", sans-serif;
                             font-size: 31px;
                             color: goldenrod;
                             font-weight: bold;
@@ -55,11 +57,13 @@ body {
                 margin-right: 25px;
                 width: 150px;
                 height: 150px;
+
             }
 
             td {
                 height: 250px;
             }
+
         }
 
         tr:nth-child(3) {
@@ -84,27 +88,36 @@ body {
         tr:nth-child(5) {
             img {
                 margin-left: 25px;
-                margin-right: 25px;
-                width: 150px;
-                height: 150px;
-                border: 5px solid #DDDDDD;
-                border-radius: 25px;
+                margin-right: 10px;
+                width: 225px;
+                height: 225px;
             }
 
-            td {
-                height: 200px;
-            }
-
-            td:hover {
-                transition: scale .5s;
-                scale: 1.05;
-                cursor: pointer;
+            #creatorCode {
+                border: 0;
+                padding: 10px 363px;
+                background: none;
+                text-align: center;
+                span {
+                    text-shadow: #000 5px 5px 5px;
+                    font-size: 30px;
+                    font-family: "Luckiest Guy", sans-serif;
+                    color: rgb(180, 250, 180);
+                    line-height: 40px;
+                    margin-top: 20px;
+                    transition: font-size .2s;
+                }
+                #code:hover {
+                    cursor: pointer;
+                    font-size: 110%;
+                    transition: font-size .2s;
+                }
             }
         }
     }
 
     .imgBorder {
-        border: 5px solid #DDDDDD;
+        border: 5px solid blue;
         border-radius: 50%;
     }
 }
