@@ -214,21 +214,16 @@ body {
     }
 }
 
-
-/* ===== Mobile accessibility + layout adjustments for Bloonsle (non-destructive) ===== */
 @media (max-width: 768px) {
 
-    /* Avoid zoomed-out layout on small screens */
     #main {
         margin-top: 0;
     }
 
-    /* Make the main table fluid */
     #main #mainTable {
         width: 100%;
     }
 
-    /* Reflow the hints area into a wrapping grid with comfortable tap targets */
     #main #mainTable #bloonsle_div {
         flex-wrap: wrap;
         gap: 10px;
@@ -237,7 +232,7 @@ body {
 
     #main #mainTable #bloonsle_div .filler,
     #main #mainTable #bloonsle_div .fillerSide {
-        display: none; /* remove spacer cells on mobile */
+        display: none;
     }
 
     #main #mainTable #bloonsle_div .hint_type {
@@ -259,7 +254,7 @@ body {
         width: 84px;
         height: 84px;
         font-size: 16px;
-        border-width: 2px; /* slightly slimmer borders */
+        border-width: 2px;
     }
 
     #main #mainTable #bloonsle_div .hint:nth-child(11n) {
@@ -275,7 +270,6 @@ body {
         padding: 2px 0;
     }
 
-    /* Title section: scale down for narrow screens */
     #title_div {
         scale: 1;
         padding: 8px;
@@ -290,7 +284,6 @@ body {
         font-size: 80px;
     }
 
-    /* Tutorial block: improve readability within viewport */
     #title_div #tutorial {
         padding: 12px;
         border-width: 3px;
@@ -310,7 +303,6 @@ body {
         font-size: 26px;
     }
 
-    /* Refresh and input sections */
     #refresh_div {
         font-size: 18px;
         padding-top: 16px;
@@ -325,7 +317,6 @@ body {
         height: 32px;
     }
 
-    /* Winning screen adjustments */
     #winningScreen_div {
         margin-top: 24px;
     }
@@ -349,14 +340,12 @@ body {
         transition: .5s scale;
     }
 
-    /* Ensure images scale to container width */
     img {
         max-width: 100%;
         height: auto;
     }
 }
 
-/* Respect reduced motion preference for Bloonsle page */
 @media (prefers-reduced-motion: reduce) {
     #winningScreen_div #winning_screen #share_button,
     #main #mainTable #bloonsle_div .hint,
@@ -366,7 +355,6 @@ body {
     }
 }
 
-/* Neutralize hover-driven scale on touch devices for stability */
 @media (pointer: coarse) {
     #winningScreen_div #winning_screen #share_button:hover {
         scale: 1;
