@@ -63,7 +63,6 @@ body {
             td {
                 height: 250px;
             }
-
         }
 
         tr:nth-child(3) {
@@ -83,34 +82,14 @@ body {
                 scale: 1.05;
                 cursor: pointer;
             }
-        }
 
-        tr:nth-child(5) {
-            img {
-                margin-left: 25px;
-                margin-right: 10px;
-                width: 225px;
-                height: 225px;
-            }
 
-            #creatorCode {
-                border: 0;
-                padding: 10px 363px;
-                background: none;
-                text-align: center;
-                span {
-                    text-shadow: #000 5px 5px 5px;
-                    font-size: 30px;
-                    font-family: "LuckiestGuy", sans-serif;
-                    color: rgb(180, 250, 180);
-                    line-height: 40px;
-                    margin-top: 20px;
-                    transition: font-size .2s;
-                }
-                #code:hover {
-                    cursor: pointer;
-                    font-size: 110%;
-                    transition: font-size .2s;
+            td:nth-child(3) {
+                img {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                    width: 160px;
+                    height: 160px;
                 }
             }
         }
@@ -119,6 +98,40 @@ body {
     .imgBorder {
         border: 5px solid blue;
         border-radius: 50%;
+    }
+    #creatorCode {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 700px;
+        height: fit-content;
+        width: fit-content;
+        border: 0;
+        background: none;
+        text-align: center;
+
+        img {
+            margin: 10px;
+            width: 225px;
+            height: 225px;
+        }
+
+        span {
+            text-shadow: #000 5px 5px 5px;
+            font-size: 30px;
+            font-family: "LuckiestGuy", sans-serif;
+            color: rgb(180, 250, 180);
+            line-height: 40px;
+            margin-top: 35px;
+            transition: font-size .2s;
+        }
+
+        #code:hover {
+            cursor: pointer;
+            font-size: 110%;
+            transition: font-size .2s;
+        }
     }
 }
 
@@ -174,10 +187,6 @@ body {
         height: 96px;
         margin-left: 12px;
         margin-right: 12px;
-    }
-
-    #creatorCode {
-        padding: 10px 200px;
     }
 
     /* Disable hover scaling on touch devices for stability */

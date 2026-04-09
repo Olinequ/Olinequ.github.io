@@ -20,5 +20,5 @@ copyCode = () => {
     document.getElementById('code').innerText = 'Copied!';
     setTimeout(function (){
         document.getElementById('code').innerText = 'olinequ';
-    }, 500);
+    }, 800);
 }
