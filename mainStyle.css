@@ -25,7 +25,8 @@ body {
 
 #navbar {
     box-sizing: border-box;
-    font-family: "Berlin Sans FB", sans-serif;
+    font-family: "SN Pro", sans-serif;
+    font-weight: bold;
     position: fixed;
     top: 0;
     left: 0;

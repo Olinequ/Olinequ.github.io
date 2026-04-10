@@ -29,7 +29,7 @@ body {
                     p {
                         color: #DDDDDD;
                         font-size: 23px;
-                        font-family: "Josefin Sans", sans-serif;
+                        font-family: "Trebuchet MS", sans-serif;
                         padding: 5px;
                         margin-top: -2px;
 
@@ -55,8 +55,8 @@ body {
             img {
                 margin-left: 25px;
                 margin-right: 25px;
-                width: 150px;
-                height: 150px;
+                width: 175px;
+                height: 175px;
 
             }
 

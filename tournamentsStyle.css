@@ -22,7 +22,6 @@ ul {
             zoom: 1.2;
 
             table {
-                font-family: "Josefin Sans", sans-serif;
                 height: 200px;
                 width: 800px;
                 border-collapse: collapse;
@@ -39,13 +38,16 @@ ul {
                         h1 {
                             color: goldenrod;
                             margin: 10px;
+                            font-family: "Josefin Sans", sans-serif;
                         }
 
                         p {
                             color: #DDDDDD;
                             margin: 10px;
+                            font-family: "Trebuchet MS", sans-serif;
 
                             .golden {
+                                font-family: "Josefin Sans", sans-serif;
                                 font-size: 25px;
                                 color: gold;
                                 font-weight: bold;
