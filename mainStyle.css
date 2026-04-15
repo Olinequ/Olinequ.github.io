@@ -37,6 +37,7 @@ body {
     height: 75px;
     background: linear-gradient(to right, #000, #222, #444, #222, #000);
     border-bottom: 3px solid #DDDDDD;
+    font-size: 35px;
 
     img {
         margin-top: 15px;
@@ -61,7 +62,6 @@ body {
             box-sizing: border-box;
             height: 67px;
             text-align: center;
-            font-size: 35px;
             width: 300px;
 
             a {
@@ -112,6 +112,7 @@ body {
         height: auto;
         padding-top: 8px;
         padding-bottom: 8px;
+        font-size: 20px;
     }
 
     #navbar img {
@@ -130,7 +131,7 @@ body {
         width: auto;
         height: auto;
         padding: 10px 14px;
-        font-size: 14px;
+
     }
 
     #main {
