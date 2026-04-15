@@ -235,8 +235,8 @@ body {
     text-align: center;
     margin: 16px 10px 4px;
   }
-  #credit { font-size: 18px; }
-  #update { font-size: 16px; margin-top: 0; }
+  #credit { font-size: 24px; }
+  #update { font-size: 20px; margin-top: 0; }
 
   img { max-width: 100%; height: auto; }
 }
