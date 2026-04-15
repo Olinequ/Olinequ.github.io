@@ -62,7 +62,7 @@ body {
             height: 67px;
             text-align: center;
             font-size: 35px;
-            width: 200px;
+            width: 300px;
 
             a {
                 text-shadow: #000 3px 3px 3px;
@@ -81,6 +81,9 @@ body {
             }
         }
         td:nth-child(3) {
+            width: 100px;
+        }
+        td:nth-child(4) {
             text-indent: -75px;
         }
     }

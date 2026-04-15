@@ -1,0 +1,253 @@
+body {
+    background-image: url("IMG/tinkerton.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+
+    .leaderboard {
+        margin-top: 300px;
+        width: 1600px;
+        .solo, .coop {
+            border-radius: 100px;
+            background: rgb(50, 50, 50, 0.85);
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 50px;
+            width: 675px;
+            color: white;
+            h1 {
+                text-align: center;
+                font-family: "Josefin Sans", sans-serif;
+                color: gold;
+                text-shadow: 3px 3px 3px black;
+                font-size: 50px;
+                font-weight: bold;
+                margin-top: 25px;
+                margin-bottom: 15px;
+            }
+            h2 {
+                text-align: center;
+                font-family: "Josefin Sans", sans-serif;
+                color: goldenrod;
+                text-shadow: 3px 3px 3px black;
+                font-size: 30px;
+                font-weight: bold;
+                margin-top: 40px;
+                margin-bottom: 15px;
+            }
+        }
+        .filler {
+            width: 50px;
+        }
+    }
+
+    .category {
+        font-family: "Josefin Sans", sans-serif;
+        border-collapse: collapse;
+        margin-bottom: 25px;
+        tr:nth-child(odd) {
+            background: rgb(120, 100, 0, 0.35);
+            td {
+                border: 3px solid gold;
+            }
+            td:nth-child(1) {
+                height: 120px;
+                width: 120px;
+                img {
+                    width: 120px;
+                    height: 106px;
+                }
+            }
+            td:nth-child(2) {
+                height: 120px;
+                width: 100%;
+                p {
+                    margin: 10px;
+                }
+                p:nth-child(1) {
+                    color: gold;
+                    font-weight: bold;
+                    font-size: 26px;
+                }
+                p:nth-child(2) {
+                    color: goldenrod;
+                    font-weight: bold;
+                    font-size: 22px;
+                    margin-top: -5px;
+                }
+                p:nth-child(3) {
+                    color: white;
+                    font-size: 20px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        .filler {
+            height: 25px;
+        }
+        .empty {
+            opacity: 0;
+        }
+    }
+}
+
+#bossSelect {
+    position: absolute;
+    width: 960px;
+    margin-top: -40px;
+    ul {
+        list-style: none;
+        li {
+            background: rgb(20, 20, 20, 0.85);
+            border-radius: 25px;
+            padding: 10px 5px;
+            display: inline-block;
+            margin: 10px;
+            transition: scale .5s;
+            img {
+                width: 90px;
+                height: 80px;
+
+            }
+        }
+        li:hover {
+            transition: scale .5s;
+            scale: 1.15;
+            cursor: pointer;
+        }
+        li.selected {
+            border: 4px solid gold;
+            background: rgb(120, 100, 0, 0.85);
+        }
+    }
+}
+
+#credit {
+    position: absolute;
+    bottom: 50px;
+    color: gold;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-size: 25px;
+}
+
+#update {
+    position: absolute;
+    bottom: 0;
+    color: goldenrod;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 3px 3px 3px black;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+  #main { justify-content: stretch; }
+
+  #bossSelect {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 8px 10px;
+  }
+  #bossSelect ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 2px;
+  }
+  #bossSelect ul li {
+    margin: 0;
+    padding: 8px 6px;
+    border-radius: 16px;
+  }
+  #bossSelect ul li img {
+    width: 72px;
+    height: 64px;
+  }
+
+  #main .leaderboard {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: separate;
+  }
+  #main .leaderboard tr,
+  #main .leaderboard td {
+    display: block;
+    width: auto;
+  }
+  #main .leaderboard td.filler { display: none; }
+
+  #main .leaderboard .solo,
+  #main .leaderboard .coop {
+    width: auto;
+    margin: 10px 10px 16px;
+    border-radius: 24px;
+    padding: 14px;
+  }
+  #main .leaderboard .solo h1,
+  #main .leaderboard .coop h1 {
+    font-size: 28px;
+    margin: 8px 0 10px;
+  }
+  #main .leaderboard .solo h2,
+  #main .leaderboard .coop h2 {
+    font-size: 20px;
+    margin: 12px 0 8px;
+  }
+
+  .category {
+    width: 100%;
+  }
+  .category tr:nth-child(odd) td { border-width: 2px; }
+  .category tr:nth-child(odd) td:nth-child(1) {
+    height: auto;
+    width: auto;
+  }
+  .category tr:nth-child(odd) td:nth-child(1) img {
+    width: 84px;
+    height: 74px;
+  }
+  .category tr:nth-child(odd) td:nth-child(2) {
+    height: auto;
+  }
+  .category tr:nth-child(odd) td:nth-child(2) p { margin: 6px 8px; }
+  .category tr:nth-child(odd) td:nth-child(2) p:nth-child(1) { font-size: 20px; }
+  .category tr:nth-child(odd) td:nth-child(2) p:nth-child(2) { font-size: 16px; margin-top: -2px; }
+  .category tr:nth-child(odd) td:nth-child(2) p:nth-child(3) { font-size: 14px; margin-top: 8px; }
+
+  .category .filler { height: 14px; }
+
+  #credit,
+  #update {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 16px 10px 4px;
+  }
+  #credit { font-size: 18px; }
+  #update { font-size: 16px; margin-top: 0; }
+
+  img { max-width: 100%; height: auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #bossSelect ul li,
+  #bossSelect ul li:hover {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (pointer: coarse) {
+  #bossSelect ul li:hover { scale: 1; }
+}
