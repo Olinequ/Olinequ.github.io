@@ -37,7 +37,7 @@ body {
     height: 75px;
     background: linear-gradient(to right, #000, #222, #444, #222, #000);
     border-bottom: 3px solid #DDDDDD;
-    font-size: 35px;
+    font-size: 30px;
 
     img {
         margin-top: 15px;
@@ -62,7 +62,7 @@ body {
             box-sizing: border-box;
             height: 67px;
             text-align: center;
-            width: 300px;
+            width: 280px;
 
             a {
                 text-shadow: #000 3px 3px 3px;
@@ -86,7 +86,7 @@ body {
         }
 
         td:nth-child(4) {
-            text-indent: -75px;
+            text-indent: -70px;
         }
     }
 }
@@ -96,10 +96,4 @@ body {
     top: 175px;
     animation: fadeIn 2s;
     padding-bottom: 175px;
-}
-
-@media (min-width: 200px) and (max-width: 800px) {
-    #navbar {
-        font-size: 24px;
-    }
 }
