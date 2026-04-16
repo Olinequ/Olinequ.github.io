@@ -62,7 +62,7 @@ body {
             box-sizing: border-box;
             height: 67px;
             text-align: center;
-            width: 280px;
+            width: 240px;
 
             a {
                 text-shadow: #000 3px 3px 3px;
@@ -84,9 +84,11 @@ body {
         td:nth-child(3) {
             width: 100px;
         }
-
         td:nth-child(4) {
-            text-indent: -70px;
+            font-family: "LuckiestGuy", sans-serif;
+            font-weight: normal;
+            letter-spacing: 1px;
+            text-indent: -25px;
         }
     }
 }

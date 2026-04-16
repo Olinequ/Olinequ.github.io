@@ -28,14 +28,14 @@ body {
 
                     p {
                         color: #DDDDDD;
-                        font-size: 23px;
-                        font-family: "Trebuchet MS", sans-serif;
+                        font-size: 22px;
+                        font-family: "Josefin Sans", sans-serif;
                         padding: 5px;
                         margin-top: -2px;
 
                         .golden {
                             font-family: "Josefin Sans", sans-serif;
-                            font-size: 31px;
+                            font-size: 30px;
                             color: goldenrod;
                             font-weight: bold;
                         }
