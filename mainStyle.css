@@ -80,9 +80,11 @@ body {
                 color: goldenrod;
             }
         }
+
         td:nth-child(3) {
             width: 100px;
         }
+
         td:nth-child(4) {
             text-indent: -75px;
         }
@@ -94,4 +96,10 @@ body {
     top: 175px;
     animation: fadeIn 2s;
     padding-bottom: 175px;
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    #navbar {
+        font-size: 24px;
+    }
 }
