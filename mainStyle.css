@@ -98,7 +98,7 @@ body {
     padding-bottom: 175px;
 }
 
-@media (min-width: 320px) and (max-width: 900px) {
+@media (min-width: 200px) and (max-width: 800px) {
     #navbar {
         font-size: 24px;
     }
