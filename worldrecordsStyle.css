@@ -10,89 +10,69 @@ body {
     display: flex;
     justify-content: center;
 
-    .leaderboard {
+    #leaderboard {
         margin-top: 300px;
-        width: 1600px;
-        .solo, .coop {
-            border-radius: 100px;
-            background: rgb(50, 50, 50, 0.85);
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 50px;
-            width: 675px;
-            color: white;
-            h1 {
-                text-align: center;
-                font-family: "Josefin Sans", sans-serif;
-                color: gold;
-                text-shadow: 3px 3px 3px black;
-                font-size: 50px;
-                font-weight: bold;
-                margin-top: 25px;
-                margin-bottom: 15px;
-            }
-            h2 {
-                text-align: center;
-                font-family: "Josefin Sans", sans-serif;
-                color: goldenrod;
-                text-shadow: 3px 3px 3px black;
-                font-size: 30px;
-                font-weight: bold;
-                margin-top: 40px;
-                margin-bottom: 15px;
-            }
-        }
-        .filler {
-            width: 50px;
-        }
-    }
-
-    .category {
-        font-family: "Josefin Sans", sans-serif;
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+        border: 5px #DDD outset;
+        background: rgb(50, 50, 50, 0.75);
+        text-align: center;
         border-collapse: collapse;
-        margin-bottom: 25px;
-        tr:nth-child(odd) {
-            background: rgb(120, 100, 0, 0.35);
-            td {
-                border: 3px solid gold;
+        font-family: "Josefin Sans", sans-serif;
+
+        h1 {
+            color: goldenrod;
+            font-size: 50px;
+            text-shadow: 3px 3px 3px #000;
+        }
+
+        #solo, #coop {
+            width: 700px;
+
+            h1 {
+                font-size: 35px;
             }
-            td:nth-child(1) {
-                height: 120px;
-                width: 120px;
-                img {
-                    width: 120px;
-                    height: 106px;
-                }
-            }
-            td:nth-child(2) {
-                height: 120px;
-                width: 100%;
-                p {
-                    margin: 10px;
-                }
-                p:nth-child(1) {
-                    color: gold;
-                    font-weight: bold;
-                    font-size: 26px;
-                }
-                p:nth-child(2) {
-                    color: goldenrod;
-                    font-weight: bold;
-                    font-size: 22px;
-                    margin-top: -5px;
-                }
-                p:nth-child(3) {
+
+            table {
+                border-collapse: collapse;
+                margin: 20px;
+
+                td {
+                    img {
+                        width: 137px;
+                        height: 125px;
+                        padding: 5px;
+                    }
+
+                    border: 5px solid goldenrod;
                     color: white;
-                    font-size: 20px;
-                    margin-top: 15px;
+                    background: rgb(250, 200, 0, 0.15)
+                }
+
+                td:nth-child(2) {
+                    width: 100%;
+                    text-align: left;
+                    padding: 10px;
+                    font-family: "SN Pro", serif;
+
+                    #player {
+                        color: gold;
+                        font-size: 30px;
+                    }
+
+                    #mapInfo {
+                        color: goldenrod;
+                        font-size: 25px;
+                    }
+                }
+
+                .filler {
+                    border: 0;
+                    background: 0;
+                    height: 10px;
                 }
             }
-        }
-        .filler {
-            height: 25px;
-        }
-        .empty {
-            opacity: 0;
         }
     }
 }
@@ -101,8 +81,10 @@ body {
     position: absolute;
     width: 960px;
     margin-top: -40px;
+
     ul {
         list-style: none;
+
         li {
             background: rgb(20, 20, 20, 0.85);
             border-radius: 25px;
@@ -110,17 +92,20 @@ body {
             display: inline-block;
             margin: 10px;
             transition: scale .5s;
+
             img {
                 width: 90px;
                 height: 80px;
 
             }
         }
+
         li:hover {
             transition: scale .5s;
             scale: 1.15;
             cursor: pointer;
         }
+
         li.selected {
             border: 4px solid gold;
             background: rgb(120, 100, 0, 0.85);

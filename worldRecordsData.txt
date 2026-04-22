@@ -1,0 +1,352 @@
+=============================
+===== Normal Bloonarius =====
+=============================
+
+//// Default Category
+// SOLO
+MrPietrek/34.35/Bloonarius #?/Off The Coast
+YtseJam/34.43/Bloonarius #?/Off The Coast
+// COOP
+Jandalf + Animal/34.51/Bloonarius #?/Spa Pits
+Jandalf + Felicia + SirCrowley/34.56/Bloonarius #?/Spa Pits
+
+
+
+
+
+=============================
+======== Normal Lych ========
+=============================
+
+//// Post Lych rework
+// SOLO
+-/-/Lych #?/-
+-/-/Lych #?/-
+// COOP
+-/-/Lych #?/-
+-/-/Lych #?/-
+
+
+//// After the Ice Paragon introduction
+// SOLO
+Thee Player/2:45.51/Lych #56/Cubism
+GHGYS/2:48.61/Lych #56/Cubism
+// COOP
+Felicia + Spani/3:06.73/Lych #?/Blons
+Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #?/Blons
+
+
+//// Before the Ice Paragon introduction
+// SOLO
+Infuriation/3:06.53/Lych #?/One Two Tree
+YtseJam/3:06.60/Lych #?/One Two Tree
+// COOP
+Felicia + Spani/3:06.73/Lych #?/Blons
+Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #?/Blons
+
+
+
+
+
+=============================
+======= Normal Vortex =======
+=============================
+
+//// After the vortex animation changes
+// SOLO
+Spani/45.76/Vortex#?/Candy Falls
+FLYFF/45.96/Vortex#?/Candy Falls
+
+// COOP
+LazyLizard + Katabu/50.28/Vortex #?/Candy Falls
+Spani + Panda/51.18/Vortex #?/Candy Falls
+
+
+
+//// Before the vortex animation changes
+// SOLO
+YtseJam/36.56/Vortex #?/Haunted
+MrPietrek/36.60/Vortex #?/Haunted
+
+// COOP
+WorZollLak + Player/40.13/Vortex #?/Frozen Over
+Jandalf + SirCrowley + Felicia + Spani/40.98/Vortex #?/Frozen Over
+
+
+
+
+
+=============================
+===== Normal Dreadbloon =====
+=============================
+
+/// Default category
+// SOLO
+YtseJam/35.50/Dreadbloon #?/Muddy Puddles
+Olinequ/36.20/Dreadbloon #?/End Of The Road
+
+// COOP
+Felicia + SirCrowley + Jandalf + Berix/37.85/Dreadbloon #?/Sulfur Springs
+Felicia + Spani + SirCrowley + Donniesharko/39.08/Dreadbloon #?/Muddy Puddles
+
+
+
+
+
+=============================
+======= Normal Phayze =======
+=============================
+
+/// After the Ice Paragon introduction
+// SOLO
+Gone/1:04.98/Phayze #27/Logs
+Storyteller/1:05.35/Phayze #27/Logs
+
+// COOP
+Felicia + Jandalf + SirCrowley + Veteol/1:06.88/Phayze #27/Logs
+Felicia + Veteol/1:06.96/Phayze #27/Logs
+
+
+/// Before the Ice Paragon introduction
+// SOLO
+Olinequ/1:33.30/Phayze #?/End Of The Road
+YtseJam/1:33.43/Phayze #?/Chutes
+
+
+// COOP
+Jandalf + SirCrowley + Felicia + Spani/1:35.86/Phayze #?/Chutes
+WorZoII3Lak + Orange/1:39.05/Phayze #?/Chutes
+
+
+
+
+
+=============================
+=== Normal Blastapopoulos ===
+=============================
+
+/// After the Ice Paragon introduction
+// SOLO
+Olinequ/1:50.78/Blastapopoulos #14/Tinkerton
+Gone/1:51.81/Blastapopoulos #14/Tinkerton
+
+// COOP
+-/-/Blastapopoulos #?/-
+-/-/Blastapopoulos #?/-
+
+
+/// Before the Ice Paragon introduction
+// SOLO
+Animal/1:32.15/Blastapopoulos #1/Four Circles
+06bob/1:33.03/Blastapopoulos #1/Four Circles
+
+// COOP
+-/-/Blastapopoulos #?/-
+-/-/Blastapopoulos #?/-
+
+
+
+
+
+=============================
+===== Normal Diamondback ====
+=============================
+
+/// Default category
+// SOLO
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-
+
+// COOP
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-
+
+
+
+
+
+=============================
+===== Elite Bloonarius ======
+=============================
+
+/// After Spike Paragon rework
+// SOLO
+-/-/Bloonarius#?/-
+-/-/Bloonarius#?/-
+
+// COOP
+-/-/Bloonarius#?/-
+-/-/Bloonarius#?/-
+
+
+/// After Spike Paragon release
+// SOLO
+Whitenight/31.73/Bloonarius #?/Spa Pits
+Karler + SirCrowley (Tie)/32.01/Bloonarius #?/Spa Pits
+
+// COOP
+Jandalf + SirCrowley/38.10/Bloonarius #?/Spa Pits
+Jandalf + Spani + SirCrowley + Felicia/42.30/Bloonarius #?/Tinkerton
+
+
+/// Before Spike Paragon introduction
+// SOLO
+MrPietrek/38.58/Bloonarius #?/Cornfield
+YtseJam/39.20/Bloonarius #?/Cornfield
+
+// COOP
+Jandalf + SirCrowley + Felicia + Spani/1:12.95/Bloonarius #?/Another Brick
+WorZoII3Lak + Player/1:19.73/Bloonarius #?/Another Brick
+
+
+
+
+
+=============================
+======== Elite Lych =========
+=============================
+
+/// Post Lych rework
+// SOLO
+-/-/Lych #?/-
+-/-/Lych #?/-
+
+// COOP
+-/-/Lych #?/-
+-/-/Lych #?/-
+
+
+/// 2025 April Fools Event on Blons
+// SOLO
+YtseJam/4:07.05/Lych #?/Blons
+MrPietrek/4:07.11/Lych #?/Blons
+
+//COOP
+Felicia + Katabu/4:10.11/Lych #?/Blons
+Resell + Karler + Barracuda/4:14.31/Lych #?/Blons
+
+
+/// Before the Ice Paragon introduction
+// SOLO
+MrPietrek/4:16:50/Lych #?/Another brick
+YtseJam/4:20.85/Lych #?/Tree Stump
+
+// COOP
+Felicia + Spani + SirCrowley + Jandalf/4:16.53/Lych #?/Ancient Portal
+Thee Player + Axyom/4:22.18/Lych #?/Ancient Portal
+
+
+
+
+
+=============================
+======= Elite Vortex ========
+=============================
+
+/// After the vortex animation changes
+// SOLO
+Whitenight / 1:45.20/Vortex #? / Frozen Over
+SirCrowley / 1:47.63/Vortex #? / Frozen Over
+
+// COOP
+Felicia + Fool + Jandalf + SirCrowley / 1:52.11/Vortex #? / Frozen Over
+FynnEbsen + Spani + Schmusekroko + EpicLion / 2:30.70/Vortex #? / Frozen Over
+
+
+/// Before the vortex animation changes
+// SOLO
+Whitenight/1:45.20/Vortex #?/Frozen Over
+SirCrowley/1:47.63/Vortex #?/Frozen Over
+
+// COOP
+Felicia + TheFool + Jandalf + SirCrowley/ 1:52.11/Vortex #?/Frozen Over
+FynnEbsen + Spani + Schmusekroko + EpicLion/2:30.70/Vortex #?/Frozen Over
+
+
+
+
+
+=============================
+===== Elite Dreadbloon ======
+=============================
+
+/// Default category
+// SOLO
+WhiteNight/1:03.35/Dreadbloon #?/Muddy Puddles
+Karler/1:11.81/Dreadbloon #?/Frozen Over
+
+
+// COOP
+Felicia + Spani + SirCrowley + Jandalf/58.56/Dreadbloon #?/Spice Islands
+LazyLizard + Resell + Katabu/1:10.16/Dreadbloon #?/Spice Islands
+
+
+
+
+
+=============================
+======= Elite Phayze ========
+=============================
+
+/// After the Ice Paragon introduction
+// SOLO
+-/-/Phayze #?/-
+-/-/Phayze #?/-
+
+// COOP
+-/-/Phayze #?/-
+-/-/Phayze #?/-
+
+
+/// Before the Ice Paragon introduction
+// SOLO
+Whitenight/3:20.08/Phayze #?/Chutes
+Q/3:30.78/Phayze #?/Chutes
+
+// COOP
+Jandalf + SirCrowley + Felicia + Spani/3:14.38/Phayze #?/Chutes
+Buttman + 10 + Milin + Seerukio/3:24.60/Phayze #?/Chutes
+
+
+
+
+
+=============================
+=== Elite Blastapopoulos ====
+=============================
+
+/// After the Ice Paragon introduction
+// SOLO
+Ikun/2:47.93/Blastapopoulos #16/Spice Islands
+Thee Player/3:06.90/Blastapopoulos #16/Spice Islands
+
+// COOP
+Vengeance + Wonder + HS + Kitty675/2:50.23/Blastapopoulos #16/Spice Islands
+Thee Player + LazyLizard/3:01.31/Blastapopoulos #16/Spice Islands
+
+
+/// Before the Ice Paragon introduction
+// SOLO
+Jandalf/2:41.98/Blastapopoulos #?/Ancient Portal
+Guanium/3:39.65/Blastapopoulos #1/Four Circles
+
+// COOP
+Jandalf + Turtles + SirCrowley + Felicia/3:21.36/Blastapopoulos #?/Ancient Portal
+-/-/Blastapopoulos #?/-
+
+
+
+
+
+=============================
+===== Elite Diamondback =====
+=============================
+
+/// Default category
+// SOLO
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-
+
+// COOP
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-

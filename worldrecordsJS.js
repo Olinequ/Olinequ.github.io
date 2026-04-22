@@ -1,1308 +1,559 @@
-let solo = document.getElementsByClassName("solo")
-let coop = document.getElementsByClassName("coop")
 let bossSelectionList = document.querySelector("#bossSelectList")
+let solo = document.querySelector("#solo")
+let coop = document.querySelector("#coop")
 
-selectBoss = (boss) => {
+selectBoss(1)
+
+async function selectBoss(boss) {
     for (let i = 0; i < 14; i++) {
         bossSelectionList.children[i].classList.remove("selected")
     }
-    if (boss === 'bloony') {
-        bossSelectionList.children[0].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>MrPietrek / 34.35</p>
-                            <p>Bloonarius #? / Off The Coast</p>
-                            <p>[This run used unnerfed 042 spike storms]</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>YtseJam / 34.43</p>
-                            <p>Bloonarius #? / Off The Coast</p>
-                            <p>[This run used unnerfed 042 spike storms]</p>
-                        </td>
-                    </tr>
-                </table>`
+    bossSelectionList.children[boss-1].classList.add("selected")
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf + Animal / 34.51</p>
-                            <p>Bloonarius #? / Spa Pits</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Jandalf + Felicia + SirCrowley / 34.56</p>
-                            <p>Bloonarius #? / Spa Pits</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'lych') {
-        bossSelectionList.children[1].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After the Lych rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Thee Player / 2:45.51</p>
-                            <p>Lych #56 / Cubism</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>GHGYS / 2:48.61</p>
-                            <p>Lych #56 / Cubism</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+    const response = await fetch(`worldRecordsData.txt`);
+    const data = await response.text();
+    const lines = data.split('\n');
 
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Infuriation / 3:06.53</p>
-                            <p>Lych #? / One Two Tree</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>YtseJam / 3:06.60</p>
-                            <p>Lych #? / One Two tree</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+    switch (parseInt(boss)) {
+        case 1:
+            solo.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[6].split('/')[0]} / ${lines[6].split('/')[1]}</span><br><span id="mapInfo">${lines[6].split('/')[2]} / ${lines[6].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[7].split('/')[0]} / ${lines[7].split('/')[1]}</span><br><span id="mapInfo">${lines[7].split('/')[2]} / ${lines[7].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[9].split('/')[0]} / ${lines[9].split('/')[1]}</span><br><span id="mapInfo">${lines[9].split('/')[2]} / ${lines[9].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[10].split('/')[0]} / ${lines[10].split('/')[1]}</span><br><span id="mapInfo">${lines[10].split('/')[2]} / ${lines[10].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 2:
+            solo.innerHTML = `
+            <h1 class="categoryName">Post Lych rework</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[22].split('/')[0]} / ${lines[22].split('/')[1]}</span><br><span id="mapInfo">${lines[22].split('/')[2]} / ${lines[22].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[23].split('/')[0]} / ${lines[23].split('/')[1]}</span><br><span id="mapInfo">${lines[23].split('/')[2]} / ${lines[23].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Lych rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Spani / 3:06.73</p>
-                            <p>Lych #? / Blons</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Felicia + Spani + SirCrowley + Jandalf / 3:06.75</p>
-                            <p>Lych #? / Blons</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[31].split('/')[0]} / ${lines[31].split('/')[1]}</span><br><span id="mapInfo">${lines[31].split('/')[2]} / ${lines[31].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[32].split('/')[0]} / ${lines[32].split('/')[1]}</span><br><span id="mapInfo">${lines[32].split('/')[2]} / ${lines[32].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Spani / 3:06.73</p>
-                            <p>Lych #? / Blons</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Felicia + Spani + SirCrowley + Jandalf / 3:06.75</p>
-                            <p>Lych #? / Blons</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'vortex') {
-        bossSelectionList.children[2].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Spani / 45.76</p>
-                            <p>Vortex #? / Candy Falls</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>FLYFF / 45.96</p>
-                            <p>Vortex #? / Candy Falls</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[40].split('/')[0]} / ${lines[40].split('/')[1]}</span><br><span id="mapInfo">${lines[40].split('/')[2]} / ${lines[40].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[41].split('/')[0]} / ${lines[41].split('/')[1]}</span><br><span id="mapInfo">${lines[41].split('/')[2]} / ${lines[41].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">Post Lych rework</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[25].split('/')[0]} / ${lines[25].split('/')[1]}</span><br><span id="mapInfo">${lines[25].split('/')[2]} / ${lines[25].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[26].split('/')[0]} / ${lines[26].split('/')[1]}</span><br><span id="mapInfo">${lines[26].split('/')[2]} / ${lines[26].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>YtseJam / 36.56</p>
-                            <p>Vortex #? / Haunted</p>
-                            <p>[This run used Brickell mines stacking]</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>MrPietrek / 36.60</p>
-                            <p>Vortex #? / Haunted</p>
-                            <p>[This run used Brickell mines stacking]</p>
-                        </td>
-                    </tr>
-                </table>`
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>LazyLizard + Katabu / 50.28</p>
-                            <p>Vortex #? / Candy Falls</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Spani + Panda / 51.18</p>
-                            <p>Vortex #? / Candy Falls</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[34].split('/')[0]} / ${lines[34].split('/')[1]}</span><br><span id="mapInfo">${lines[34].split('/')[2]} / ${lines[34].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[35].split('/')[0]} / ${lines[35].split('/')[1]}</span><br><span id="mapInfo">${lines[35].split('/')[2]} / ${lines[35].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>WorZollLak + Player / 40.13</p>
-                            <p>Vortex #? / Frozen Over</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Jandalf + SirCrowley + Felicia + Spani / 40.98</p>
-                            <p>Vortex #? / Frozen Over</p>
-                            <p class="empty"></p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'dread') {
-        bossSelectionList.children[3].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>YtseJam / 35.50</p>
-                            <p>Dreadbloon #? / Muddy Puddles</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Olinequ / 36.20</p>
-                            <p>Dreadbloon #? / End Of The Road</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[43].split('/')[0]} / ${lines[43].split('/')[1]}</span><br><span id="mapInfo">${lines[43].split('/')[2]} / ${lines[43].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[44].split('/')[0]} / ${lines[44].split('/')[1]}</span><br><span id="mapInfo">${lines[44].split('/')[2]} / ${lines[44].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 3:
+            solo.innerHTML = `
+            <h1 class="categoryName">After the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[56].split('/')[0]} / ${lines[56].split('/')[1]}</span><br><span id="mapInfo">${lines[56].split('/')[2]} / ${lines[56].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[57].split('/')[0]} / ${lines[57].split('/')[1]}</span><br><span id="mapInfo">${lines[57].split('/')[2]} / ${lines[57].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + SirCrowley + Jandalf + Berix / 37.85</p>
-                            <p>Dreadbloon #? / Sulfur Springs</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Felicia + Spani + SirCrowley + Donniesharko / 39.08</p>
-                            <p>Dreadbloon #? / Muddy Puddles</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'phayze') {
-        bossSelectionList.children[4].classList.add("selected")
-        solo[0].innerHTML = `
-               <h1>Solo</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Gone / 1:04.98</p>
-                            <p>Phayze #27 / Logs</p>
-                            <p>[Phayze was 500% speed that week]</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Storyteller / 1:05.35</p>
-                            <p>Phayze #27 / Logs</p>
-                            <p>[Phayze was 500% speed that week]</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[67].split('/')[0]} / ${lines[67].split('/')[1]}</span><br><span id="mapInfo">${lines[67].split('/')[2]} / ${lines[67].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[68].split('/')[0]} / ${lines[68].split('/')[1]}</span><br><span id="mapInfo">${lines[68].split('/')[2]} / ${lines[68].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[60].split('/')[0]} / ${lines[60].split('/')[1]}</span><br><span id="mapInfo">${lines[60].split('/')[2]} / ${lines[60].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[61].split('/')[0]} / ${lines[61].split('/')[1]}</span><br><span id="mapInfo">${lines[61].split('/')[2]} / ${lines[61].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Olinequ / 1:33.30</p>
-                            <p>Phayze #? / End Of The Road</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>YtseJam / 1:33.43</p>
-                            <p>Phayze #? / Chutes</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[71].split('/')[0]} / ${lines[71].split('/')[1]}</span><br><span id="mapInfo">${lines[71].split('/')[2]} / ${lines[71].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[72].split('/')[0]} / ${lines[72].split('/')[1]}</span><br><span id="mapInfo">${lines[72].split('/')[2]} / ${lines[72].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 4:
+            solo.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[84].split('/')[0]} / ${lines[84].split('/')[1]}</span><br><span id="mapInfo">${lines[84].split('/')[2]} / ${lines[84].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[85].split('/')[0]} / ${lines[85].split('/')[1]}</span><br><span id="mapInfo">${lines[85].split('/')[2]} / ${lines[85].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[88].split('/')[0]} / ${lines[88].split('/')[1]}</span><br><span id="mapInfo">${lines[88].split('/')[2]} / ${lines[88].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[89].split('/')[0]} / ${lines[89].split('/')[1]}</span><br><span id="mapInfo">${lines[89].split('/')[2]} / ${lines[89].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 5:
+            solo.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[101].split('/')[0]} / ${lines[101].split('/')[1]}</span><br><span id="mapInfo">${lines[101].split('/')[2]} / ${lines[101].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[102].split('/')[0]} / ${lines[102].split('/')[1]}</span><br><span id="mapInfo">${lines[102].split('/')[2]} / ${lines[102].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Jandalf + SirCrowley + Veteol / 1:06.88</p>
-                            <p>Event #? / Logs</p>
-                            <p>[Phayze was 500% speed that week]</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Felicia + Veteol / 1:06.96</p>
-                            <p>Event #? / Logs</p>
-                            <p>[Phayze was 500% speed that week]</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[111].split('/')[0]} / ${lines[111].split('/')[1]}</span><br><span id="mapInfo">${lines[111].split('/')[2]} / ${lines[111].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[112].split('/')[0]} / ${lines[112].split('/')[1]}</span><br><span id="mapInfo">${lines[112].split('/')[2]} / ${lines[112].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[105].split('/')[0]} / ${lines[105].split('/')[1]}</span><br><span id="mapInfo">${lines[105].split('/')[2]} / ${lines[105].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[106].split('/')[0]} / ${lines[106].split('/')[1]}</span><br><span id="mapInfo">${lines[106].split('/')[2]} / ${lines[106].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf + SirCr0wley + Felicia + Spani / 1:35.86</p>
-                            <p>Phayze #? / Chutes</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>WorZoII3Lak + Orange / 1:39.05</p>
-                            <p>Phayze #? / Chutes</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'blasta') {
-        bossSelectionList.children[5].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Olinequ / 1:50.78</p>
-                            <p>Blastapopoulos #14 / Tinkerton</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>Gone / 1:51.81</p>
-                            <p>Blastapopoulos #14 / Tinkerton</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>Animal / 1:32.15</p>
-                            <p>Blastapopoulos #1 / Four Circles</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>06bob / 1:33.03</p>
-                            <p>Blastapopoulos #1 / Four Circles</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[116].split('/')[0]} / ${lines[116].split('/')[1]}</span><br><span id="mapInfo">${lines[116].split('/')[2]} / ${lines[116].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[117].split('/')[0]} / ${lines[117].split('/')[1]}</span><br><span id="mapInfo">${lines[117].split('/')[2]} / ${lines[117].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 6:
+            solo.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[129].split('/')[0]} / ${lines[129].split('/')[1]}</span><br><span id="mapInfo">${lines[129].split('/')[2]} / ${lines[129].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[130].split('/')[0]} / ${lines[130].split('/')[1]}</span><br><span id="mapInfo">${lines[130].split('/')[2]} / ${lines[130].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Blastapopoulos #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Blastapopoulos #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Blastapopoulos #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Blastapopoulos #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'diamond') {
-        bossSelectionList.children[6].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[139].split('/')[0]} / ${lines[139].split('/')[1]}</span><br><span id="mapInfo">${lines[139].split('/')[2]} / ${lines[139].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[140].split('/')[0]} / ${lines[140].split('/')[1]}</span><br><span id="mapInfo">${lines[140].split('/')[2]} / ${lines[140].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[133].split('/')[0]} / ${lines[133].split('/')[1]}</span><br><span id="mapInfo">${lines[133].split('/')[2]} / ${lines[133].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[134].split('/')[0]} / ${lines[134].split('/')[1]}</span><br><span id="mapInfo">${lines[134].split('/')[2]} / ${lines[134].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1normal.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2normal.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'bloonyE') {
-        bossSelectionList.children[7].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After Spike Paragon rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Bloonarius #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Bloonarius #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[143].split('/')[0]} / ${lines[143].split('/')[1]}</span><br><span id="mapInfo">${lines[143].split('/')[2]} / ${lines[143].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[144].split('/')[0]} / ${lines[144].split('/')[1]}</span><br><span id="mapInfo">${lines[144].split('/')[2]} / ${lines[144].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 7:
+            solo.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[156].split('/')[0]} / ${lines[156].split('/')[1]}</span><br><span id="mapInfo">${lines[156].split('/')[2]} / ${lines[156].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[157].split('/')[0]} / ${lines[157].split('/')[1]}</span><br><span id="mapInfo">${lines[157].split('/')[2]} / ${lines[157].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[160].split('/')[0]} / ${lines[160].split('/')[1]}</span><br><span id="mapInfo">${lines[160].split('/')[2]} / ${lines[160].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[161].split('/')[0]} / ${lines[161].split('/')[1]}</span><br><span id="mapInfo">${lines[161].split('/')[2]} / ${lines[161].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 8:
+            solo.innerHTML = `
+            <h1 class="categoryName">After Spike Paragon nerf</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[173].split('/')[0]} / ${lines[173].split('/')[1]}</span><br><span id="mapInfo">${lines[173].split('/')[2]} / ${lines[173].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[174].split('/')[0]} / ${lines[174].split('/')[1]}</span><br><span id="mapInfo">${lines[174].split('/')[2]} / ${lines[174].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before Spike Paragon rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Whitenight / 31.73</p>
-                            <p>Bloonarius #? / Spa Pits</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Karler + SirCrowley (Tie) / 32.01</p>
-                            <p>Bloonarius #? / Spa Pits</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: During the Spike Paragon release</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[183].split('/')[0]} / ${lines[183].split('/')[1]}</span><br><span id="mapInfo">${lines[183].split('/')[2]} / ${lines[183].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[184].split('/')[0]} / ${lines[184].split('/')[1]}</span><br><span id="mapInfo">${lines[184].split('/')[2]} / ${lines[184].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before Spike Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>MrPietrek / 38.58</p>
-                            <p>Bloonarius #? / Cornfield</p>
-                            <p>[This run used old spikes that could pile up over multiple rounds, and the boss had 37.5% HP]</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>YtseJam / 39.20</p>
-                            <p>Bloonarius #? / Cornfield</p>
-                            <p>[This run used old spikes that could pile up over multiple rounds, and the boss had 37.5% HP]</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Spike Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[193].split('/')[0]} / ${lines[193].split('/')[1]}</span><br><span id="mapInfo">${lines[193].split('/')[2]} / ${lines[193].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[194].split('/')[0]} / ${lines[194].split('/')[1]}</span><br><span id="mapInfo">${lines[194].split('/')[2]} / ${lines[194].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After Spike Paragon nerf</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[177].split('/')[0]} / ${lines[177].split('/')[1]}</span><br><span id="mapInfo">${lines[177].split('/')[2]} / ${lines[177].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[178].split('/')[0]} / ${lines[178].split('/')[1]}</span><br><span id="mapInfo">${lines[178].split('/')[2]} / ${lines[178].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After Spike Paragon rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Bloonarius #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Bloonarius #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: During the Spike Paragon release</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[187].split('/')[0]} / ${lines[187].split('/')[1]}</span><br><span id="mapInfo">${lines[187].split('/')[2]} / ${lines[187].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[188].split('/')[0]} / ${lines[188].split('/')[1]}</span><br><span id="mapInfo">${lines[188].split('/')[2]} / ${lines[188].split('/')[3]}</span></td> </tr>
+            </table>
 
+            <h1 class="categoryName">Legacy: Before the Spike Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[197].split('/')[0]} / ${lines[197].split('/')[1]}</span><br><span id="mapInfo">${lines[197].split('/')[2]} / ${lines[197].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[198].split('/')[0]} / ${lines[198].split('/')[1]}</span><br><span id="mapInfo">${lines[198].split('/')[2]} / ${lines[198].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 9:
+            solo.innerHTML = `
+            <h1 class="categoryName">Post Lych rework</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[210].split('/')[0]} / ${lines[210].split('/')[1]}</span><br><span id="mapInfo">${lines[210].split('/')[2]} / ${lines[210].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[211].split('/')[0]} / ${lines[211].split('/')[1]}</span><br><span id="mapInfo">${lines[211].split('/')[2]} / ${lines[211].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before Spike Paragon rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf + SirCrowley / 38.10</p>
-                            <p>Bloonarius #? / Spa Pits</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Jandalf + Spani + SirCr0wley + Felicia / 42.30</p>
-                            <p>Bloonarius #? / Tinkerton</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: 2025 April Fools event on Blons</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[220].split('/')[0]} / ${lines[220].split('/')[1]}</span><br><span id="mapInfo">${lines[220].split('/')[2]} / ${lines[220].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[221].split('/')[0]} / ${lines[221].split('/')[1]}</span><br><span id="mapInfo">${lines[221].split('/')[2]} / ${lines[221].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before Spike Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf + SirCr0wley + Felicia + Spani / 1:12.95</p>
-                            <p>Bloonarius #? / Another Brick</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>WorZoII3Lak + Player / 1:19.73</p>
-                            <p>Bloonarius #? / Another Brick</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'lychE') {
-        bossSelectionList.children[8].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After the Lych rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Ikun / 5:32.41</p>
-                            <p>Lych #56 / Cubism</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Thee Player / 6:08.71</p>
-                            <p>Lych #56 / Cubism</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[230].split('/')[0]} / ${lines[230].split('/')[1]}</span><br><span id="mapInfo">${lines[230].split('/')[2]} / ${lines[230].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[231].split('/')[0]} / ${lines[231].split('/')[1]}</span><br><span id="mapInfo">${lines[231].split('/')[2]} / ${lines[231].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">Post Lych rework</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[214].split('/')[0]} / ${lines[214].split('/')[1]}</span><br><span id="mapInfo">${lines[214].split('/')[2]} / ${lines[214].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[215].split('/')[0]} / ${lines[215].split('/')[1]}</span><br><span id="mapInfo">${lines[215].split('/')[2]} / ${lines[215].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>2025 April Fools event on Blons</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>YtseJam / 4:07.05</p>
-                            <p>Lych #? / Blons</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>MrPietrek / 4:07.11</p>
-                            <p>Lych #? / Blons</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: 2025 April Fools event on Blons</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[224].split('/')[0]} / ${lines[224].split('/')[1]}</span><br><span id="mapInfo">${lines[224].split('/')[2]} / ${lines[224].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[225].split('/')[0]} / ${lines[225].split('/')[1]}</span><br><span id="mapInfo">${lines[225].split('/')[2]} / ${lines[225].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>MrPietrek / 4:16:50</p>
-                            <p>Lych #? / Another brick</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>YtseJam / 4:20.85</p>
-                            <p>Lych #? / Tree Stump</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[234].split('/')[0]} / ${lines[234].split('/')[1]}</span><br><span id="mapInfo">${lines[234].split('/')[2]} / ${lines[234].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[235].split('/')[0]} / ${lines[235].split('/')[1]}</span><br><span id="mapInfo">${lines[235].split('/')[2]} / ${lines[235].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 10:
+            solo.innerHTML = `
+            <h1 class="categoryName">After the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[247].split('/')[0]} / ${lines[247].split('/')[1]}</span><br><span id="mapInfo">${lines[247].split('/')[2]} / ${lines[247].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[248].split('/')[0]} / ${lines[248].split('/')[1]}</span><br><span id="mapInfo">${lines[248].split('/')[2]} / ${lines[248].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Lych rework</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Lych #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[257].split('/')[0]} / ${lines[257].split('/')[1]}</span><br><span id="mapInfo">${lines[257].split('/')[2]} / ${lines[257].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[258].split('/')[0]} / ${lines[258].split('/')[1]}</span><br><span id="mapInfo">${lines[258].split('/')[2]} / ${lines[258].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[251].split('/')[0]} / ${lines[251].split('/')[1]}</span><br><span id="mapInfo">${lines[251].split('/')[2]} / ${lines[251].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[252].split('/')[0]} / ${lines[252].split('/')[1]}</span><br><span id="mapInfo">${lines[252].split('/')[2]} / ${lines[252].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>2025 April Fools event on Blons</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Katabu / 4:10.11</p>
-                            <p>Lych #? / Blons</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Resell + Karler + Barracuda / 4:14.31</p>
-                            <p>Lych #? / Blons</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the vortex animation changes</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[261].split('/')[0]} / ${lines[261].split('/')[1]}</span><br><span id="mapInfo">${lines[261].split('/')[2]} / ${lines[261].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[262].split('/')[0]} / ${lines[262].split('/')[1]}</span><br><span id="mapInfo">${lines[262].split('/')[2]} / ${lines[262].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 11:
+            solo.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[274].split('/')[0]} / ${lines[274].split('/')[1]}</span><br><span id="mapInfo">${lines[274].split('/')[2]} / ${lines[274].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[275].split('/')[0]} / ${lines[275].split('/')[1]}</span><br><span id="mapInfo">${lines[275].split('/')[2]} / ${lines[275].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[279].split('/')[0]} / ${lines[279].split('/')[1]}</span><br><span id="mapInfo">${lines[279].split('/')[2]} / ${lines[279].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[280].split('/')[0]} / ${lines[280].split('/')[1]}</span><br><span id="mapInfo">${lines[280].split('/')[2]} / ${lines[280].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 12:
+            solo.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[292].split('/')[0]} / ${lines[292].split('/')[1]}</span><br><span id="mapInfo">${lines[292].split('/')[2]} / ${lines[292].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[293].split('/')[0]} / ${lines[293].split('/')[1]}</span><br><span id="mapInfo">${lines[293].split('/')[2]} / ${lines[293].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Spani + SirCrowley + Jandalf / 4:16.53</p>
-                            <p>Lych #? / Ancient Portal</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Thee Player + Axyom / 4:22.18</p>
-                            <p>Lych #? / Ancient Portal</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'vortexE') {
-        bossSelectionList.children[9].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Whitenight / 1:45.20</p>
-                            <p>Vortex #? / Frozen Over</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>SirCrowley / 1:47.63</p>
-                            <p>Vortex #? / Frozen Over</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[302].split('/')[0]} / ${lines[302].split('/')[1]}</span><br><span id="mapInfo">${lines[302].split('/')[2]} / ${lines[302].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[303].split('/')[0]} / ${lines[303].split('/')[1]}</span><br><span id="mapInfo">${lines[303].split('/')[2]} / ${lines[303].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[296].split('/')[0]} / ${lines[296].split('/')[1]}</span><br><span id="mapInfo">${lines[296].split('/')[2]} / ${lines[296].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[297].split('/')[0]} / ${lines[297].split('/')[1]}</span><br><span id="mapInfo">${lines[297].split('/')[2]} / ${lines[297].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Whitenight / 1:45.20</p>
-                            <p>Vortex #? / Frozen Over</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>SirCrowley / 1:47.63</p>
-                            <p>Vortex #? / Frozen Over</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Fool + Jandalf + SirCrowley / 1:52.11</p>
-                            <p>Vortex #? / Frozen Over</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>FynnEbsen + Spani + Schmusekroko + EpicLion / 2:30.70</p>
-                            <p>Vortex #? / Frozen Over</p>
-                        </td>
-                    </tr>
-                </table>
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[306].split('/')[0]} / ${lines[306].split('/')[1]}</span><br><span id="mapInfo">${lines[306].split('/')[2]} / ${lines[306].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[307].split('/')[0]} / ${lines[307].split('/')[1]}</span><br><span id="mapInfo">${lines[307].split('/')[2]} / ${lines[307].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 13:
+            solo.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[319].split('/')[0]} / ${lines[319].split('/')[1]}</span><br><span id="mapInfo">${lines[319].split('/')[2]} / ${lines[319].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[320].split('/')[0]} / ${lines[320].split('/')[1]}</span><br><span id="mapInfo">${lines[320].split('/')[2]} / ${lines[320].split('/')[3]}</span></td> </tr>
+            </table>
 
-                <h2>Before the Vortex animation changes</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Fool + Jandalf + SirCrowley / 1:52.11</p>
-                            <p>Vortex #? / Frozen Over</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>FynnEbsen + Spani + Schmusekroko + EpicLion / 2:30.70</p>
-                            <p>Vortex #? / Frozen Over</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'dreadE') {
-        bossSelectionList.children[10].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>WhiteNight / 1:03.35</p>
-                            <p>Dreadbloon #? / Muddy Puddles</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Karler / 1:11.81</p>
-                            <p>Dreadbloon #? / Frozen Over</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[329].split('/')[0]} / ${lines[329].split('/')[1]}</span><br><span id="mapInfo">${lines[329].split('/')[2]} / ${lines[329].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[330].split('/')[0]} / ${lines[330].split('/')[1]}</span><br><span id="mapInfo">${lines[330].split('/')[2]} / ${lines[330].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[323].split('/')[0]} / ${lines[323].split('/')[1]}</span><br><span id="mapInfo">${lines[323].split('/')[2]} / ${lines[323].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[324].split('/')[0]} / ${lines[324].split('/')[1]}</span><br><span id="mapInfo">${lines[324].split('/')[2]} / ${lines[324].split('/')[3]}</span></td> </tr>
+            </table>
 
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Felicia + Spani + SirCrowley + Jandalf / 58.56</p>
-                            <p>Dreadbloon #? / Spice Islands</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>LazyLizard + Resell + Katabu / 1:10.16</p>
-                            <p>Dreadbloon #? / Spice Islands</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'phayzeE') {
-        bossSelectionList.children[11].classList.add("selected")
-        solo[0].innerHTML = `
-               <h1>Solo</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Phayze #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Phayze #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Whitenight / 3:20.08</p>
-                            <p>Phayze #? / Chutes</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Q / 3:30.78</p>
-                            <p>Phayze #? / Chutes</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Phayze #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Phayze #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-
-                <h2>Before Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf + SirCr0wley + Felicia + Spani / 3:14.38</p>
-                            <p>Phayze #? / Chutes</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Buttman + 10 + Milin + Seerukio / 3:24.60</p>
-                            <p>Phayze #? / Chutes</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'blastaE') {
-        bossSelectionList.children[12].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <h2>After the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Ikun / 2:47.93</p>
-                            <p>Blastapopoulos #16 / Spice Islands</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Thee Player / 3:06.90</p>
-                            <p>Blastapopoulos #16 / Spice Islands</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>Before the Ice Paragon introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf / 2:41.98</p>
-                            <p>Blastapopoulos #? / Ancient Portal</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Guanium / 3:39.65</p>
-                            <p>Blastapopoulos #1 / Four Circles</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <h2>After the Ice Paragon Introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Vengeance + Wonder + HS + Kitty675 / 2:50.23</p>
-                            <p>Blastapopoulos #16 / Spice Islands</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>Thee Player + LazyLizard / 3:01.31</p>
-                            <p>Blastapopoulos #16 / Spice Islands</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>
-                
-                <h2>Before the Ice Paragon Introduction</h2>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>Jandalf + Turtles + SirCr0wley + Felicia / 3:21.36</p>
-                            <p>Blastapopoulos #? / Ancient Portal</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Blastapopoulos #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-    }
-    else if (boss === 'diamondE') {
-        bossSelectionList.children[13].classList.add("selected")
-        solo[0].innerHTML = `
-                <h1>Solo</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
-
-        coop[0].innerHTML = `
-                <h1>Coop</h1>
-                <table class="category">
-                    <tr>
-                        <td><img src="IMG/top1elite.png" alt="t1"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="filler"></td>
-                    </tr>
-                    <tr>
-                        <td><img src="IMG/top2elite.png" alt="t2"></td>
-                        <td>
-                            <p>- / -</p>
-                            <p>Diamondback #? / -</p>
-                            <p class="empty">-</p>
-                        </td>
-                    </tr>
-                </table>`
+            <h1 class="categoryName">Legacy: Before the Ice Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[333].split('/')[0]} / ${lines[333].split('/')[1]}</span><br><span id="mapInfo">${lines[333].split('/')[2]} / ${lines[333].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[334].split('/')[0]} / ${lines[334].split('/')[1]}</span><br><span id="mapInfo">${lines[334].split('/')[2]} / ${lines[334].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        case 14:
+            solo.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[346].split('/')[0]} / ${lines[346].split('/')[1]}</span><br><span id="mapInfo">${lines[346].split('/')[2]} / ${lines[346].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[347].split('/')[0]} / ${lines[347].split('/')[1]}</span><br><span id="mapInfo">${lines[347].split('/')[2]} / ${lines[347].split('/')[3]}</span></td> </tr>
+            </table>`
+            coop.innerHTML = `
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[350].split('/')[0]} / ${lines[350].split('/')[1]}</span><br><span id="mapInfo">${lines[350].split('/')[2]} / ${lines[350].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[351].split('/')[0]} / ${lines[351].split('/')[1]}</span><br><span id="mapInfo">${lines[351].split('/')[2]} / ${lines[351].split('/')[3]}</span></td> </tr>
+            </table>`
+            break;
+        default:
+            break;
     }
 }
