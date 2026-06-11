@@ -20,16 +20,16 @@ Jandalf + Felicia + SirCrowley/34.56/Bloonarius #?/Spa Pits
 
 //// Post Lych rework
 // SOLO
--/-/Lych #?/-
--/-/Lych #?/-
+Storyteller/34.60/Lych #59/Alpine Run
+LazyLizard/34.90/Lych #59/Alpine Run
 // COOP
--/-/Lych #?/-
--/-/Lych #?/-
+Pat + Axyom + Cake + LazyLizard/39.78/Lych #59/Alpine Run
+River + MABO + Maarcii + LazyLizard/47.16/Lych #59/Alpine Run
 
 
 //// After the Ice Paragon introduction
 // SOLO
-Thee Player/2:45.51/Lych #56/Cubism
+Pat/2:45.51/Lych #56/Cubism
 GHGYS/2:48.61/Lych #56/Cubism
 // COOP
 Felicia + Spani/3:06.73/Lych #?/Blons
@@ -158,8 +158,8 @@ Animal/1:32.15/Blastapopoulos #1/Four Circles
 -/-/Diamondback#?/-
 
 // COOP
--/-/Diamondback#?/-
--/-/Diamondback#?/-
+Axyom + Pat/1:54.16/Diamondback#1/Chutes
+Katabu + Felicia/1:54.26/Diamondback#1/Chutes
 
 
 
@@ -186,7 +186,7 @@ Karler + SirCrowley (Tie)/32.01/Bloonarius #?/Spa Pits
 
 // COOP
 Jandalf + SirCrowley/38.10/Bloonarius #?/Spa Pits
-Jandalf + Spani + SirCrowley + Felicia/42.30/Bloonarius #?/Tinkerton
+Spani + Katabu/41.78/Bloonarius #?/Tinkerton
 
 
 /// Before Spike Paragon introduction
@@ -208,12 +208,12 @@ WorZoII3Lak + Player/1:19.73/Bloonarius #?/Another Brick
 
 /// Post Lych rework
 // SOLO
--/-/Lych #?/-
--/-/Lych #?/-
+Spani/1:27.08/Lych #59/Alpine Run
+Pat/1:30.55/Lych #59/Alpine Run
 
 // COOP
--/-/Lych #?/-
--/-/Lych #?/-
+Jandalf + Axyom + Cake + LazyLizard/1:45.70/Lych #59/Alpine Run
+Lucy + Maarcii + Kitty/2:08.78/Lych #59/Alpine Run
 
 
 /// 2025 April Fools Event on Blons
@@ -233,7 +233,7 @@ YtseJam/4:20.85/Lych #?/Tree Stump
 
 // COOP
 Felicia + Spani + SirCrowley + Jandalf/4:16.53/Lych #?/Ancient Portal
-Thee Player + Axyom/4:22.18/Lych #?/Ancient Portal
+Pat + Axyom/4:22.18/Lych #?/Ancient Portal
 
 
 
@@ -318,11 +318,11 @@ Buttman + 10 + Milin + Seerukio/3:24.60/Phayze #?/Chutes
 /// After the Ice Paragon introduction
 // SOLO
 Ikun/2:47.93/Blastapopoulos #16/Spice Islands
-Thee Player/3:06.90/Blastapopoulos #16/Spice Islands
+Pat/3:06.90/Blastapopoulos #16/Spice Islands
 
 // COOP
 Vengeance + Wonder + HS + Kitty675/2:50.23/Blastapopoulos #16/Spice Islands
-Thee Player + LazyLizard/3:01.31/Blastapopoulos #16/Spice Islands
+Pat + LazyLizard/3:01.31/Blastapopoulos #16/Spice Islands
 
 
 /// Before the Ice Paragon introduction
@@ -344,9 +344,9 @@ Jandalf + Turtles + SirCrowley + Felicia/3:21.36/Blastapopoulos #?/Ancient Porta
 
 /// Default category
 // SOLO
--/-/Diamondback#?/-
--/-/Diamondback#?/-
+Storyteller/4:14.63/Diamondback#1/Chutes
+Philia093/4:55.00/Diamondback#1/Chutes
 
 // COOP
--/-/Diamondback#?/-
--/-/Diamondback#?/-
+Katabu + Axyom/3:31.63/Diamondback#1/Chutes
+Felicia + ?/4:04.30/Diamondback#1/Chutes

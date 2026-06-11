@@ -265,7 +265,7 @@ async function selectBoss(boss) {
             break;
         case 8:
             solo.innerHTML = `
-            <h1 class="categoryName">After Spike Paragon nerf</h1>
+            <h1 class="categoryName">After the Spike Paragon nerf</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -275,7 +275,7 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[174].split('/')[0]} / ${lines[174].split('/')[1]}</span><br><span id="mapInfo">${lines[174].split('/')[2]} / ${lines[174].split('/')[3]}</span></td> </tr>
             </table>
 
-            <h1 class="categoryName">Legacy: During the Spike Paragon release</h1>
+            <h1 class="categoryName">Legacy: Before the Spike Paragon nerf</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -295,7 +295,7 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[194].split('/')[0]} / ${lines[194].split('/')[1]}</span><br><span id="mapInfo">${lines[194].split('/')[2]} / ${lines[194].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After Spike Paragon nerf</h1>
+            <h1 class="categoryName">After the Spike Paragon nerf</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -305,7 +305,7 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[178].split('/')[0]} / ${lines[178].split('/')[1]}</span><br><span id="mapInfo">${lines[178].split('/')[2]} / ${lines[178].split('/')[3]}</span></td> </tr>
             </table>
 
-            <h1 class="categoryName">Legacy: During the Spike Paragon release</h1>
+            <h1 class="categoryName">Legacy: Before the Spike Paragon nerf</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
