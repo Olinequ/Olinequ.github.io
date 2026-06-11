@@ -123,7 +123,7 @@ _040ace Military 16000 true true 4 sharp,explosive,camo middle
 _050ace Military 26000 true true 5 sharp,explosive,camo middle
 _003ace Military 2550 false true 3 sharp bottom
 _004ace Military 23400 false true 4 sharp,explosive bottom
-_005ace Military 85000 false true 5 sharp,normal bottom
+_005ace Military 90000 false true 5 sharp,normal bottom
 _300wizard Magic 1450 false true 3 energy top
 _400wizard Magic 10000 false true 4 plasma top
 _500wizard Magic 32000 false true 5 plasma,fire,normal top
