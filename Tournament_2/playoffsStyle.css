@@ -198,10 +198,33 @@ body {
     }
 }
 
-@media all and (max-width: 600px) and (orientation:landscape)
-{
+@media (min-width:320px) and (max-width:480px)  {
     #winnersBracket, #losersBracket, #finalBracket {
         zoom: 0.8;
     }
 }
-
+@media (min-width:481px) and (max-width:640px)  {
+    #winnersBracket, #losersBracket, #finalBracket {
+        zoom: 0.8;
+    }
+}
+@media (min-width:641px) and (max-width:940px)  {
+    #winnersBracket, #losersBracket, #finalBracket {
+        zoom: 0.8;
+    }
+}
+@media (min-width:961px) and (max-width:1024px)  {
+    #winnersBracket, #losersBracket, #finalBracket {
+        zoom: 0.8;
+    }
+}
+@media (min-width:1025px) and (max-width:1280px) {
+    #winnersBracket, #losersBracket, #finalBracket {
+        zoom: 0.8;
+    }
+}
+@media (min-width:1281px) and (max-width:1400px) {
+    #winnersBracket, #losersBracket, #finalBracket {
+        zoom: 0.9;
+    }
+}
