@@ -29,12 +29,12 @@ body {
                     p {
                         color: #DDDDDD;
                         font-size: 22px;
-                        font-family: "Josefin Sans", sans-serif;
+                        font-family: "SN Pro", sans-serif;
                         padding: 5px;
                         margin-top: -2px;
 
                         .golden {
-                            font-family: "Josefin Sans", sans-serif;
+                            font-family: "SN Pro", sans-serif;
                             font-size: 30px;
                             color: goldenrod;
                             font-weight: bold;

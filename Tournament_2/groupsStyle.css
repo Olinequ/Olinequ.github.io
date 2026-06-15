@@ -1,0 +1,128 @@
+body {
+    background-image: url("../IMG/firingRange.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    zoom: 0.85;
+    padding-top: 150px;
+    table {
+        border-collapse: collapse;
+        font-family: "SN Pro", sans-serif;
+        td {
+            background: rgb(70, 70, 70, 0.75);
+            color: white;
+            border: 3px white solid;
+            height: 40px;
+            padding: 10px;
+        }
+        th {
+            font-size: 35px;
+            padding: 15px;
+            text-shadow: 3px 3px 3px #000;
+            font-weight: bold;
+            transition: scale 0.5s;
+            background: rgb(30, 30, 30, 0.75);
+            border: 3px white solid;
+        }
+        th:nth-child(1) {
+            color: rgb(230, 0, 0);
+            transition: background-color .5s;
+        }
+        th:nth-child(2) {
+            color: rgb(80, 80, 220);
+            transition: background-color .5s;
+        }
+        th:nth-child(3) {
+            color: rgb(0, 200, 0);
+            transition: background-color .5s;
+        }
+        th:nth-child(4) {
+            color: rgb(220, 220, 0);
+            transition: background-color .5s;
+        }
+        th:nth-child(1).selected, th:nth-child(1):hover {
+            background-color: rgb(200, 50, 50, 0.6);
+            transition: background-color .5s;
+        }
+        th:nth-child(2).selected, th:nth-child(2):hover {
+            background-color: rgb(50, 50, 200, 0.6);
+            transition: background-color .5s;
+        }
+        th:nth-child(3).selected, th:nth-child(3):hover {
+            background-color: rgb(50, 150, 50, 0.6);
+            transition: background-color .5s;
+        }
+        th:nth-child(4).selected, th:nth-child(4):hover {
+            background-color: rgb(150, 150, 50, 0.6);
+            transition: background-color .5s;
+        }
+        th:hover {
+            cursor: pointer;
+        }
+        .columnTitle {
+            text-align: center;
+            font-size: 30px;
+            color: gold;
+            font-weight: bold;
+            text-shadow: 3px 3px 3px #000;
+            background: rgb(30, 30, 30, 0.75);
+        }
+        .columnTitle:nth-child(2) {
+            width: 40px;
+            height: 40px;
+        }
+        .columnTitle:nth-child(2).active {
+            background-color: rgb(150, 150, 50, 0.6);
+            rotate: 180deg;
+            text-shadow: -3px -3px 3px #000;
+        }
+        .columnTitle:nth-child(2).active:hover {
+            background-color: rgb(150, 150, 50, 0.6);
+        }
+        .columnTitle:nth-child(2):hover {
+            cursor: pointer;
+            background-color: rgb(150, 150, 50, 0.6);
+        }
+        .playerName {
+            width: 210px;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 3px #000;
+            font-family: "SN Pro", sans-serif;
+        }
+        .pointsAmount, .pointsGranted {
+            width: 40px;
+            text-align: center;
+            font-size: 28px;
+            color: goldenrod;
+            font-family: "Lilita one", sans-serif;
+            text-shadow: 3px 3px 3px #000;
+        }
+        .roundScore {
+            width: 210px;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 3px #000;
+            font-family: "SN Pro", sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+        a:hover {
+            font-size: 110%;
+            transition: 0.3s;
+        }
+    }
+}
+
+

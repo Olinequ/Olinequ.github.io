@@ -1,0 +1,202 @@
+body {
+    background-image: url("../IMG/firingRange.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "SN Pro", sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 250px;
+}
+
+#winnersBracket, #losersBracket, #finalBracket {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 1400px;
+
+        tr {
+
+            td {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+
+    .roundNumber {
+        color: goldenrod;
+        text-shadow: 3px 3px 3px black;
+        font-size: 30px;
+        padding: 20px;
+        margin: 20px;
+        text-align: center;
+    }
+}
+
+.bracketName {
+    color: goldenrod;
+    text-shadow: 4px 4px 4px black;
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.round1, .round2, .round3, .round4, .round5, .round6, .final {
+    list-style-type: none;
+    color: white;
+    margin: 0 0 0 -35px;
+
+    .score {
+        border: 1px solid white;
+        padding: 10px 5px 10px 10px;
+        margin: 5px;
+        height: 25px;
+        background: rgb(50, 50, 50, 0.5);
+        text-shadow: 3px 3px 3px black;
+        text-indent: -5px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: font-size .25s ease;
+        }
+
+        a:hover {
+            font-size: 19px;
+        }
+    }
+
+    .score:nth-child(2n) {
+        margin-bottom: 20px;
+    }
+
+    .score:last-child {
+        margin-bottom: 5px;
+    }
+}
+
+
+
+#winnersBracket {
+    table {
+        tr:nth-child(2) {
+            position: relative;
+            top: -400px;
+        }
+    }
+    .round2 {
+        .score:nth-child(1) {
+            margin-top: 138px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 138px;
+        }
+    }
+
+    .round3 {
+        .score:nth-child(1) {
+            margin-top: 375px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 375px;
+        }
+    }
+
+    .round4 {
+        .score:nth-child(1) {
+            margin-top: 850px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 850px;
+        }
+    }
+    .score {
+        width: 300px;
+    }
+}
+
+#losersBracket {
+    position: relative;
+    top: -600px;
+
+    table {
+        tr:nth-child(2) {
+            position: relative;
+            top: -175px;
+        }
+    }
+    .round3 {
+        .score:nth-child(1) {
+            margin-top: 140px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 140px;
+        }
+    }
+
+    .round4 {
+        .score:nth-child(1) {
+            margin-top: 140px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 140px;
+        }
+    }
+
+    .round5 {
+        .score:nth-child(1) {
+            margin-top: 380px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 380px;
+        }
+    }
+
+    .round6 {
+        .score:nth-child(1) {
+            margin-top: 380px;
+        }
+        .score:nth-child(2n) {
+            margin-bottom: 380px;
+        }
+    }
+
+    .score {
+        width: 205px;
+    }
+}
+
+#finalBracket {
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: -700px;
+
+    .score {
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 700px;
+    }
+}
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="Shortcut Icon" href="../IMG/VortexElite.png">
+    <link rel="stylesheet" href="../mainStyle.css">
+    <link rel="stylesheet" href="groupsStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Playwrite+NZ+Basic:wght@100..400&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Olinequ</title>
+</head>
+<body>
+
+<div id="main">
+
+<table id="scoreboard">
+    <tr>
+        <th class="groupName" colspan="2" onclick="selectGroup(0)">Group A</th>
+        <th class="groupName" colspan="2" onclick="selectGroup(1)">Group B</th>
+        <th class="groupName" colspan="2" onclick="selectGroup(2)">Group C</th>
+        <th class="groupName" colspan="2" onclick="selectGroup(3)">Group D</th>
+    </tr>
+    <tr>
+        <td class="columnTitle">Player</td>
+        <td class="columnTitle" onclick="sort()">^</td>
+        <td class="columnTitle" colspan="2">Round 1</td>
+        <td class="columnTitle" colspan="2">Round 2</td>
+        <td class="columnTitle" colspan="2">Round 3</td>
+    </tr>
+
+</table>
+
+</div>
+
+<div id="navbar">
+    <img src="../IMG/pfp.png" alt="pfp" onclick="home()">
+    <table>
+        <tr>
+            <td><a href="../index.html">Home</a></td>
+            <td><a href="quali.html">Qualifiers</a></td>
+            <td></td>
+            <td><a href="groups.html" class="active">Groups</a></td>
+            <td><a href="playoffs.html">Playoffs</a></td>
+        </tr>
+    </table>
+</div>
+
+<script src="main.js"></script>
+<script src="groupsJS.js"></script>
+</body>
+</html>

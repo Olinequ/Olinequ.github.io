@@ -1,0 +1,69 @@
+body {
+    background-image: url("../IMG/firingRange.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    zoom: 0.85;
+    padding-top: 150px;
+}
+
+#timed, #leastCash {
+    margin-right: 80px;
+}
+
+#timed, #leastCash, #leastTiers {
+    font-family: "SN Pro", sans-serif;
+    font-weight: bold;
+    color: white;
+    border-collapse: collapse;
+    background: rgb(50, 50, 50, 0.25);
+    th {
+        background: rgb(50, 80, 50, 0.85);
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        border: 3px white solid;
+        width: 450px;
+        padding: 8px;
+        span {
+            vertical-align: 35%;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    td {
+        border: 3px solid white;
+        width: 400px;
+        padding: 8px;
+        font-size: 25px;
+    }
+}
+
+.placement {
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.player {
+    margin-right: 10px;
+}
+
+.score {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.score:hover {
+    font-size: 110%;
+    transition: 0.3s;
+}
