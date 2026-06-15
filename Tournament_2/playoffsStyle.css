@@ -198,5 +198,10 @@ body {
     }
 }
 
-
+@media all and (max-width: 600px) and (orientation:landscape)
+{
+    #winnersBracket, #losersBracket, #finalBracket {
+        zoom: 0.8;
+    }
+}
 
