@@ -273,12 +273,12 @@ FynnEbsen + Spani + Schmusekroko + EpicLion/2:30.70/Vortex #?/Frozen Over
 /// Default category
 // SOLO
 WhiteNight/1:03.35/Dreadbloon #?/Muddy Puddles
-Karler/1:11.81/Dreadbloon #?/Frozen Over
+Karler/1:07.10/Dreadbloon #31/Spice Islands
 
 
 // COOP
-Felicia + Spani + SirCrowley + Jandalf/58.56/Dreadbloon #?/Spice Islands
-LazyLizard + Resell + Katabu/1:10.16/Dreadbloon #?/Spice Islands
+Felicia + Spani + SirCrowley + Jandalf/58.56/Dreadbloon #31/Spice Islands
+LazyLizard + Resell + Katabu/1:10.16/Dreadbloon #31/Spice Islands
 
 
 
@@ -349,4 +349,4 @@ Philia093/4:55.00/Diamondback#1/Chutes
 
 // COOP
 Katabu + Axyom/3:31.63/Diamondback#1/Chutes
-Felicia + ?/4:04.30/Diamondback#1/Chutes
+Felicia + Katabu + LazyLizard/4:04.30/Diamondback#1/Chutes
