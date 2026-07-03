@@ -16,7 +16,7 @@ async function loadTimed() {
             let score = lines[i].split(',');
             if (score[4] === "TRUE") {
                 timed.innerHTML += `<tr><td style="background: rgb(150, 150, 50, 0.4)"><a href="${score[3]}" class="score" target="_blank"><span class="placement">` + score[0] + ".</span> <span class='player'>" + score[1] + "</span> " + score[2] + `</a></td></tr>`;
-                spots++
+            spots++
             }
             else if (i < spots)
                 timed.innerHTML += `<tr><td style="background: rgb(50, 150, 50, 0.4)"><a href="${score[3]}" class="score" target="_blank"><span class="placement">` + score[0] + ".</span> <span class='player'>" + score[1] + "</span> " + score[2] + `</a></td></tr>`;
