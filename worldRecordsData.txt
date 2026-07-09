@@ -127,12 +127,12 @@ WorZoII3Lak + Orange/1:39.05/Phayze #?/Chutes
 
 /// After the Ice Paragon introduction
 // SOLO
-Olinequ/1:50.78/Blastapopoulos #14/Tinkerton
-Gone/1:51.81/Blastapopoulos #14/Tinkerton
+Pat/1:20.11/Blastapopoulos #18/Park Path
+Olinequ/1:21.03/Blastapopoulos #18/Park Path
 
 // COOP
--/-/Blastapopoulos #?/-
--/-/Blastapopoulos #?/-
+Axyom + Pat/1:21.86/Blastapopoulos #18/Park Path
+Katabu + Jandalf/1:22.75/Blastapopoulos #18/Park Path
 
 
 /// Before the Ice Paragon introduction
@@ -318,7 +318,7 @@ Buttman + 10 + Milin + Seerukio/3:24.60/Phayze #?/Chutes
 /// After the Ice Paragon introduction
 // SOLO
 Ikun/2:47.93/Blastapopoulos #16/Spice Islands
-Pat/3:06.90/Blastapopoulos #16/Spice Islands
+Pat/2:50.61/Blastapopoulos #18/Park Path
 
 // COOP
 Vengeance + Wonder + HS + Kitty675/2:50.23/Blastapopoulos #16/Spice Islands
