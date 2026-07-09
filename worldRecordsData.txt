@@ -132,7 +132,7 @@ Olinequ/1:21.03/Blastapopoulos #18/Park Path
 
 // COOP
 Axyom + Pat/1:21.86/Blastapopoulos #18/Park Path
-Katabu + Jandalf/1:22.75/Blastapopoulos #18/Park Path
+Katabu + Jandalf + LazyLizard + River/1:22.75/Blastapopoulos #18/Park Path
 
 
 /// Before the Ice Paragon introduction
