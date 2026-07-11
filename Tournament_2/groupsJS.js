@@ -101,37 +101,27 @@ async function loadGroupScores(groupNumber) {
             }
         }
 
-        for (let i = 0; i < roundsSoFar * 24; i++) {
-            switch (parseInt((pointsGranted[i].innerHTML).split('+')[1])) {
-                case 0:
-                    pointsGranted[i].style.color = "rgb(200, 200, 200)"
-                    break;
-                case 2:
-                    pointsGranted[i].style.color = "rgb(200, 50, 50)"
-                    break;
-                case 3:
-                    pointsGranted[i].style.color = "rgb(200, 100, 50)"
-                    break;
-                case 4:
-                    pointsGranted[i].style.color = "rgb(160, 160, 50)"
-                    break;
-                case 5:
-                    pointsGranted[i].style.color = "rgb(220, 220, 50)"
-                    break;
-                case 6:
-                    pointsGranted[i].style.color = "rgb(150, 255, 150)"
-                    break;
-                case 7:
-                    pointsGranted[i].style.color = "rgb(5, 255, 5)"
-                    break;
-                case 8:
-                    pointsGranted[i].style.color = "rgb(250, 50, 200)"
-                    break;
-                default:
-                    pointsGranted[i].style.color = "rgb(200, 200, 200)"
-                    break;
+        for (let i = 0; i < roundsSoFar*96; i++) {
+            let points = parseInt((pointsGranted[i].innerHTML).split('+')[1])
+            if (points === 0) {
+                pointsGranted[i].style.color = "rgb(200, 200, 200)"
+            } else if (points === 2) {
+                pointsGranted[i].style.color = "rgb(200, 50, 50)"
+            } else if (points === 3) {
+                pointsGranted[i].style.color = "rgb(200, 100, 50)"
+            } else if (points === 4) {
+                pointsGranted[i].style.color = "rgb(160, 160, 50)"
+            } else if (points === 5) {
+                pointsGranted[i].style.color = "rgb(220, 220, 50)"
+            } else if (points === 6) {
+                pointsGranted[i].style.color = "rgb(150, 255, 150)"
+            } else if (points === 7) {
+                pointsGranted[i].style.color = "rgb(5, 255, 5)"
+            } else if (points === 8) {
+                pointsGranted[i].style.color = "rgb(250, 50, 200)"
+            } else {
+                pointsGranted[i].style.color = "rgb(200, 200, 200)"
             }
         }
     }
-
 }
