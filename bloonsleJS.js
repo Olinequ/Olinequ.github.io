@@ -235,7 +235,7 @@ setInterval(() => {
 function random(){
     let day = new Date().getDate();
     let month = new Date().getMonth();
-    let num = Math.round((day+4) / (month+3) * 39163).toString();
+    let num = Math.round((day+4) / (month+3) * 21883).toString();
     return +(num[1] + num[2] + num[3]) % 225;
 }
 
