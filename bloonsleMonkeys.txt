@@ -75,7 +75,7 @@ _400sniper Military 6300 false false 4 normal top
 _500sniper Military 32000 false false 5 normal top
 _030sniper Military 2100 false false 3 sharp,camo middle
 _040sniper Military 7600 true false 4 normal,camo middle
-_050sniper Military 12000 true false 5 normal,camo middle
+_050sniper Military 12000 true false 5 normal,camo,sharp middle
 _003sniper Military 2700 false false 3 sharp bottom
 _004sniper Military 4100 false false 4 sharp bottom
 _005sniper Military 14900 false false 5 sharp bottom
