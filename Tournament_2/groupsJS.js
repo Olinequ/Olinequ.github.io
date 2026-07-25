@@ -103,7 +103,7 @@ async function loadGroupScores(groupNumber) {
         for (let i = 0; i < roundsSoFar; i++) {
             for (let j = 0; j < 72; j += 3) {
                 score[j + i].innerHTML = `<a href="${lines[(j / 3) + 24 * i].split(',')[3 + (groupNumber * 5)]}" target="_blank">${lines[(j / 3) + 24 * i].split(',')[2 + (groupNumber * 5)]}</a>`
-                pointsGranted[j + i].innerHTML = `+` + lines[(j / 3) + 24 * i].split(',')[4 + (groupNumber * 5)]
+                pointsGranted[j + i].innerHTML = `+` + lines[(j / 3) + 24 * i].split(',')[4 + (groupNumber * 5)].split('.')[0]
             }
         }
 
