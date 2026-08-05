@@ -38,7 +38,7 @@ _300ice Primary 1500 false true 3 m.freeze,camo,shatter top
 _400ice Primary 2300 false true 4 m.freeze,camo,shatter top
 _500ice Primary 28000 false true 5 normal,camo,shatter top
 _030ice Primary 2750 false true 3 cold middle
-_040ice Primary 4000 true true 4 cold middle
+_040ice Primary 4750 true true 4 cold middle
 _050ice Primary 21000 true true 5 cold middle
 _003ice Primary 1900 false true 3 glacier bottom
 _004ice Primary 2750 false true 4 glacier bottom
@@ -84,7 +84,7 @@ _400boat Military 8000 false true 4 sharp,explosive top
 _500boat Military 26000 false true 5 sharp,normal top
 _030boat Military 900 false true 3 fire,explosive,sharp middle
 _040boat Military 3900 true true 4 fire,explosive,sharp middle
-_050boat Military 27000 true true 5 fire,explosive,sharp middle
+_050boat Military 29000 true true 5 fire,explosive,sharp middle
 _003boat Military 2400 false true 3 sharp,camo bottom
 _004boat Military 5500 false true 4 sharp,camo bottom
 _005boat Military 23000 false true 5 sharp,camo bottom
