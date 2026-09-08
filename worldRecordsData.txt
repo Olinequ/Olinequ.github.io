@@ -154,12 +154,12 @@ Animal/1:32.15/Blastapopoulos #1/Four Circles
 
 /// Default category
 // SOLO
--/-/Diamondback#?/-
--/-/Diamondback#?/-
+GHGYS/2:11.66/Diamondback#7/Winter Park
+MABO YT/2:12.03/Diamondback#7/Winter Park
 
 // COOP
-Axyom + Pat/1:54.16/Diamondback#1/Chutes
-Katabu + Felicia/1:54.26/Diamondback#1/Chutes
+Maarcii + ?/2:10.45/Diamondback#7/Winter Park
+MABO YT + River + Dadam + LazyLizard/2:11.81/Diamondback#7/Winter Park
 
 
 
@@ -171,12 +171,12 @@ Katabu + Felicia/1:54.26/Diamondback#1/Chutes
 
 /// After Spike Paragon rework
 // SOLO
--/-/Bloonarius#?/-
--/-/Bloonarius#?/-
+Storyteller/1:48.75/Bloonarius#AprilFools/Cornfield
+Karler/2:06.25/Bloonarius#AprilFools/Cornfield
 
 // COOP
--/-/Bloonarius#?/-
--/-/Bloonarius#?/-
+Maarcii + Spani + Despog_Hjae + Lucy/2:07.65/Bloonarius#68/Haunted
+Spani + Jandalf/2:19.41/Bloonarius#68/Haunted
 
 
 /// After Spike Paragon release
@@ -344,9 +344,9 @@ Jandalf + Turtles + SirCrowley + Felicia/3:21.36/Blastapopoulos #?/Ancient Porta
 
 /// Default category
 // SOLO
-Storyteller/4:14.63/Diamondback#1/Chutes
-Philia093/4:55.00/Diamondback#1/Chutes
+MrPietrek/3:08.78/Diamondback#7/Winter Park
+Kapu/3:26.40/Diamondback#7/Winter Park
 
 // COOP
-Katabu + Axyom/3:31.63/Diamondback#1/Chutes
-Felicia + Katabu + LazyLizard/4:04.30/Diamondback#1/Chutes
+Maarcii + ?/3:37.33/Diamondback#7/Winter Park
+Metalheart + Eternal + ?/4:07.06/Diamondback#7/Winter Park
