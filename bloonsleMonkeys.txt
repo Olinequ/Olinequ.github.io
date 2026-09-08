@@ -142,6 +142,15 @@ _050druid Magic 35000 true true 5 sharp middle
 _003druid Magic 600 false true 3 sharp bottom
 _004druid Magic 2350 false true 4 sharp bottom
 _005druid Magic 45000 false true 5 sharp bottom
+_300skywarden Magic 1650 false false 3 shatter,camo top
+_400skywarden Magic 3300 false false 4 shatter,camo top
+_500skywarden Magic 19000 false false 5 shatter,camo top
+_030skywarden Magic 1800 false false 3 plasma middle
+_040skywarden Magic 2000 true false 4 plasma middle
+_050skywarden Magic 35000 true false 5 plasma middle
+_003skywarden Magic 1500 false false 3 shatter bottom
+_004skywarden Magic 3900 false false 4 shatter,normal bottom
+_005skywarden Magic 20000 false false 5 shatter,normal bottom
 _300super Magic 20000 false false 3 plasma top
 _400super Magic 100000 false false 4 normal top
 _500super Magic 500000 false false 5 normal top

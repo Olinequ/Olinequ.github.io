@@ -195,6 +195,8 @@ function formatGuess(guess) {
             return part1+"engi";
         case "engineermonkey":
             return part1+"engi";
+        case "warden":
+            return part1+"skywarden";
     }
 
     return guess;
@@ -236,7 +238,7 @@ function random(){
     let day = new Date().getDate();
     let month = new Date().getMonth();
     let num = Math.round((day+4) / (month+3) * 21883).toString();
-    return +(num[1] + num[2] + num[3]) % 225;
+    return +(num[1] + num[2] + num[3]) % 234;
 }
 
 if (getCookie("correct_number") === '') {
