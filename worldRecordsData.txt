@@ -4,11 +4,11 @@
 
 //// Default Category
 // SOLO
-MrPietrek/34.35/Bloonarius #?/Off The Coast
-YtseJam/34.43/Bloonarius #?/Off The Coast
+MrPietrek/34.35/Bloonarius #25/Off The Coast
+YtseJam/34.43/Bloonarius #25/Off The Coast
 // COOP
-Jandalf + Animal/34.51/Bloonarius #?/Spa Pits
-Jandalf + Felicia + SirCrowley/34.56/Bloonarius #?/Spa Pits
+Jandalf + Animal/34.51/Bloonarius #58/Spa Pits
+Jandalf + Felicia + SirCrowley/34.56/Bloonarius #58/Spa Pits
 
 
 
@@ -32,17 +32,17 @@ River + MABO + Maarcii + LazyLizard/47.16/Lych #59/Alpine Run
 Pat/2:45.51/Lych #56/Cubism
 GHGYS/2:48.61/Lych #56/Cubism
 // COOP
-Felicia + Spani/3:06.73/Lych #?/Blons
-Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #?/Blons
+Felicia + Spani/3:06.73/Lych #AprilFools2025/Blons
+Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #AprilFools2025/Blons
 
 
 //// Before the Ice Paragon introduction
 // SOLO
-Infuriation/3:06.53/Lych #?/One Two Tree
-YtseJam/3:06.60/Lych #?/One Two Tree
+Infuriation/3:06.53/Lych #35/One Two Tree
+YtseJam/3:06.60/Lych #35/One Two Tree
 // COOP
-Felicia + Spani/3:06.73/Lych #?/Blons
-Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #?/Blons
+Felicia + Spani/3:06.73/Lych #AprilFools2025/Blons
+Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #AprilFools2025/Blons
 
 
 
@@ -54,23 +54,23 @@ Felicia + Spani + Jandalf + SirCrowley/3:06.75/Lych #?/Blons
 
 //// After the vortex animation changes
 // SOLO
-Spani/45.76/Vortex#?/Candy Falls
-FLYFF/45.96/Vortex#?/Candy Falls
+Spani/45.76/Vortex#37/Candy Falls
+FLYFF/45.96/Vortex#37/Candy Falls
 
 // COOP
-LazyLizard + Katabu/50.28/Vortex #?/Candy Falls
-Spani + Panda/51.18/Vortex #?/Candy Falls
+LazyLizard + Katabu/50.28/Vortex #37/Candy Falls
+Spani + Panda/51.18/Vortex #37/Candy Falls
 
 
 
 //// Before the vortex animation changes
 // SOLO
-YtseJam/36.56/Vortex #?/Haunted
-MrPietrek/36.60/Vortex #?/Haunted
+YtseJam/36.56/Vortex #19/Haunted
+MrPietrek/36.60/Vortex #19/Haunted
 
 // COOP
-WorZollLak + Player/40.13/Vortex #?/Frozen Over
-Jandalf + SirCrowley + Felicia + Spani/40.98/Vortex #?/Frozen Over
+WorZollLak + Player/40.13/Vortex #29/Frozen Over
+Jandalf + SirCrowley + Felicia + Spani/40.98/Vortex #29/Frozen Over
 
 
 
@@ -82,12 +82,12 @@ Jandalf + SirCrowley + Felicia + Spani/40.98/Vortex #?/Frozen Over
 
 /// Default category
 // SOLO
-YtseJam/35.50/Dreadbloon #?/Muddy Puddles
-Olinequ/36.20/Dreadbloon #?/End Of The Road
+YtseJam/35.50/Dreadbloon #20/Muddy Puddles
+Olinequ/36.20/Dreadbloon #10/End Of The Road
 
 // COOP
-Felicia + SirCrowley + Jandalf + Berix/37.85/Dreadbloon #?/Sulfur Springs
-Felicia + Spani + SirCrowley + Donniesharko/39.08/Dreadbloon #?/Muddy Puddles
+Felicia + SirCrowley + Jandalf + Berix/37.85/Dreadbloon #16/Sulfur Springs
+Felicia + Spani + SirCrowley + Donniesharko/39.08/Dreadbloon #20/Muddy Puddles
 
 
 
@@ -109,13 +109,13 @@ Felicia + Veteol/1:06.96/Phayze #27/Logs
 
 /// Before the Ice Paragon introduction
 // SOLO
-Olinequ/1:33.30/Phayze #?/End Of The Road
-YtseJam/1:33.43/Phayze #?/Chutes
+Olinequ/1:33.30/Phayze #8/End Of The Road
+YtseJam/1:33.43/Phayze #5/Chutes
 
 
 // COOP
-Jandalf + SirCrowley + Felicia + Spani/1:35.86/Phayze #?/Chutes
-WorZoII3Lak + Orange/1:39.05/Phayze #?/Chutes
+Jandalf + SirCrowley + Felicia + Spani/1:35.86/Phayze #5/Chutes
+WorZoII3Lak + Orange/1:39.05/Phayze #5/Chutes
 
 
 
@@ -141,8 +141,8 @@ Animal/1:32.15/Blastapopoulos #1/Four Circles
 06bob/1:33.03/Blastapopoulos #1/Four Circles
 
 // COOP
--/-/Blastapopoulos #?/-
--/-/Blastapopoulos #?/-
+The Fool + ?/1:44.98/Blastapopoulos #7/The Cabin
+The Fool + Gashi + Maplist Player/1:48.13/Blastapopoulos #7/The Cabin
 
 
 
@@ -171,8 +171,8 @@ MABO YT + River + Dadam + LazyLizard/2:11.81/Diamondback#7/Winter Park
 
 /// After Spike Paragon rework
 // SOLO
-Storyteller/1:48.75/Bloonarius#AprilFools/Cornfield
-Karler/2:06.25/Bloonarius#AprilFools/Cornfield
+Storyteller/1:48.75/Bloonarius#AprilFools2026/Cornfield
+Karler/2:06.25/Bloonarius#AprilFools2026/Cornfield
 
 // COOP
 Maarcii + Spani + Despog_Hjae + Lucy/2:07.65/Bloonarius#68/Haunted
@@ -181,22 +181,22 @@ Spani + Jandalf/2:19.41/Bloonarius#68/Haunted
 
 /// After Spike Paragon release
 // SOLO
-Whitenight/31.73/Bloonarius #?/Spa Pits
-Karler + SirCrowley (Tie)/32.01/Bloonarius #?/Spa Pits
+Whitenight/31.73/Bloonarius #58/Spa Pits
+Karler + SirCrowley (Tie)/32.01/Bloonarius #58/Spa Pits
 
 // COOP
-Jandalf + SirCrowley/38.10/Bloonarius #?/Spa Pits
-Spani + Katabu/41.78/Bloonarius #?/Tinkerton
+Jandalf + SirCrowley/38.10/Bloonarius #58/Spa Pits
+Spani + Katabu/41.78/Bloonarius #59/Tinkerton
 
 
 /// Before Spike Paragon introduction
 // SOLO
-MrPietrek/38.58/Bloonarius #?/Cornfield
-YtseJam/39.20/Bloonarius #?/Cornfield
+MrPietrek/38.58/Bloonarius #36/Cornfield
+YtseJam/39.20/Bloonarius #36/Cornfield
 
 // COOP
-Jandalf + SirCrowley + Felicia + Spani/1:12.95/Bloonarius #?/Another Brick
-WorZoII3Lak + Player/1:19.73/Bloonarius #?/Another Brick
+Jandalf + SirCrowley + Felicia + Spani/1:12.95/Bloonarius #43/Another Brick
+WorZoII3Lak + Player/1:19.73/Bloonarius #43/Another Brick
 
 
 
@@ -218,22 +218,22 @@ Lucy + Maarcii + Kitty/2:08.78/Lych #59/Alpine Run
 
 /// 2025 April Fools Event on Blons
 // SOLO
-YtseJam/4:07.05/Lych #?/Blons
-MrPietrek/4:07.11/Lych #?/Blons
+YtseJam/4:07.05/Lych #AprilFools2025/Blons
+MrPietrek/4:07.11/Lych #AprilFools2025/Blons
 
 //COOP
-Felicia + Katabu/4:10.11/Lych #?/Blons
-Resell + Karler + Barracuda/4:14.31/Lych #?/Blons
+Felicia + Katabu/4:10.11/Lych #AprilFools2025/Blons
+Resell + Karler + Barracuda/4:14.31/Lych #AprilFools2025/Blons
 
 
 /// Before the Ice Paragon introduction
 // SOLO
-MrPietrek/4:16:50/Lych #?/Another brick
-YtseJam/4:20.85/Lych #?/Tree Stump
+MrPietrek/4:16:50/Lych #37/Another brick
+Karler/4:17.48/Lych #54/Ancient Portal
 
 // COOP
-Felicia + Spani + SirCrowley + Jandalf/4:16.53/Lych #?/Ancient Portal
-Pat + Axyom/4:22.18/Lych #?/Ancient Portal
+Felicia + Spani + SirCrowley + Jandalf/4:16.53/Lych #54/Ancient Portal
+Karler + ?/4:18.10/Lych #54/Ancient Portal
 
 
 
@@ -245,22 +245,22 @@ Pat + Axyom/4:22.18/Lych #?/Ancient Portal
 
 /// After the vortex animation changes
 // SOLO
-Whitenight / 1:45.20/Vortex #? / Frozen Over
-SirCrowley / 1:47.63/Vortex #? / Frozen Over
+Whitenight/1:45.20/Vortex #29/Frozen Over
+SirCrowley/1:47.63/Vortex #29/Frozen Over
 
 // COOP
-Felicia + Fool + Jandalf + SirCrowley / 1:52.11/Vortex #? / Frozen Over
-FynnEbsen + Spani + Schmusekroko + EpicLion / 2:30.70/Vortex #? / Frozen Over
+Felicia + Fool + Jandalf + SirCrowley/1:52.11/Vortex #29/Frozen Over
+FynnEbsen + Spani + Schmusekroko + EpicLion/2:30.70/Vortex #29/Frozen Over
 
 
 /// Before the vortex animation changes
 // SOLO
-Whitenight/1:45.20/Vortex #?/Frozen Over
-SirCrowley/1:47.63/Vortex #?/Frozen Over
+Whitenight/1:45.20/Vortex #29/Frozen Over
+SirCrowley/1:47.63/Vortex #29/Frozen Over
 
 // COOP
-Felicia + TheFool + Jandalf + SirCrowley/ 1:52.11/Vortex #?/Frozen Over
-FynnEbsen + Spani + Schmusekroko + EpicLion/2:30.70/Vortex #?/Frozen Over
+Felicia + TheFool + Jandalf + SirCrowley/1:52.11/Vortex #29/Frozen Over
+FynnEbsen + Spani + Schmusekroko + EpicLion/2:30.70/Vortex #29/Frozen Over
 
 
 
@@ -272,7 +272,7 @@ FynnEbsen + Spani + Schmusekroko + EpicLion/2:30.70/Vortex #?/Frozen Over
 
 /// Default category
 // SOLO
-WhiteNight/1:03.35/Dreadbloon #?/Muddy Puddles
+WhiteNight/1:03.35/Dreadbloon #20/Muddy Puddles
 Karler/1:07.10/Dreadbloon #31/Spice Islands
 
 
@@ -300,12 +300,12 @@ LazyLizard + Resell + Katabu/1:10.16/Dreadbloon #31/Spice Islands
 
 /// Before the Ice Paragon introduction
 // SOLO
-Whitenight/3:20.08/Phayze #?/Chutes
-Q/3:30.78/Phayze #?/Chutes
+Whitenight/3:20.08/Phayze #5/Chutes
+Q/3:30.78/Phayze #5/Chutes
 
 // COOP
-Jandalf + SirCrowley + Felicia + Spani/3:14.38/Phayze #?/Chutes
-Buttman + 10 + Milin + Seerukio/3:24.60/Phayze #?/Chutes
+Jandalf + SirCrowley + Felicia + Spani/3:14.38/Phayze #5/Chutes
+Buttman + 10 + Milin + Seerukio/3:24.60/Phayze #5/Chutes
 
 
 
@@ -327,12 +327,12 @@ Pat + LazyLizard/3:01.31/Blastapopoulos #16/Spice Islands
 
 /// Before the Ice Paragon introduction
 // SOLO
-Jandalf/2:41.98/Blastapopoulos #?/Ancient Portal
-Guanium/3:39.65/Blastapopoulos #1/Four Circles
+Whitenight/2:40.33/Blastapopoulos #7/The Cabin
+Jandalf/2:41.98/Blastapopoulos #4/Ancient Portal
 
 // COOP
-Jandalf + Turtles + SirCrowley + Felicia/3:21.36/Blastapopoulos #?/Ancient Portal
--/-/Blastapopoulos #?/-
+Jandalf + Turtles + SirCrowley + Felicia/3:21.36/Blastapopoulos #4/Ancient Portal
+The Fool + Maplist Player + Free Pringle/3:44.95/Blastapopoulos #7/The Cabin
 
 
 
