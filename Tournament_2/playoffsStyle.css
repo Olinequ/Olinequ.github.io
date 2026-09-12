@@ -136,6 +136,7 @@ body {
 #losersBracket {
     position: relative;
     top: -600px;
+    margin-bottom: -800px;
 
     table {
         tr:nth-child(2) {
@@ -187,14 +188,24 @@ body {
 #finalBracket {
     position: relative;
     margin-bottom: 150px;
-    margin-top: -700px;
 
     .score {
         margin-bottom: 10px;
+        height: fit-content;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 28px;
+        }
+        a:hover {
+            transition: font-size .4s ease;
+            font-size: 32px;
+        }
     }
 
     table {
         width: 700px;
+        height: fit-content;
     }
 }
 
