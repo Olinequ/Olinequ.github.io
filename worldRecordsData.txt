@@ -158,7 +158,7 @@ GHGYS/2:11.66/Diamondback#7/Winter Park
 MABO YT/2:12.03/Diamondback#7/Winter Park
 
 // COOP
-Maarcii + ?/2:10.45/Diamondback#7/Winter Park
+Maarcii + Kitty/2:10.45/Diamondback#7/Winter Park
 MABO YT + River + Dadam + LazyLizard/2:11.81/Diamondback#7/Winter Park
 
 
@@ -175,7 +175,7 @@ Storyteller/1:48.75/Bloonarius#AprilFools2026/Cornfield
 Karler/2:06.25/Bloonarius#AprilFools2026/Cornfield
 
 // COOP
-Maarcii + Spani + Despog_Hjae + Lucy/2:07.65/Bloonarius#68/Haunted
+Maarcii + Spani + Kitty + Lucy/2:07.65/Bloonarius#68/Haunted
 Spani + Jandalf/2:19.41/Bloonarius#68/Haunted
 
 
@@ -348,5 +348,5 @@ MrPietrek/3:08.78/Diamondback#7/Winter Park
 Kapu/3:26.40/Diamondback#7/Winter Park
 
 // COOP
-Maarcii + ?/3:37.33/Diamondback#7/Winter Park
+Maarcii + Spani + Lucy + Kitty/3:37.33/Diamondback#7/Winter Park
 Metalheart + Eternal + ?/4:07.06/Diamondback#7/Winter Park
