@@ -195,11 +195,58 @@ body {
         a {
             text-decoration: none;
             color: white;
-            font-size: 28px;
+            font-size: 24px;
         }
         a:hover {
             transition: font-size .4s ease;
-            font-size: 32px;
+            font-size: 28px;
+        }
+
+
+
+
+    }
+    .score:nth-child(1) {
+        background: rgb(255, 215, 0, 0.20);
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+        }
+        a:hover {
+            transition: font-size .4s ease;
+            font-size: 36px;
+        }
+        span {
+            color: gold;
+            font-size: 37px;
+            padding-right: 25px;
+            padding-left: 10px;
+        }
+    }
+    .score:nth-child(2) {
+        span {
+            color: #778899;
+            font-size: 34px;
+            padding-right: 25px;
+            padding-left: 10px;
+        }
+    }
+    .score:nth-child(3) {
+        span {
+            color: sandybrown;
+            font-size: 31px;
+            padding-right: 25px;
+            padding-left: 10px;
+        }
+    }
+
+    .score:nth-child(4) {
+        span {
+            color: white;
+            font-size: 28px;
+            padding-right: 25px;
+            padding-left: 10px;
         }
     }
 
