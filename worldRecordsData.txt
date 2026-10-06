@@ -290,12 +290,12 @@ LazyLizard + Resell + Katabu/1:10.16/Dreadbloon #31/Spice Islands
 
 /// After the Ice Paragon introduction
 // SOLO
--/-/Phayze #?/-
--/-/Phayze #?/-
+Skjoll/2:11.38/Phayze #31/Flooded Valley
+Pat/2:13.71/Phayze #31/Flooded Valley
 
 // COOP
--/-/Phayze #?/-
--/-/Phayze #?/-
+Skjoll + Jandalf + Katabu/1:54.95/Phayze #31/Flooded Valley
+?/2:13.41/Phayze #31/Flooded Valley
 
 
 /// Before the Ice Paragon introduction
