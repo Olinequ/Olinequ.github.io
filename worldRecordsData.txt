@@ -295,7 +295,7 @@ Pat/2:13.71/Phayze #31/Flooded Valley
 
 // COOP
 Skjoll + Jandalf + Katabu/1:54.95/Phayze #31/Flooded Valley
-?/2:13.41/Phayze #31/Flooded Valley
+Slug + David/2:13.41/Phayze #31/Flooded Valley
 
 
 /// Before the Ice Paragon introduction
