@@ -30,7 +30,7 @@ _400bomb Primary 2800 false true 4 explosive top
 _500bomb Primary 55000 false true 5 normal top
 _030bomb Primary 1000 false true 3 explosive middle
 _040bomb Primary 3450 true true 4 explosive middle
-_050bomb Primary 28000 true true 5 explosive middle
+_050bomb Primary 26000 true true 5 explosive middle
 _003bomb Primary 700 false true 3 explosive bottom
 _004bomb Primary 2500 false true 4 explosive bottom
 _005bomb Primary 30000 false true 5 explosive bottom
