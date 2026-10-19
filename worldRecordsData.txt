@@ -350,3 +350,100 @@ Kapu/3:26.40/Diamondback#7/Winter Park
 // COOP
 Maarcii + Spani + Lucy + Kitty/3:37.33/Diamondback#7/Winter Park
 Metalheart + Eternal + ?/4:07.06/Diamondback#7/Winter Park
+
+
+
+
+
+=============================
+==== Post Sniper Paragon ====
+=============================
+
+/// Normal Vortex
+// SOLO
+-/-/Vortex#?/-
+-/-/Vortex#?/-
+
+// COOP
+-/-/Vortex#?/-
+-/-/Vortex#?/-
+
+/// Elite Vortex
+// SOLO
+-/-/Vortex#?/-
+-/-/Vortex#?/-
+
+// COOP
+-/-/Vortex#?/-
+-/-/Vortex#?/-
+
+
+
+/// Elite Dreadbloon post rework
+// SOLO
+Gone/2:48.76/Dreadbloon#36/Skull Peak
+Seerukio/3:13.23/Dreadbloon#36/Skull Peak
+
+// COOP
+Lucy + Maarcii/3:41.06/Dreadbloon#36/Skull Peak
+Serendipity + GG Bond/4:04.15/Dreadbloon#36/Skull Peak
+
+
+
+/// Normal Phayze
+// SOLO
+-/-/Phayze#?/-
+-/-/Phayze#?/-
+
+// COOP
+-/-/Phayze#?/-
+-/-/Phayze#?/-
+
+/// Elite Phayze
+// SOLO
+-/-/Phayze#?/-
+-/-/Phayze#?/-
+
+// COOP
+-/-/Phayze#?/-
+-/-/Phayze#?/-
+
+
+
+/// Normal Blastapopoulos
+// SOLO
+Pat/1:24.33/Blastapopoulos#20/Moon Landing
+Main/1:35.48/Blastapopoulos#20/Moon Landing
+
+// COOP
+Maarcii + ?/1:28.41/Blastapopoulos#20/Moon Landing
+Eternal + ?/1:56.68/Blastapopoulos#20/Moon Landing
+
+/// Elite Blastapopoulos
+// SOLO
+Guanium/3:51.55/Blastapopoulos#20/Moon Landing
+Zarrot/5:58.73/Blastapopoulos#20/Moon Landing
+
+// COOP
+Maarcii + ?/6:31.11/Blastapopoulos#20/Moon Landing
+Kiwipopper4518 + ?/9:06.05/Blastapopoulos#20/Moon Landing
+
+
+
+/// Normal Diamondback
+// SOLO
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-
+
+// COOP
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-
+
+/// Elite Diamondback
+// SOLO
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-
+
+// COOP
+-/-/Diamondback#?/-
+-/-/Diamondback#?/-

@@ -21,10 +21,10 @@ function getCookie(cname) {
     return "";
 }
 
+/*
 function deleteCookie(cname) {
     setCookie(cname, null, -1);
 }
-
 
 document.querySelector('body').addEventListener('keypress', (e) => {
     if (e.key === '=') {
@@ -37,6 +37,7 @@ document.querySelector('body').addEventListener('keypress', (e) => {
         alert("cookies deleted")
     }
 })
+*/
 
 
 

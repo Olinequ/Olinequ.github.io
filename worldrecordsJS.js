@@ -99,7 +99,17 @@ async function selectBoss(boss) {
             break;
         case 3:
             solo.innerHTML = `
-            <h1 class="categoryName">After the vortex animation changes</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[363].split('/')[0]} / ${lines[363].split('/')[1]}</span><br><span id="mapInfo">${lines[363].split('/')[2]} / ${lines[363].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[364].split('/')[0]} / ${lines[364].split('/')[1]}</span><br><span id="mapInfo">${lines[364].split('/')[2]} / ${lines[364].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the vortex animation changes</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -119,7 +129,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[68].split('/')[0]} / ${lines[68].split('/')[1]}</span><br><span id="mapInfo">${lines[68].split('/')[2]} / ${lines[68].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After the vortex animation changes</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[367].split('/')[0]} / ${lines[367].split('/')[1]}</span><br><span id="mapInfo">${lines[367].split('/')[2]} / ${lines[367].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[368].split('/')[0]} / ${lines[368].split('/')[1]}</span><br><span id="mapInfo">${lines[368].split('/')[2]} / ${lines[368].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the vortex animation changes</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -161,7 +181,17 @@ async function selectBoss(boss) {
             break;
         case 5:
             solo.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[394].split('/')[0]} / ${lines[394].split('/')[1]}</span><br><span id="mapInfo">${lines[394].split('/')[2]} / ${lines[394].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[395].split('/')[0]} / ${lines[395].split('/')[1]}</span><br><span id="mapInfo">${lines[395].split('/')[2]} / ${lines[395].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -181,7 +211,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[112].split('/')[0]} / ${lines[112].split('/')[1]}</span><br><span id="mapInfo">${lines[112].split('/')[2]} / ${lines[112].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[398].split('/')[0]} / ${lines[398].split('/')[1]}</span><br><span id="mapInfo">${lines[398].split('/')[2]} / ${lines[398].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[399].split('/')[0]} / ${lines[399].split('/')[1]}</span><br><span id="mapInfo">${lines[399].split('/')[2]} / ${lines[399].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -203,7 +243,17 @@ async function selectBoss(boss) {
             break;
         case 6:
             solo.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[414].split('/')[0]} / ${lines[414].split('/')[1]}</span><br><span id="mapInfo">${lines[414].split('/')[2]} / ${lines[414].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[415].split('/')[0]} / ${lines[415].split('/')[1]}</span><br><span id="mapInfo">${lines[415].split('/')[2]} / ${lines[415].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -223,7 +273,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[140].split('/')[0]} / ${lines[140].split('/')[1]}</span><br><span id="mapInfo">${lines[140].split('/')[2]} / ${lines[140].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[418].split('/')[0]} / ${lines[418].split('/')[1]}</span><br><span id="mapInfo">${lines[418].split('/')[2]} / ${lines[418].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[419].split('/')[0]} / ${lines[419].split('/')[1]}</span><br><span id="mapInfo">${lines[419].split('/')[2]} / ${lines[419].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -245,6 +305,17 @@ async function selectBoss(boss) {
             break;
         case 7:
             solo.innerHTML = `
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[434].split('/')[0]} / ${lines[434].split('/')[1]}</span><br><span id="mapInfo">${lines[434].split('/')[2]} / ${lines[434].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[435].split('/')[0]} / ${lines[435].split('/')[1]}</span><br><span id="mapInfo">${lines[435].split('/')[2]} / ${lines[435].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: Before the Sniper Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -254,6 +325,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[157].split('/')[0]} / ${lines[157].split('/')[1]}</span><br><span id="mapInfo">${lines[157].split('/')[2]} / ${lines[157].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1normal.png" alt="top1"></td>
+            <td><span id="player">${lines[438].split('/')[0]} / ${lines[438].split('/')[1]}</span><br><span id="mapInfo">${lines[438].split('/')[2]} / ${lines[438].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2normal.png" alt="top2"></td>
+            <td><span id="player">${lines[439].split('/')[0]} / ${lines[439].split('/')[1]}</span><br><span id="mapInfo">${lines[439].split('/')[2]} / ${lines[439].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: Before the Sniper Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1normal.png" alt="top1"></td>
@@ -389,7 +471,17 @@ async function selectBoss(boss) {
             break;
         case 10:
             solo.innerHTML = `
-            <h1 class="categoryName">After the vortex animation changes</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[372].split('/')[0]} / ${lines[372].split('/')[1]}</span><br><span id="mapInfo">${lines[372].split('/')[2]} / ${lines[372].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[373].split('/')[0]} / ${lines[373].split('/')[1]}</span><br><span id="mapInfo">${lines[373].split('/')[2]} / ${lines[373].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the vortex animation changes</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -409,7 +501,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[258].split('/')[0]} / ${lines[258].split('/')[1]}</span><br><span id="mapInfo">${lines[258].split('/')[2]} / ${lines[258].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After the vortex animation changes</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[376].split('/')[0]} / ${lines[376].split('/')[1]}</span><br><span id="mapInfo">${lines[376].split('/')[2]} / ${lines[376].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[376].split('/')[0]} / ${lines[376].split('/')[1]}</span><br><span id="mapInfo">${lines[376].split('/')[2]} / ${lines[376].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the vortex animation changes</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -431,6 +533,17 @@ async function selectBoss(boss) {
             break;
         case 11:
             solo.innerHTML = `
+            <h1 class="categoryName">After the Dreadbloon rework</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[383].split('/')[0]} / ${lines[383].split('/')[1]}</span><br><span id="mapInfo">${lines[383].split('/')[2]} / ${lines[383].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[384].split('/')[0]} / ${lines[384].split('/')[1]}</span><br><span id="mapInfo">${lines[384].split('/')[2]} / ${lines[384].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: Before the Dreadbloon rework</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -440,6 +553,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[275].split('/')[0]} / ${lines[275].split('/')[1]}</span><br><span id="mapInfo">${lines[275].split('/')[2]} / ${lines[275].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
+            <h1 class="categoryName">After the Dreadbloon rework</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[387].split('/')[0]} / ${lines[387].split('/')[1]}</span><br><span id="mapInfo">${lines[387].split('/')[2]} / ${lines[387].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[388].split('/')[0]} / ${lines[388].split('/')[1]}</span><br><span id="mapInfo">${lines[388].split('/')[2]} / ${lines[388].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: Before the Dreadbloon rework</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -451,7 +575,17 @@ async function selectBoss(boss) {
             break;
         case 12:
             solo.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[403].split('/')[0]} / ${lines[403].split('/')[1]}</span><br><span id="mapInfo">${lines[403].split('/')[2]} / ${lines[403].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[404].split('/')[0]} / ${lines[404].split('/')[1]}</span><br><span id="mapInfo">${lines[404].split('/')[2]} / ${lines[404].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -471,7 +605,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[303].split('/')[0]} / ${lines[303].split('/')[1]}</span><br><span id="mapInfo">${lines[303].split('/')[2]} / ${lines[303].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[407].split('/')[0]} / ${lines[407].split('/')[1]}</span><br><span id="mapInfo">${lines[407].split('/')[2]} / ${lines[407].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[408].split('/')[0]} / ${lines[408].split('/')[1]}</span><br><span id="mapInfo">${lines[408].split('/')[2]} / ${lines[408].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -493,7 +637,17 @@ async function selectBoss(boss) {
             break;
         case 13:
             solo.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[423].split('/')[0]} / ${lines[423].split('/')[1]}</span><br><span id="mapInfo">${lines[423].split('/')[2]} / ${lines[423].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[424].split('/')[0]} / ${lines[424].split('/')[1]}</span><br><span id="mapInfo">${lines[424].split('/')[2]} / ${lines[424].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -513,7 +667,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[330].split('/')[0]} / ${lines[330].split('/')[1]}</span><br><span id="mapInfo">${lines[330].split('/')[2]} / ${lines[330].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
-            <h1 class="categoryName">After the Ice Paragon introduction</h1>
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[427].split('/')[0]} / ${lines[427].split('/')[1]}</span><br><span id="mapInfo">${lines[427].split('/')[2]} / ${lines[427].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[428].split('/')[0]} / ${lines[428].split('/')[1]}</span><br><span id="mapInfo">${lines[428].split('/')[2]} / ${lines[428].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: After the Ice Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -535,6 +699,17 @@ async function selectBoss(boss) {
             break;
         case 14:
             solo.innerHTML = `
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[443].split('/')[0]} / ${lines[443].split('/')[1]}</span><br><span id="mapInfo">${lines[443].split('/')[2]} / ${lines[443].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[444].split('/')[0]} / ${lines[444].split('/')[1]}</span><br><span id="mapInfo">${lines[444].split('/')[2]} / ${lines[444].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: Before the Sniper Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
@@ -544,6 +719,17 @@ async function selectBoss(boss) {
             <td><span id="player">${lines[347].split('/')[0]} / ${lines[347].split('/')[1]}</span><br><span id="mapInfo">${lines[347].split('/')[2]} / ${lines[347].split('/')[3]}</span></td> </tr>
             </table>`
             coop.innerHTML = `
+            <h1 class="categoryName">After the Sniper Paragon introduction</h1>
+            <table> 
+            <tr>
+            <td><img src="IMG/top1elite.png" alt="top1"></td>
+            <td><span id="player">${lines[447].split('/')[0]} / ${lines[447].split('/')[1]}</span><br><span id="mapInfo">${lines[447].split('/')[2]} / ${lines[447].split('/')[3]}</span></td> </tr>
+            <tr> <td class="filler"> </tr> <tr> 
+            <td><img src="IMG/top2elite.png" alt="top2"></td>
+            <td><span id="player">${lines[448].split('/')[0]} / ${lines[448].split('/')[1]}</span><br><span id="mapInfo">${lines[448].split('/')[2]} / ${lines[448].split('/')[3]}</span></td> </tr>
+            </table>
+            
+            <h1 class="categoryName">Legacy: Before the Sniper Paragon introduction</h1>
             <table> 
             <tr>
             <td><img src="IMG/top1elite.png" alt="top1"></td>
