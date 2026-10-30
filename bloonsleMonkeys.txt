@@ -41,10 +41,10 @@ _030ice Primary 2750 false true 3 cold middle
 _040ice Primary 4750 true true 4 cold middle
 _050ice Primary 21000 true true 5 cold middle
 _003ice Primary 1900 false true 3 glacier bottom
-_004ice Primary 2750 false true 4 glacier bottom
+_004ice Primary 2750 false true 4 glacier,shatter bottom
 _005ice Primary 30000 false true 5 shatter bottom
-_300desperado Primary 1200 false false 3 sharp top
-_400desperado Primary 5800 false false 4 sharp top
+_300desperado Primary 1200 false false 3 normal top
+_400desperado Primary 5800 false false 4 normal top
 _500desperado Primary 16500 false false 5 normal top
 _030desperado Primary 3000 true false 3 normal,camo middle
 _040desperado Primary 6000 true false 4 normal,camo middle
